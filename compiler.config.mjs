@@ -5,6 +5,11 @@ export default {
 
 	inputDir: './icons/',
 
+	// the file that is used to insert the parsed icons into and the symbol used to split the file
+
+	inputFile: './src/pangolicons.source.js',
+	processorSymbol: '/** @icons */',
+
 	/**
 	 * The output directories for the compiled elements. Directories can be specified as string or array.
 	 *
