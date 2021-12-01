@@ -5,6 +5,7 @@ docs
 src
 icons
 compiler.mjs
+compiler.config.mjs
 tsconfig.json
 rollup.config.js
 *.zip
