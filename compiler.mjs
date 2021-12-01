@@ -18,9 +18,12 @@ const compileIcons = async ({ config }) => {
 	 * The Icons will later be appended after the head and before the tail.
 	 */
 
-	const srcFile = await fs.readFile(config.inputFile, 'utf-8');
-	const [head, tail] = srcFile.split(config.processorSymbol);
-	console.log({ head, tail });
+	try {
+		const srcFile = await fs.readFile(config.inputFiles, 'utf-8');
+		const [head, tail] = srcFile.split(config.processorSymbol);
+	} catch (e) {
+		console.log(`Compiler: ${e}`);
+	}
 
 	/**
 	 * Read the specified input directory and collect all filenames that will later be used to extract the svg content
