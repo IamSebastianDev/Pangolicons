@@ -6,10 +6,11 @@
 	"module": "./dist/pangolicons.esm.js",
 	"types": "./dist/pangolicons.d.ts",
 	"scripts": {
-		"dev": "",
-		"build": "",
-		"compile": "",
-		"test": ""
+		"dev": "rollup --config rollup.config.js --watch",
+		"build": "rollup --config rollup.config.js",
+		"compile": "rm -rf ./icons/* && node compiler.mjs",
+		"test": "node ./test/vial.mjs",
+		"prepublish": "npm run compile && npm run build && npx tsc"
 	},
 	"keywords": [
 		"svg",
