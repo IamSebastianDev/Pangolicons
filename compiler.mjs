@@ -19,7 +19,7 @@ const compileIcons = async ({ config }) => {
 	 */
 
 	try {
-		const srcFile = await fs.readFile(config.inputFiles, 'utf-8');
+		const srcFile = await fs.readFile(config.inputFile, 'utf-8');
 		const [head, tail] = srcFile.split(config.processorSymbol);
 	} catch (e) {
 		console.log(`Compiler: ${e}`);
