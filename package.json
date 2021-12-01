@@ -1,0 +1,28 @@
+{
+	"name": "pangolicons",
+	"version": "3.0.0",
+	"description": "Pangolicons is a open source svg icon library inspired by feather icons",
+	"main": "./dist/pangolicons.js",
+	"module": "./dist/pangolicons.esm.js",
+	"types": "./dist/pangolicons.d.ts",
+	"scripts": {
+		"dev": "",
+		"build": "",
+		"compile": "",
+		"test": ""
+	},
+	"keywords": [
+		"svg",
+		"icon",
+		"glyph",
+		"minimal",
+		"dependency-free"
+	],
+	"author": "Sebastian Heinz",
+	"license": "MIT",
+	"devDependencies": {
+		"rollup": "^2.60.2",
+		"rollup-plugin-terser": "^7.0.2",
+		"typescript": "^4.5.2"
+	}
+}
