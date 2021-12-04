@@ -2,43 +2,31 @@
 
 // import dependencies
 
-import { appendFile } from 'fs';
 import fs from 'fs/promises';
-import config from './compiler.config.mjs';
+import userConfig from './compiler.config.mjs';
 
 // Main function for compiling the icons
 
-const compileIcons = async ({ config }) => {
+const compileIcons = async ({ userConfig = {} }) => {
+	// merge the user and default config
+
+	const config = {
+		log: true,
+		outputDir: {
+			icons: './icons',
+		},
+		...userConfig,
+	};
+
+	// assert that a input dir is provided
+	if (!config.inputDir) {
+		compilerError('No Input directory specified', true);
+	}
+
 	// set up & start the timer
 
 	const timerID = '\x1b[32m ⏳ Time to compile';
 	console.time(timerID);
-
-	/**
-	 * Get and process the specified sourcefile, that is split at the specified delimitor into a head and tail part.
-	 * The Icons will later be appended after the head and before the tail.
-	 */
-
-	let srcFile;
-
-	try {
-		srcFile = await fs.readFile(config.src, 'utf-8');
-	} catch (e) {
-		compileError(e, true);
-	}
-
-	const [head, tail] = srcFile.split(config.processorSymbolIcons);
-
-	/**
-	 * Write the "head" part of the src file to the output file. The Icons will be appended before the tail part is
-	 * added.
-	 */
-
-	try {
-		await fs.writeFile(config.output, head, 'utf-8');
-	} catch (e) {
-		compileError(e);
-	}
 
 	/**
 	 * Read the specified input directory and collect all filenames that will later be used to extract the svg content
@@ -50,19 +38,64 @@ const compileIcons = async ({ config }) => {
 	try {
 		fileNames = await fs.readdir(config.inputDir);
 	} catch (e) {
-		compileError(e);
+		compilerError(e);
 	}
 
 	/**
-	 *
-	 * Itterate over the array of filenames and call the append Icon function for each Icon. The function will create a
-	 * icon out of the file's content and append it to the output file.
-	 *
+	 * Preprocessor chain
 	 */
 
-	for (const file of fileNames) {
-		const icon = await createIcon({ file, path: config.inputDir });
-		await fs.appendFile(config.output, icon, 'utf-8');
+	let result = fileNames;
+
+	for (const processor of config.processors.pre) {
+		result = await processor({ config, result, error: compilerError });
+	}
+
+	/**
+	 * Convert the Objects in the results array into Strings representing the class Constructor
+	 */
+
+	const icons = result.map((svg) => createIcons(svg));
+
+	/**
+	 * Process the sourcefile by reading the content's of the file provided by the config object. The file is then split
+	 * into the head and tail portion. The head part can be written into the output file immeadiatley, followed by the
+	 * previoulsy created icons, that will be placed into the file one after another.
+	 */
+
+	const srcFile = await fs.readFile(config.src.input, 'utf-8');
+	const [head, tail] = srcFile.split(config.src.symbols.insertIcons);
+
+	await fs.writeFile(config.src.output, head, 'utf-8');
+
+	for (let i = 0; i < icons.length; i++) {
+		await fs.appendFile(config.src.output, icons[i], 'utf-8');
+		config.log &&
+			console.log(
+				`\x1b[32m File ${i + 1} of ${fileNames.length} parsed. \x1b[0m`
+			);
+	}
+
+	// get the icon names as a simple array of strings.
+
+	const iconNames = result.map(({ tags }) => tags[0]);
+
+	/**
+	 * Append the tail of the sourcefile, replacing the iconList symbol with the formerly created iconNames array and
+	 * joining it, which created the comma seperated list of icon names we need inside the Objects icons property.
+	 */
+
+	await fs.appendFile(
+		config.src.output,
+		tail.replace(config.src.symbols.insertList, iconNames.join())
+	);
+
+	/**
+	 * Process the output chain after the main library file has been compiled
+	 */
+
+	for (const processor of config.processors.post) {
+		await processor({ config, result, error: compilerError });
 	}
 
 	// end the timer
@@ -70,59 +103,46 @@ const compileIcons = async ({ config }) => {
 	config.log && console.timeEnd(timerID);
 };
 
-compileIcons({ config });
+compileIcons({ userConfig });
 
-function sanitizePath({ svgString }) {
-	const defRegex = new RegExp(/<svg .+?<\/defs>(?<pathFrag>.+?)<\/svg>/im);
-	const classRegex = new RegExp(/class=".+?"/gim);
+/**
+ *
+ * @description Method to log an error to the console during compile time.
+ *
+ * @param { String } error - the Error string created by the compiler
+ * @param { Boolean? } critical - A boolean indicating if the error is critical and should stop the compiliation.
+ * Defaults to false
+ *
+ */
 
-	const matchedFragment = [...svgString.match(defRegex)][1];
-	const pathFragment = matchedFragment.replace(classRegex, '');
+function compilerError(error, critical = false) {
+	const errorString = `\x1b[31mCompiler: ${error}\x1b[0m`;
 
-	return pathFragment;
-}
-
-async function createIcon({ file, path }) {
-	/**
-	 * Extract the name and tags out of the filename. The tags are converted to an array, to make it possible to
-	 * add the name of the Icon to the tag array. This will ensure that every icon has at least one tag, even if no other tags
-	 * are provided.
-	 */
-
-	let [name, tags] = file.split('@');
-	tags = [...new Set([name, ...tags.split('.')[0].split(',')])];
-
-	/**
-	 * read the files content
-	 */
-
-	let svgString;
-
-	try {
-		svgString = await fs.readFile(`${path}/${file}`, 'utf-8');
-	} catch (e) {
-		compileError(e);
-	}
-
-	const parsedPath = sanitizePath({ svgString });
-
-	const icon = `const ${name} = new Icon({ 
-	tags: [${tags.map((tag) => `'${tag}'`).join(',')}], 
-	def: '${parsedPath}' 
-});
-
-export { ${name} }
-
-`;
-
-	return icon;
-}
-
-function compileError(e, critical = false) {
-	const errorString = `\x1b[31mCompiler: ${e}\x1b[0m`;
 	if (critical) {
 		throw new Error(errorString);
 	}
 
 	console.error(errorString);
+}
+
+/**
+ *
+ * @description a utility method to create a Icon constructor string to insert into the file.
+ *
+ * @param { {} } param0 - the object passed to the function containing the tags and path properties.
+ * @param { string[] } param0.tags - an array of strings containing the name and tags of the icon.
+ * @param { string } param0.string - the actual path of the icon.
+ *
+ * @returns { String } the created String
+ */
+
+function createIcons({ tags, path }) {
+	return `const ${tags[0]} = new Icon({ 
+	tags: [${tags.map((tag) => `'${tag}'`).join(',')}], 
+	path: '${path}' 
+});
+
+export { ${tags[0]} }
+
+`;
 }
