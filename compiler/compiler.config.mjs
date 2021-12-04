@@ -3,6 +3,7 @@
 import processIcons from './processors/processIcons.mjs';
 import sanitizePath from './processors/sanitizePath.mjs';
 import processOutput from './processors/processOutput.mjs';
+import exportScripts from './processors/exportScripts.mjs';
 
 export default {
 	// the folder that contains all icons to parse
@@ -53,7 +54,7 @@ export default {
 
 	processors: {
 		pre: [processIcons, sanitizePath],
-		post: [processOutput],
+		post: [processOutput, exportScripts],
 	},
 
 	// logs the progress of the compilation to the console
