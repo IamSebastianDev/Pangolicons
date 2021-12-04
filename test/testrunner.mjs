@@ -1,6 +1,5 @@
 /** @format */
 
-import { fail } from 'assert';
 import fs from 'fs';
 
 /**
@@ -64,26 +63,45 @@ class Testrunner {
 			console.log();
 		});
 
+		// Seperate the passed and failed tests into their own array
+
 		const failed = reports.filter(({ result }) => !result);
 		const passed = reports.filter(({ result }) => result);
 
+		// Process the summary
+
 		Testrunner.log.summary({ reports, failed, passed });
-		console.log();
+		console.log('\x1b[0m');
 	}
 
 	// methods to log different results to the console
 
 	static log = {
+		/**
+		 * @description method to log the results of the tests to the console.
+		 */
+
 		result: ({ result, index, reports, name }) => {
 			const color = result ? '\x1b[32m' : '\x1b[31m';
 			const indexedString = `${index + 1} / ${reports.length}`;
 
 			console.log(`${color}🧪 Test ${indexedString} complete: ${name}`);
 		},
+
+		/**
+		 * @description method to log the tests report, and in case of failure the description to the console
+		 */
+
 		report: ({ result, report, description }) => {
 			console.log(`\x1b[2mReport: ${report}\x1b[0m`);
 			!result && console.log(`\x1b[2m${description}\x1b[0m`);
 		},
+
+		/**
+		 * @description method to log the summary of all run tests to the console, inclusive the amount of run tests,
+		 * and how many passed and failed, and the perecentage of it,
+		 */
+
 		summary: ({ reports, failed, passed }) => {
 			const numberOfReports = reports.length;
 			const style = `\x1b[4m\x1b[1m`;
@@ -125,12 +143,22 @@ class Testrunner {
 
 			console.log();
 		},
+
+		/**
+		 * @description method to log a list of the names of failed tests to the console
+		 */
+
 		failedTests: ({ failed }) => {
 			console.log(`\x1b[2m\x1b[31m🦠 The following tests failed:\x1b[0m`);
 			failed.forEach(({ test }) => {
 				console.log(`\x1b[31mFailed: ${test.name}`);
 			});
 		},
+
+		/**
+		 * @description method to log the percentage of passed tests to the console.
+		 */
+
 		percentageReport: ({ numberOfReports, passed }) => {
 			const percentage = (100 * passed.length) / numberOfReports;
 			console.log(`${percentage.toFixed(2)}% of Tests passed.`);
