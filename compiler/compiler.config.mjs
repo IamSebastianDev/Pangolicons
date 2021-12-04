@@ -17,8 +17,8 @@ export default {
 	 */
 
 	outputDir: {
-		icons: './docs/assets/icons/svgs',
-		compressed: './docs/assets/icons/compressed',
+		icons: './docs/public/assets/icons/svgs',
+		compressed: './docs/public/assets/icons/compressed',
 	},
 
 	/**
