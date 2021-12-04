@@ -2,6 +2,7 @@ node_modules
 compiler
 docs
 icons
+packages
 src
 test
 .gitignore
