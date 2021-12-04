@@ -71,6 +71,8 @@ class Testrunner {
 		console.log();
 	}
 
+	// methods to log different results to the console
+
 	static log = {
 		result: ({ result, index, reports, name }) => {
 			const color = result ? '\x1b[32m' : '\x1b[31m';
@@ -105,6 +107,8 @@ class Testrunner {
 				Testrunner.log.failedTests({ failed });
 			}
 
+			// some tests failed
+
 			if (failed.length > 0) {
 				console.log(`${style}\x1b[33m🧪 Some tests failed!\x1b[0m`);
 				console.log(
@@ -114,6 +118,8 @@ class Testrunner {
 			}
 
 			console.log();
+
+			// log the Percentage of passsed tests to the Console.
 
 			Testrunner.log.percentageReport({ numberOfReports, passed });
 
