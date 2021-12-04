@@ -11,7 +11,7 @@ export default {
 			plugins: [terser({ module: false, toplevel: true })],
 		},
 		{
-			file: './dist/pangolicons.esm.js',
+			file: './dist/pangolicons.esm.mjs',
 			format: 'es',
 			plugins: [terser()],
 		},

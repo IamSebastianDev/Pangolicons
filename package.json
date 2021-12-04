@@ -3,7 +3,7 @@
 	"version": "3.0.0",
 	"description": "Pangolicons is a open source svg icon library inspired by feather icons",
 	"main": "./dist/pangolicons.js",
-	"module": "./dist/pangolicons.esm.js",
+	"module": "./dist/pangolicons.esm.mjs",
 	"types": "./dist/pangolicons.d.ts",
 	"scripts": {
 		"dev": "rollup --config rollup.config.js --watch",
