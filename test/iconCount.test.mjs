@@ -4,14 +4,14 @@ import fs from 'fs/promises';
 import { Pangolicons } from '../dist/pangolicons.esm.mjs';
 
 export default {
-	title: 'Number of Icons',
+	name: 'Number of Icons',
 	description:
 		'Check if the amount of icons provided matches the amount of Icons added.',
 	run: async ({ Testrunner }) => {
-		const { length: supposedCount } = await fs.readdir('./icons/');
-		const existingCount = Object.keys(Pangolicons.icons).length;
+		const { length: numberOfFiles } = await fs.readdir('./icons/');
+		const numberOfIcons = Object.keys(Pangolicons.icons).length;
 
-		if (supposedCount === existingCount) {
+		if (numberOfFiles === numberOfIcons) {
 			return {
 				result: true,
 				report: 'Amount of Icons matches.',
@@ -20,7 +20,7 @@ export default {
 			return {
 				result: false,
 				report: `The amount of Icons differs by ${
-					supposedCount - existingCount
+					numberOfFiles - numberOfIcons
 				}.`,
 			};
 		}
