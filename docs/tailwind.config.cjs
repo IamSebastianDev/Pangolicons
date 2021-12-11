@@ -2,7 +2,7 @@
 
 module.exports = {
 	mode: 'jit',
-	purge: ['./src/**/*.svelte'],
+	content: ['./src/**/*.svelte'],
 	darkMode: 'class', // or 'media' or 'class'
 	theme: {
 		fontFamily: {
