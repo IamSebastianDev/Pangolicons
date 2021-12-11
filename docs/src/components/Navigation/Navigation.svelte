@@ -1,6 +1,6 @@
 <script>
 	import Pangol from '../UI/Pangol.svelte';
-	import NavigationList from './NavigationList.svelte';
+	import NavigationList from './NavList.svelte';
 	import NavLink from './NavLink.svelte';
 	import NavMobile from './NavMobile.svelte';
 
