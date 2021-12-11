@@ -18,8 +18,8 @@ export default {
 	 */
 
 	outputDir: {
-		icons: './docs/public/assets/icons/svgs',
-		compressed: './docs/public/assets/icons/compressed',
+		icons: './docs/static/assets/icons/svgs',
+		compressed: './docs/static/assets/icons/compressed',
 	},
 
 	/**
@@ -54,7 +54,7 @@ export default {
 
 	processors: {
 		pre: [processIcons, sanitizePath],
-		post: [processOutput, exportScripts],
+		post: [processOutput],
 	},
 
 	// logs the progress of the compilation to the console
