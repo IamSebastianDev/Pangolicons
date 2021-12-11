@@ -7,12 +7,12 @@
 </script>
 
 <NavItem>
-	<NavLink href="/docs" title="Documentation">
+	<NavLink href="/docs" title="Documentation" classes="hover:text-pangol-500">
 		<Pangol name="text" {attributes}>Docs</Pangol>
 	</NavLink>
 </NavItem>
 <NavItem>
-	<NavLink href="/packages" title="Packages">
+	<NavLink href="/packages" title="Packages" classes="hover:text-pangol-500">
 		<Pangol name="package" {attributes}>Packages</Pangol>
 	</NavLink>
 </NavItem>
@@ -21,6 +21,7 @@
 		href="https://github.com/iamsebastiandev/pangolicons"
 		title="Github"
 		target="_blank"
+		classes="hover:text-pangol-500"
 	>
 		<Pangol name="github" {attributes}>Github</Pangol>
 	</NavLink>
