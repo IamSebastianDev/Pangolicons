@@ -1,0 +1,38 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%svelte.head%
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Open+Sans:wght@300&family=Roboto:wght@100;400&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script>
+			// handle dark mode on page load to make sure that no flickering occurs.
+
+			const storageIdentifier = 'pangolicons__preferColourSchemeDark';
+			const userPrefersDarkTheme =
+				window.localStorage.getItem(storageIdentifier);
+
+			if (
+				userPrefersDarkTheme === 'true' ||
+				(userPrefersDarkTheme === undefined &&
+					window.matchMedia('(prefers-color-scheme: dark)'))
+			) {
+				document.documentElement.classList.add('dark');
+				localStorage.setItem(storageIdentifier, true);
+			}
+		</script>
+	</head>
+	<body style="overflow-x: hidden">
+		<div id="svelte">%svelte.body%</div>
+	</body>
+</html>
