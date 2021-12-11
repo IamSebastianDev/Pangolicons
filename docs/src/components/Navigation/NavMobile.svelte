@@ -1,5 +1,5 @@
 <script>
-	import NavigationList from './NavigationList.svelte';
+	import NavList from './NavList.svelte';
 	import NavLink from './NavLink.svelte';
 	import Pangol from '../UI/Pangol.svelte';
 
@@ -24,7 +24,7 @@
 			<Pangol name="x" />
 		</NavLink>
 		<ul class="flex flex-col justify-around items-center h-1/2">
-			<NavigationList {attributes} />
+			<NavList {attributes} />
 		</ul>
 		<div
 			class="flex flex-row justify-center items-center absolute bottom-0 m-4 p-2"
