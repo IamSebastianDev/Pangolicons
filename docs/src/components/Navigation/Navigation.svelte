@@ -20,7 +20,7 @@
 </script>
 
 <nav
-	class="relative mx-auto flex flex-row max-w-screen-lg flex-shrink-0 border-b border-b-slate-100 dark:border-slate-700 dark:bg-slate-800 items-center"
+	class="fixed top-0 md:relative mx-auto flex flex-row max-w-screen-lg flex-shrink-0 border-b border-b-slate-100 dark:border-slate-700 dark:bg-slate-800 bg-white items-center"
 >
 	<NavMobile bind:showMobileNav />
 	<NavLink href="/" title="Home" classes="px-6 py-4 mr-auto">
