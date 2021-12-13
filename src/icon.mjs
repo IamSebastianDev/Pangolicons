@@ -26,7 +26,7 @@ export const Icon = ({ path, tags = [], name }) => {
 	 *
 	 */
 
-	const toSvg = (attributes) => {
+	const toSvg = (attributes = {}) => {
 		// create the svg element
 
 		const svg = document.createElementNS(
@@ -77,7 +77,7 @@ export const Icon = ({ path, tags = [], name }) => {
 	 *
 	 */
 
-	const toString = (attributes) => {
+	const toString = (attributes = {}) => {
 		const attributesToAssign = {
 			..._defaultAttributes,
 			class: `pangolicons pangolicons-${name}`,
