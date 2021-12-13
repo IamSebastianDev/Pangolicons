@@ -21,6 +21,7 @@
 		"dependency-free"
 	],
 	"sideEffects": false,
+	"unpkg": "./dist/pangolicons.esm.mjs",
 	"author": "Sebastian Heinz",
 	"license": "MIT",
 	"devDependencies": {
