@@ -43,19 +43,24 @@ export default {
 	 *	The preprocessing chain is invoked in the beginning of the compiler and will process the Icons. There are two
 	 *	default processors, the processIcon processor will extract tags and the content of the svg file. The
 	 *	sanitizePath processor will remove unecessary elements from the path. Each subsequent processor will receive
-	 *	the result of the previous processor, and error handling method and the config object.
+	 *	the result of the previous processor, an error handling method and the config object.
 	 *
 	 * Postprocessing:
 	 *	The postprocessing chain is invoked after the library file is created. The processors are passed the processed
 	 *	icon array, the config object as well as an error handling method. All processors are invoked in order.
 	 *
 	 * All processors are invoked asynchronously to enable async await in it.
+	 *
+	 * All processors are passed the full config object, meaning that you can add configurations simply to this config
+	 * file, if you need to pass parameters to the processor.
 	 */
 
 	processors: {
 		pre: [processIcons, sanitizePath],
-		post: [processOutput],
+		post: [processOutput, exportScripts],
 	},
+
+	processorScriptOutput: "./docs/static/scripts/",
 
 	// logs the progress of the compilation to the console
 
