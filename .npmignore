@@ -8,6 +8,7 @@ test
 .gitignore
 .rollup.config.js
 tsconfig.json
+pangollogo.png
 
 # General
 .DS_Store
