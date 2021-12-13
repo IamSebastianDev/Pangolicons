@@ -29,7 +29,7 @@ export default {
 
 	src: {
 		input: './src/pangolicons.source.js',
-		output: './src/pangolicons.js',
+		output: './src/pangolicons.mjs',
 		symbols: {
 			insertIcons: '/** @icons */',
 			insertList: '/** @list */',
