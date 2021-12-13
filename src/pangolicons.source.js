@@ -104,3 +104,12 @@ export const Pangolicons = {
 			.filter((elem) => elem != undefined);
 	},
 };
+
+/**
+ * if the window Object exists, add Pangolicons to it to make it globally accessible even if included as a type module
+ * reference
+ */
+
+if (typeof window !== 'undefined') {
+	window.Pangolicons = Pangolicons;
+}
