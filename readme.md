@@ -1,40 +1,20 @@
+<!-- @format -->
+
 <p align="center">
     <img src="./pangollogo.png" alt="logo">
 </p>
 
-# Pangolicons  
+# Pangolicons
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 [![Version](https://img.shields.io/badge/version-3.0.3-informational?style=flat-square)](http://badges.mit-license.org)
 [![Size](https://img.shields.io/badge/size-71kb-informational?style=flat-square)]("")
-
--
 
 Pangolicons is a modern & minimal open source SVG Icon library with a simple, fully treeshakeable API. You can see the Icons in action and learn more about Pangolicons [here](http://pangolicons.xyz).
 
 ## 🚀 Getting started
 
 There are many different ways you can include Pangolicons on your website or project. The simplest is to download all the Icons (or just the Icons you need) and simply include them in your markup or CSS as a regular image or svg. There are, however, additional ways you can use Pangolicons.
-
-### Client-side JavaScript
-
-You can use Pangolicons directly on your website using JavaScript. This is not the recommended way due to the large filesize, but possible in a pinch to prototype or test. Or if you don't care about loading times.
-
-```html
-<head>
-    ...
-    <!-- Via local file-->
-    <script type="module" src="./your/path/to/pangolicons.min.mjs">
-    <!-- Via CDN -->
-    <script type="module" src="https://unpkg.com/pangolicons">
-    ...
-</head>
-
-```
-
-> Note: See the ```type="module"``` attribute on the script tag? Pangolicons is intended to use with modern ES6 JavaScript and as such provides a esm file for unpkg and to download. If you need CommonJS style imports, you should fall back to the npm package.
-
-After adding the file to your site, the ```Pangolicons```object should be globally accessible, which means you can access the API and the Icons directly.
 
 ## 📋 License
 
