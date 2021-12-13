@@ -137,9 +137,10 @@ function compilerError(error, critical = false) {
  */
 
 function createIcons({ tags, path }) {
-	return `export const ${tags[0]} = new Icon({ 
+	return `export const ${tags[0]} = Icon({ 
 	tags: [${tags.map((tag) => `'${tag}'`).join(',')}], 
-	path: '${path}' 
+	path: '${path}',
+	name: '${tags[0]}' 
 });
 `;
 }
