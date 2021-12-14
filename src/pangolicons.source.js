@@ -64,6 +64,10 @@ export const Pangolicons = {
 	 */
 
 	search({ searchString }) {
+		if (searchString !== 'x' && searchString.length < 3) {
+			return;
+		}
+
 		// convert the searchstring to lowercase
 
 		searchString = searchString.toLowerCase();
@@ -71,7 +75,9 @@ export const Pangolicons = {
 		// helper method to match tags to the searchstring
 
 		const matchTags = (searchString, tags) =>
-			tags.map((elem) => elem.toLowerCase()).includes(searchString);
+			tags
+				.map((elem) => elem.toLowerCase())
+				.some((tag) => tag.includes(searchString));
 
 		// itterate over the icons
 
