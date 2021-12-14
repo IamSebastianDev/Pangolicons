@@ -31,7 +31,7 @@ export default {
 	src: {
 		input: './src/pangolicons.source.js',
 		output: './src/pangolicons.esm.mjs',
-		outputCJS: './src/pangolicons.mjs',
+		outputCJS: './src/pangolicons.js',
 		symbols: {
 			insertIcons: '/** @icons */',
 			insertList: '/** @list */',
