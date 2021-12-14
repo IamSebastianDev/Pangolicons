@@ -4,6 +4,7 @@ import processIcons from './processors/processIcons.mjs';
 import sanitizePath from './processors/sanitizePath.mjs';
 import processOutput from './processors/processOutput.mjs';
 import exportScripts from './processors/exportScripts.mjs';
+import exportCJSModule from './processors/exportCJSModule.mjs';
 
 export default {
 	// the folder that contains all icons to parse
@@ -29,7 +30,8 @@ export default {
 
 	src: {
 		input: './src/pangolicons.source.js',
-		output: './src/pangolicons.mjs',
+		output: './src/pangolicons.esm.mjs',
+		outputCJS: './src/pangolicons.mjs',
 		symbols: {
 			insertIcons: '/** @icons */',
 			insertList: '/** @list */',
@@ -57,10 +59,10 @@ export default {
 
 	processors: {
 		pre: [processIcons, sanitizePath],
-		post: [processOutput, exportScripts],
+		post: [processOutput, exportScripts, exportCJSModule],
 	},
 
-	processorScriptOutput: "./docs/static/scripts/",
+	processorScriptOutput: './docs/static/scripts/',
 
 	// logs the progress of the compilation to the console
 
