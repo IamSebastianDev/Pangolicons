@@ -1319,23 +1319,17 @@ export const Pangolicons = {
 	},
 
 	/**
-	 *  @method
-	 *	@description - static method to search the Pangolicons.icons object for an icon with a name or tag matching the
-	 *	searchstring
+	 *	@description method to search the Pangolicons.icons object for all icons which tags (and in extension name)
+	 * matches the defined searchstring.
 	 *
 	 * 	@param { Object } param0 - the object passed to the replace method with the element property
 	 * 	@param { String } param0.searchString - the String to search for
-	 * 	@param { Boolean } param0.tags - a boolean indicating if the searchstring should be matched against the
-	 * 	tags
-	 * 	@param { Boolean } param0.name - a boolean indicating if the searchstring should be matched against the
-	 * 	name
 	 *
 	 * 	@returns { Icon[] } an Array containing all icons found with the matching tags
 	 */
 
-	search({ searchString, tags = true }) {
-		// return early if the searchstring is smaller then 3 letters
-		if (searchString.length < 3) {
+	search({ searchString }) {
+		if (searchString !== 'x' && searchString.length < 3) {
 			return;
 		}
 
@@ -1346,26 +1340,20 @@ export const Pangolicons = {
 		// helper method to match tags to the searchstring
 
 		const matchTags = (searchString, tags) =>
-			tags.filter((tag) => tag.includes(searchString));
+			tags
+				.map((elem) => elem.toLowerCase())
+				.some((tag) => tag.includes(searchString));
 
 		// itterate over the icons
 
-		return Object.entries(Pangolicons.icons)
-			.map(([name, icon]) => {
-				if (tags) {
-					if (matchTags(searchString, icon.tags).length > 0) {
-						return icon;
-					}
-				} else if (!tags && name) {
-					if (icon.name.toLowerCase().includes(searchString)) {
-						return icon;
-					}
-				} else {
-					console.warn(
-						'Pangolicons: No matching filter for search specified'
-					);
+		return Object.values(Pangolicons.icons)
+			.map((icon) => {
+				if (matchTags(searchString, icon.tags)) {
+					return icon;
 				}
 			})
 			.filter((elem) => elem != undefined);
 	},
 };
+
+globalThis.Pangolicons = Pangolicons;

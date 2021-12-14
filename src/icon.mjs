@@ -1,19 +1,8 @@
 /** @format */
 
-export const Icon = ({ path, tags = [], name }) => {
-	let _defaultAttributes = {
-		xmlns: 'http://www.w3.org/2000/svg',
-		width: '24',
-		height: '24',
-		viewBox: '0 0 24 24',
-		stroke: 'currentColor',
-		fill: 'none',
-		'stroke-linecap': 'round',
-		'stroke-width': '1.5',
-		'stroke-linejoin': 'round',
-		'stroke-align': 'center',
-	};
+import defaultAttributes from './defaultAttributes.mjs';
 
+export const Icon = ({ path, tags = [], name }) => {
 	/**
 	 *
 	 *  @public @method
@@ -39,7 +28,7 @@ export const Icon = ({ path, tags = [], name }) => {
         */
 
 		const attributesToAssign = {
-			..._defaultAttributes,
+			...defaultAttributes,
 			class: `pangolicons pangolicons-${name}`,
 			...attributes,
 		};
@@ -79,7 +68,7 @@ export const Icon = ({ path, tags = [], name }) => {
 
 	const toString = (attributes = {}) => {
 		const attributesToAssign = {
-			..._defaultAttributes,
+			...defaultAttributes,
 			class: `pangolicons pangolicons-${name}`,
 			...attributes,
 		};
@@ -101,7 +90,6 @@ export const Icon = ({ path, tags = [], name }) => {
 		name,
 		path,
 		tags,
-		_defaultAttributes,
 		toString,
 		toSvg,
 	};
