@@ -4,7 +4,7 @@ import { terser } from 'rollup-plugin-terser';
 
 export default [
 	{
-		input: 'src/pangolicons.mjs',
+		input: 'src/pangolicons.js',
 		output: [
 			{
 				file: './dist/pangolicons.js',
@@ -20,6 +20,7 @@ export default [
 				format: 'esm',
 				file: './dist/pangolicons.esm.mjs',
 				plugins: [terser()],
+				sourcemap: true,
 			},
 		],
 	},
