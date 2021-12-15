@@ -1,6 +1,6 @@
 /** @format */
 
-import { Icon } from './icon.mjs';
+import { Icon } from '../icon.mjs';
 
 /** @icons */
 export const Pangolicons = {
