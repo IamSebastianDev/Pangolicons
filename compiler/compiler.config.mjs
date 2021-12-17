@@ -21,7 +21,7 @@ export default {
 	outputDir: {
 		icons: [
 			'./docs/static/assets/icons/svgs',
-			'./packages/svelte-pangolicons/icons',
+			'./packages/svelte-pangolicons/svgs',
 		],
 		compressed: './docs/static/assets/icons/compressed',
 	},
