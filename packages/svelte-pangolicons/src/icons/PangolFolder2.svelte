@@ -4,7 +4,7 @@
 			let size = '24';
 			let strokeWidth = '1.5';
 
-			export let attributes = {};
+			export let attributes = { className, size, strokeWidth };
 			$: ({ className, size, strokeWidth } = attributes);
 		</script>
 
