@@ -1,13 +1,14 @@
 {
 	"name": "pangolicons-svelte",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "pangolicons made ready for svelte!",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
 	"svelte": "src/index.js",
 	"scripts": {
 		"build": "rollup -c",
-		"dev": "rollup -c -w"
+		"compile": "node compile.mjs",
+		"prepublish": "npm run compile && npm run build"
 	},
 	"keywords": [
 		"svelte",
@@ -21,6 +22,7 @@
 		"rollup": "^2.61.1",
 		"rollup-plugin-node-resolve": "^5.2.0",
 		"rollup-plugin-svelte": "^7.1.0",
+		"rollup-plugin-terser": "^7.0.2",
 		"svelte": "^3.44.3"
 	}
 }

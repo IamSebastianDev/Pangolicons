@@ -1,8 +1,8 @@
 node_modules
-src
-rollup.config.js
-compile.mjs
+.env
 icons
+
+*.zip
 
 # General
 .DS_Store
