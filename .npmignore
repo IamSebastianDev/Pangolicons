@@ -6,7 +6,7 @@ packages
 src
 test
 .gitignore
-.rollup.config.js
+rollup.config.js
 tsconfig.json
 pangollogo.png
 
