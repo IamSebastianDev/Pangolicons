@@ -1,0 +1,25 @@
+
+		<script>
+			let className = '';
+			let size = '24';
+			let strokeWidth = '1.5';
+
+			export let attributes = {};
+			$: ({ className, size, strokeWidth } = attributes);
+		</script>
+
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="{size}"
+			height="{size}"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke="currentColor"
+			stroke-width="{strokeWidth}"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			class="pangolicons pangolicons-twitter {className}"
+		>
+			<path  d="M10.88,15.09a15.42,15.42,0,0,1-6.53,2.46,8.06,8.06,0,0,1-.85,0A10.26,10.26,0,0,0,9,19.11,10.14,10.14,0,0,0,19.2,8.9l1.3-3.51S19,5.86,18.22,6A3.59,3.59,0,0,0,12,8.48a4.48,4.48,0,0,0,.09.82A10.18,10.18,0,0,1,4.71,5.55a3.56,3.56,0,0,0-.48,1.8c0,1.25.43,6.19,6.65,7.74"/>
+		</svg>
+	

@@ -45,6 +45,14 @@ const compile = async ({ src, iconsSrc, index }) => {
 
 	await fs.writeFile(path.join(process.cwd(), index), '', 'utf-8');
 
+	// reset the index.d.ts file
+	await fs.writeFile(
+		path.join(process.cwd(), './dist/types/index.d.ts'),
+		`/// <reference types="svelte" />\n
+		import {SvelteComponentTyped} from "svelte/internal";`,
+		'utf-8'
+	);
+
 	/**
 	 * After extracting the necessary information, the actual svelte file needs to be written, and the export statement
 	 * needs to be added to the index js file, before rollup bundles the file.
@@ -61,11 +69,19 @@ const compile = async ({ src, iconsSrc, index }) => {
 			'utf-8'
 		);
 
-		// append the export in the index js file
+		// append the export in the index js & index.d.ts file
 		const statement = `export { default as ${componentName} } from './icons/${componentName}.svelte';\n`;
+		const type = `export class ${componentName} extends SvelteComponentTyped<{attributes: {size?: string, strokeWidth?: number, className?: string}}> {};\n`;
+
 		await fs.appendFile(
 			path.join(process.cwd(), index),
 			statement,
+			'utf-8'
+		);
+
+		await fs.appendFile(
+			path.join(process.cwd(), './dist/types/index.d.ts'),
+			type,
 			'utf-8'
 		);
 	}
@@ -80,14 +96,27 @@ const createSvelteFileContents = ({ name, svgPath }) => {
 	return `
 		<script>
 			let className = '';
-			let size = "24px";
-			let strokeWidth = "1.5";
+			let size = '24';
+			let strokeWidth = '1.5';
 
-	        export let attributes = {};
-			$: ({className, size, strokeWidth} = attributes)
+			export let attributes = {};
+			$: ({ className, size, strokeWidth } = attributes);
 		</script>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="{strokeWidth}" stroke-linecap="round" stroke-linejoin="round" class="pangolicons pangolicons-${name} {className}">${svgPath}</svg>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="{size}"
+			height="{size}"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke="currentColor"
+			stroke-width="{strokeWidth}"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			class="pangolicons pangolicons-${name} {className}"
+		>
+			${svgPath}
+		</svg>
 	`;
 };
 
