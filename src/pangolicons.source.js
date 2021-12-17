@@ -19,12 +19,26 @@ export const Pangolicons = {
 	 */
 
 	replace({ element }) {
+		if (element === undefined || !(element instanceof HTMLElement)) {
+			console.error(
+				`Pangolicons: ${element} is either undefined or no HTMLElement.`
+			);
+		}
+
+		if (typeof window === 'undefined' || typeof document === 'undefined') {
+			console.error(
+				`Pangolicons: The 'replaceAll' & 'replace' methods will only work in a browser enviroment.`
+			);
+			return;
+		}
+
 		const iconName = element.getAttribute('pangolicons');
 
 		if (iconName === undefined) {
 			console.log(
-				`Pangolicons: element to replace does not havee a "pangolicons" attribute.`
+				`Pangolicons: element to replace does not have a 'pangolicons' attribute.`
 			);
+			return;
 		}
 
 		const attributes = {};
@@ -46,6 +60,9 @@ export const Pangolicons = {
 
 	replaceAll() {
 		if (typeof window === 'undefined' || typeof document === 'undefined') {
+			console.error(
+				`Pangolicons: The 'replaceAll' & 'replace' methods will only work in a browser enviroment.`
+			);
 			return;
 		}
 
