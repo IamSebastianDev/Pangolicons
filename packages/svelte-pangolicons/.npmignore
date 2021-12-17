@@ -1,7 +1,7 @@
 node_modules
 rollup.config.js
 compile.mjs
-./icons
+svgs
 
 
 # General

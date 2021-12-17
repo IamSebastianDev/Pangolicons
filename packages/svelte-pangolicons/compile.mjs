@@ -120,4 +120,4 @@ const createSvelteFileContents = ({ name, svgPath }) => {
 	`;
 };
 
-compile({ iconsSrc: './icons/', src: './src/icons', index: './src/index.js' });
+compile({ iconsSrc: './svgs/', src: './src/icons', index: './src/index.js' });
