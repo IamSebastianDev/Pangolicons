@@ -19,7 +19,10 @@ export default {
 	 */
 
 	outputDir: {
-		icons: './docs/static/assets/icons/svgs',
+		icons: [
+			'./docs/static/assets/icons/svgs',
+			'./packages/svelte-pangolicons/icons',
+		],
 		compressed: './docs/static/assets/icons/compressed',
 	},
 

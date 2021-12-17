@@ -6,8 +6,6 @@ import nodePath from 'path';
 import { execSync } from 'child_process';
 
 export default async ({ result, config, error }) => {
-	let folder = config.inputDir;
-
 	/**
 	 * Check if all output folder exists, and if not, create them recursively. To make processing the paths easier, and
 	 * to unifiy behaviour between strings and arrays inide the string, the outputDir and compressed paths are
@@ -38,9 +36,9 @@ export default async ({ result, config, error }) => {
 				createSvgIcon({ path })
 			);
 		}
-
-		folder = dir;
 	}
+
+	let folder = iconPaths[0];
 
 	for (const dir of compressedPaths) {
 		const zip = zipFolder({
