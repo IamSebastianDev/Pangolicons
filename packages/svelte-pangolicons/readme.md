@@ -23,6 +23,8 @@ You can then import the Icons you want to use into your component.
 <PangolPangolin attributes="{{...}}" />
 ```
 
+All icons follow the `Pangol` + `IconName` naming scheme in PascalCase.
+
 ### `Attributes`
 
 You might pass a `attributes` object to the component containing the following properties:
@@ -34,13 +36,12 @@ You might pass a `attributes` object to the component containing the following p
 | strokeWidth | Number? | The stroke-width property of the svg               |
 
 ```html
-...
+<script>
+	const attributes = { size: '24', strokeWidth: 1.5, className: 'nav-icon' };
+</script>
 
-<PangolPangolin attributes="{{
-    size: "24",
-    strokeWidth: 1.5,
-    className: "nav-icon"
-}}" />
+...
+<PangolPangolin {attributes} />
 ```
 
 ## 📋 License
