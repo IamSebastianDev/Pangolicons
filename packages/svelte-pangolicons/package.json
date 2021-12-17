@@ -1,7 +1,7 @@
 {
 	"name": "svelte-pangolicons",
-	"version": "1.0.5",
-	"description": "pangolicons made ready for svelte!",
+	"version": "1.0.6",
+	"description": "Pangolicons made ready for svelte!",
 	"types": "dist/types",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
