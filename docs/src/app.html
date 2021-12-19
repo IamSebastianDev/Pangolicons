@@ -4,7 +4,6 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%svelte.head%
 
@@ -15,9 +14,44 @@
 			rel="stylesheet"
 		/>
 
-		<script>
-			// handle dark mode on page load to make sure that no flickering occurs.
+		<!-- FAVICONS -->
 
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./favicons/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="./favicons/safari-pinned-tab.svg"
+			color="#407899"
+		/>
+		<link rel="shortcut icon" href="./favicons/favicon.ico" />
+		<meta name="apple-mobile-web-app-title" content="Pangolicons" />
+		<meta name="application-name" content="Pangolicons" />
+		<meta name="msapplication-TileColor" content="#2d89ef" />
+		<meta
+			name="msapplication-config"
+			content="./favicons/browserconfig.xml"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+
+		<!-- Handle the user preferred colour scheme -->
+
+		<script>
 			const storageIdentifier = 'pangolicons__preferColourSchemeDark';
 			const userPrefersDarkTheme =
 				window.localStorage.getItem(storageIdentifier);
@@ -32,6 +66,14 @@
 			}
 		</script>
 	</head>
+	<style>
+		html {
+			background-color: rgba(255, 255, 255, 1);
+		}
+		html.dark {
+			background-color: rgb(30, 41, 59, 1);
+		}
+	</style>
 	<body style="overflow-x: hidden">
 		<div id="svelte">%svelte.body%</div>
 	</body>
