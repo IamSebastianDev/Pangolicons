@@ -1,9 +1,10 @@
 /** @format */
 
-module.exports = {
+const config = {
 	mode: 'jit',
-	content: ['./src/**/*.svelte'],
-	darkMode: 'class', // or 'media' or 'class'
+	content: ['./src/**/*.{html,js,svelte,ts}'],
+	darkMode: 'class',
+
 	theme: {
 		fontFamily: {
 			comfortaa: ['Comfortaa', 'sans-serif'],
@@ -33,8 +34,8 @@ module.exports = {
 			},
 		},
 	},
-	variants: {
-		extend: {},
-	},
-	plugins: [],
+
+	plugins: [require('@tailwindcss/typography')],
 };
+
+module.exports = config;
