@@ -6,9 +6,7 @@
 	export let attributes;
 </script>
 
-<Card
-	classes="hover:border-pangol-100 hover:ring-2 ring-pangol-100 w-full h-full"
->
+<Card classes="hover:border-pangol-100 hover:ring-2 ring-pangol-100 w-full">
 	<a
 		href={'/assets/icons/svgs/' + name + '.svg'}
 		title="Download {name}"
