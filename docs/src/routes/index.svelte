@@ -1,5 +1,6 @@
 <script>
-	import Hero from '../components/Hero/Hero.svelte';
+	import Hero from '$lib/Hero/Hero.svelte';
+	import Display from '$lib/Display/Display.svelte';
 </script>
 
 <svelte:head>
@@ -7,3 +8,4 @@
 </svelte:head>
 
 <Hero />
+<Display />
