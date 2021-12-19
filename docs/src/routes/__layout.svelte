@@ -1,13 +1,16 @@
 <script>
-	import { initalizeColorScheme } from '../scripts/colorScheme.js';
-	import { onMount } from 'svelte';
+	import '../app.css';
+	import Navigation from '$lib/Navigation/Navigation.svelte';
+	import Footer from '$lib/Footer.svelte';
 
-	onMount(() => {
+	import { initalizeColorScheme } from '../stores/colorScheme.js';
+
+	const init = () => {
 		initalizeColorScheme();
-	});
-
-	import Navigation from '../components/Navigation/Navigation.svelte';
+	};
 </script>
+
+<svelte:body use:init />
 
 <Navigation />
 
@@ -15,12 +18,4 @@
 	<slot />
 </main>
 
-<style global lang="postcss">
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-
-	body {
-		@apply dark:bg-slate-800 bg-white;
-	}
-</style>
+<Footer />
