@@ -29,7 +29,9 @@ export const Icon = ({ path, tags = [], name }) => {
 
 		const attributesToAssign = {
 			...defaultAttributes,
-			class: `pangolicons pangolicons-${name}`,
+			class: `pangolicons pangolicons-${name} ${
+				attributes.class ? attributes.class : ''
+			}`,
 			...attributes,
 		};
 
@@ -69,7 +71,9 @@ export const Icon = ({ path, tags = [], name }) => {
 	const toString = (attributes = {}) => {
 		const attributesToAssign = {
 			...defaultAttributes,
-			class: `pangolicons pangolicons-${name}`,
+			class: `pangolicons pangolicons-${name} ${
+				attributes.class ? attributes.class : ''
+			}`,
 			...attributes,
 		};
 
