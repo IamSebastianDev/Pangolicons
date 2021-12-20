@@ -13,7 +13,7 @@
 		<Pangol name="pangolin">Get Started</Pangol>
 	</ButtonLink>
 	<ButtonLink
-		href="https://github.com/iamsebastiandev/pangolicons"
+		href="https://github.com/IamSebastianDev/Pangolicons/tree/master/docs/static/assets/icons/svgs"
 		title="All Icons as download"
 	>
 		<Pangol name="download">Download all</Pangol>
