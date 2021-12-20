@@ -44,8 +44,8 @@ declare namespace Bo {
         export { j as chevronLast };
         export { B as chevronLeft };
         export { W as chevronLeftRight };
-        export { X as chevronRight };
-        export { $ as chevronUp };
+        export { $ as chevronRight };
+        export { X as chevronUp };
         export { G as chevronUpDown };
         export { N as chevronrightLeft };
         export { J as chevronsDown };
@@ -98,8 +98,8 @@ declare namespace Bo {
         export { je as delimitor };
         export { Be as display };
         export { We as download };
-        export { Xe as dragIndicator };
-        export { $e as edit };
+        export { $e as dragIndicator };
+        export { Xe as edit };
         export { Ge as envelope };
         export { Ne as externalLink };
         export { Je as eyeClosed };
@@ -152,8 +152,8 @@ declare namespace Bo {
         export { jt as layoutColumns };
         export { Bt as layoutGrid };
         export { Wt as layoutHorizontal };
-        export { Xt as layoutList };
-        export { $t as layoutMixed };
+        export { $t as layoutList };
+        export { Xt as layoutMixed };
         export { Gt as layoutVertical };
         export { Nt as library };
         export { Jt as list };
@@ -206,8 +206,8 @@ declare namespace Bo {
         export { ja as shuffle };
         export { Ba as sidebar };
         export { Wa as skipBack };
-        export { Xa as skipForward };
-        export { $a as sliders };
+        export { $a as skipForward };
+        export { Xa as sliders };
         export { Ga as smartphone };
         export { Na as smile };
         export { Ja as snail };
@@ -334,8 +334,8 @@ declare namespace F { }
 declare namespace j { }
 declare namespace B { }
 declare namespace W { }
-declare namespace X { }
 declare namespace $ { }
+declare namespace X { }
 declare namespace G { }
 declare namespace N { }
 declare namespace J { }
@@ -388,8 +388,8 @@ declare namespace Fe { }
 declare namespace je { }
 declare namespace Be { }
 declare namespace We { }
-declare namespace Xe { }
 declare namespace $e { }
+declare namespace Xe { }
 declare namespace Ge { }
 declare namespace Ne { }
 declare namespace Je { }
@@ -442,8 +442,8 @@ declare namespace Ft { }
 declare namespace jt { }
 declare namespace Bt { }
 declare namespace Wt { }
-declare namespace Xt { }
 declare namespace $t { }
+declare namespace Xt { }
 declare namespace Gt { }
 declare namespace Nt { }
 declare namespace Jt { }
@@ -496,8 +496,8 @@ declare namespace Fa { }
 declare namespace ja { }
 declare namespace Ba { }
 declare namespace Wa { }
-declare namespace Xa { }
 declare namespace $a { }
+declare namespace Xa { }
 declare namespace Ga { }
 declare namespace Na { }
 declare namespace Ja { }
@@ -558,5 +558,5 @@ declare function t({ path: t, tags: a, name: o }: {
     toString: (a?: {}) => string;
     toSvg: (a?: {}) => SVGSVGElement;
 };
-export { Bo as Pangolicons, a as airplay, o as alignCenter, r as alignJustify, n as alignLeft, i as alignRight, l as archive, p as arrowDown, s as arrowLeft, c as arrowLeftDown, h as arrowLeftUp, x as arrowRight, y as arrowRightDown, g as arrowRightUp, m as arrowUp, d as barChart, u as barChartAlternative, w as barChartPositive, f as batteryCharged, M as batteryEmpty, v as bell, A as bellOff, b as bellRinging, k as bluetooth, L as bluetoothConnected, H as bluetoothOff, C as bluetoothSearching, R as bold, V as bookClosed, D as bookOpen, S as bookmark, Z as box, U as calendar, z as camera, O as cameraOff, T as castToMedia, q as checkmark, P as checkmarkCircle, I as chevronDown, E as chevronDownUp, F as chevronFirst, j as chevronLast, B as chevronLeft, W as chevronLeftRight, X as chevronRight, $ as chevronUp, G as chevronUpDown, N as chevronrightLeft, J as chevronsDown, _ as chevronsLeft, Y as chevronsRight, K as chevronsUp, Q as circle, ee as circleArrowDown, te as circleArrowLeft, ae as circleArrowLeftDown, oe as circleArrowLeftUp, re as circleArrowRight, ne as circleArrowRightDown, ie as circleArrowRightUp, le as circleArrowUp, pe as circleMinus, se as circlePlus, ce as circleX, he as clipboard, xe as clipboardNotes, ye as cloud, ge as cloudDrizzle, me as cloudFog, de as cloudHail, ue as cloudLightning, we as cloudMoon, fe as cloudRain, Me as cloudSnow, ve as cloudStorm, Ae as cloudSun, be as clouds, ke as code, Le as codepen, He as convertToLink, Ce as convertToOrderedList, Re as convertToUnorderedList, Ve as convertToUnstyledList, De as cookie, Se as cornerArrowDownLeft, Ze as cornerArrowDownRight, Ue as cornerArrowLeftDown, ze as cornerArrowLeftUp, Oe as cornerArrowRightDown, Te as cornerArrowRightUp, qe as cornerArrowUpLeft, Pe as cornerArrowUpRight, Ie as creditcard, Ee as crown, Fe as database, je as delimitor, Be as display, We as download, Xe as dragIndicator, $e as edit, Ge as envelope, Ne as externalLink, Je as eyeClosed, _e as eyeOpen, Ye as eyeStriked, Ke as facebook, Qe as fader, et as fastForward, tt as file, at as filter, ot as fnBackspace, rt as fnCaps, nt as fnCommand, it as fnControl, lt as fnEscape, pt as fnOption, st as fnReturn, ct as fnShift, ht as fnSpacebar, xt as fnTab, gt as folder, yt as folder2, mt as folderMinus, dt as folderPlus, ut as fork, wt as form, ft as frown, Mt as fullscreenEnter, vt as fullscreenExit, At as gear, bt as ghost, kt as github, Lt as guitar, Ht as haze, Ct as headingDecrease, Rt as headingIncrease, Vt as heart, Dt as hexagon, St as horizontalMore, Zt as icecream, Ut as image, zt as infoCircle, Ot as infoSquare, Tt as instagram, qt as italic, Pt as jellyfish, It as key, Et as layers, Ft as layout, jt as layoutColumns, Bt as layoutGrid, Wt as layoutHorizontal, Xt as layoutList, $t as layoutMixed, Gt as layoutVertical, Nt as library, Jt as list, _t as location, Yt as lock, Kt as login, Qt as logoutLeft, ea as logoutRight, ta as marker, aa as menu, oa as microphone, ra as microphoneOff, na as minus, ia as moonRough, la as moonStylized, pa as move, sa as moveDiagonal, ca as moveDiagonalMirrored, ha as moveHorizontal, xa as moveVertical, ya as mug, ga as music, ma as neutral, da as pangolin, ua as parcel, wa as pause, fa as phone, Ma as phoneCall, va as phoneIncoming, Aa as phoneMissed, ba as phoneOff, ka as phoneOutgoing, La as pieChart, Ha as play, Ca as plus, Ra as pothos, Va as power, Da as rainbow, Sa as refresh, Za as refreshCCW, Ua as refreshCW, za as repeat, Oa as resizeImage, Ta as rewind, qa as robot, Pa as search, Ia as server, Ea as settings, Fa as shield, ja as shuffle, Ba as sidebar, Wa as skipBack, Xa as skipForward, $a as sliders, Ga as smartphone, Na as smile, Ja as snail, _a as snowflake, Ya as snpachat, Ka as spoon, Qa as square, eo as squareMinus, to as squarePlus, ao as squareX, oo as star, ro as starHalf, no as strikethrough, io as sunBig, lo as sunSmall, po as sword, so as tablet, co as terminal, ho as text, xo as title, yo as trashcanEmpty, go as trashcanFilled, mo as trello, uo as triangle, wo as triangleInverted, fo as twitch, Mo as twitter, vo as umbrella, Ao as underline, bo as unlock, ko as user, Lo as userAdd, Ho as userMultiple, Co as userRemove, Ro as verticalMore, Vo as voicemail, Do as volumeHigh, So as volumeLow, Zo as volumeMedium, Uo as volumeMute, zo as webcam, Oo as wifi, To as wifiOff, qo as wind, Po as wrench, Io as x, Eo as youtube, Fo as zoomIn, jo as zoomOut };
+export { Bo as Pangolicons, a as airplay, o as alignCenter, r as alignJustify, n as alignLeft, i as alignRight, l as archive, p as arrowDown, s as arrowLeft, c as arrowLeftDown, h as arrowLeftUp, x as arrowRight, y as arrowRightDown, g as arrowRightUp, m as arrowUp, d as barChart, u as barChartAlternative, w as barChartPositive, f as batteryCharged, M as batteryEmpty, v as bell, A as bellOff, b as bellRinging, k as bluetooth, L as bluetoothConnected, H as bluetoothOff, C as bluetoothSearching, R as bold, V as bookClosed, D as bookOpen, S as bookmark, Z as box, U as calendar, z as camera, O as cameraOff, T as castToMedia, q as checkmark, P as checkmarkCircle, I as chevronDown, E as chevronDownUp, F as chevronFirst, j as chevronLast, B as chevronLeft, W as chevronLeftRight, $ as chevronRight, X as chevronUp, G as chevronUpDown, N as chevronrightLeft, J as chevronsDown, _ as chevronsLeft, Y as chevronsRight, K as chevronsUp, Q as circle, ee as circleArrowDown, te as circleArrowLeft, ae as circleArrowLeftDown, oe as circleArrowLeftUp, re as circleArrowRight, ne as circleArrowRightDown, ie as circleArrowRightUp, le as circleArrowUp, pe as circleMinus, se as circlePlus, ce as circleX, he as clipboard, xe as clipboardNotes, ye as cloud, ge as cloudDrizzle, me as cloudFog, de as cloudHail, ue as cloudLightning, we as cloudMoon, fe as cloudRain, Me as cloudSnow, ve as cloudStorm, Ae as cloudSun, be as clouds, ke as code, Le as codepen, He as convertToLink, Ce as convertToOrderedList, Re as convertToUnorderedList, Ve as convertToUnstyledList, De as cookie, Se as cornerArrowDownLeft, Ze as cornerArrowDownRight, Ue as cornerArrowLeftDown, ze as cornerArrowLeftUp, Oe as cornerArrowRightDown, Te as cornerArrowRightUp, qe as cornerArrowUpLeft, Pe as cornerArrowUpRight, Ie as creditcard, Ee as crown, Fe as database, je as delimitor, Be as display, We as download, $e as dragIndicator, Xe as edit, Ge as envelope, Ne as externalLink, Je as eyeClosed, _e as eyeOpen, Ye as eyeStriked, Ke as facebook, Qe as fader, et as fastForward, tt as file, at as filter, ot as fnBackspace, rt as fnCaps, nt as fnCommand, it as fnControl, lt as fnEscape, pt as fnOption, st as fnReturn, ct as fnShift, ht as fnSpacebar, xt as fnTab, gt as folder, yt as folder2, mt as folderMinus, dt as folderPlus, ut as fork, wt as form, ft as frown, Mt as fullscreenEnter, vt as fullscreenExit, At as gear, bt as ghost, kt as github, Lt as guitar, Ht as haze, Ct as headingDecrease, Rt as headingIncrease, Vt as heart, Dt as hexagon, St as horizontalMore, Zt as icecream, Ut as image, zt as infoCircle, Ot as infoSquare, Tt as instagram, qt as italic, Pt as jellyfish, It as key, Et as layers, Ft as layout, jt as layoutColumns, Bt as layoutGrid, Wt as layoutHorizontal, $t as layoutList, Xt as layoutMixed, Gt as layoutVertical, Nt as library, Jt as list, _t as location, Yt as lock, Kt as login, Qt as logoutLeft, ea as logoutRight, ta as marker, aa as menu, oa as microphone, ra as microphoneOff, na as minus, ia as moonRough, la as moonStylized, pa as move, sa as moveDiagonal, ca as moveDiagonalMirrored, ha as moveHorizontal, xa as moveVertical, ya as mug, ga as music, ma as neutral, da as pangolin, ua as parcel, wa as pause, fa as phone, Ma as phoneCall, va as phoneIncoming, Aa as phoneMissed, ba as phoneOff, ka as phoneOutgoing, La as pieChart, Ha as play, Ca as plus, Ra as pothos, Va as power, Da as rainbow, Sa as refresh, Za as refreshCCW, Ua as refreshCW, za as repeat, Oa as resizeImage, Ta as rewind, qa as robot, Pa as search, Ia as server, Ea as settings, Fa as shield, ja as shuffle, Ba as sidebar, Wa as skipBack, $a as skipForward, Xa as sliders, Ga as smartphone, Na as smile, Ja as snail, _a as snowflake, Ya as snpachat, Ka as spoon, Qa as square, eo as squareMinus, to as squarePlus, ao as squareX, oo as star, ro as starHalf, no as strikethrough, io as sunBig, lo as sunSmall, po as sword, so as tablet, co as terminal, ho as text, xo as title, yo as trashcanEmpty, go as trashcanFilled, mo as trello, uo as triangle, wo as triangleInverted, fo as twitch, Mo as twitter, vo as umbrella, Ao as underline, bo as unlock, ko as user, Lo as userAdd, Ho as userMultiple, Co as userRemove, Ro as verticalMore, Vo as voicemail, Do as volumeHigh, So as volumeLow, Zo as volumeMedium, Uo as volumeMute, zo as webcam, Oo as wifi, To as wifiOff, qo as wind, Po as wrench, Io as x, Eo as youtube, Fo as zoomIn, jo as zoomOut };
 //# sourceMappingURL=pangolicons.d.ts.map
