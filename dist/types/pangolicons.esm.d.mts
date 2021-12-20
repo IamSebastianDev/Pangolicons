@@ -1,2105 +1,561 @@
-export const airplay: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const alignCenter: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const alignJustify: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const alignLeft: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const alignRight: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const archive: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const arrowDown: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const arrowLeft: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const arrowLeftDown: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const arrowLeftUp: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const arrowRight: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const arrowRightDown: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const arrowRightUp: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const arrowUp: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const barChart: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const barChartAlternative: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const barChartPositive: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const batteryCharged: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const batteryEmpty: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const bell: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const bellOff: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const bellRinging: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const bluetooth: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const bluetoothConnected: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const bluetoothOff: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const bluetoothSearching: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const bold: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const bookClosed: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const bookOpen: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const bookmark: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const box: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const calendar: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const camera: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cameraOff: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const castToMedia: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const checkmark: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const checkmarkCircle: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const chevronDown: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const chevronDownUp: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const chevronFirst: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const chevronLast: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const chevronLeft: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const chevronLeftRight: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const chevronRight: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const chevronUp: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const chevronUpDown: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const chevronrightLeft: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const chevronsDown: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const chevronsLeft: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const chevronsRight: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const chevronsUp: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const circle: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const circleArrowDown: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const circleArrowLeft: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const circleArrowLeftDown: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const circleArrowLeftUp: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const circleArrowRight: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const circleArrowRightDown: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const circleArrowRightUp: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const circleArrowUp: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const circleMinus: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const circlePlus: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const circleX: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const clipboard: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const clipboardNotes: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cloud: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cloudDrizzle: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cloudFog: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cloudHail: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cloudLightning: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cloudMoon: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cloudRain: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cloudSnow: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cloudStorm: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cloudSun: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const clouds: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const code: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const codepen: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const convertToLink: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const convertToOrderedList: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const convertToUnorderedList: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const convertToUnstyledList: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cookie: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cornerArrowDownLeft: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cornerArrowDownRight: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cornerArrowLeftDown: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cornerArrowLeftUp: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cornerArrowRightDown: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cornerArrowRightUp: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cornerArrowUpLeft: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const cornerArrowUpRight: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const creditcard: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const crown: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const database: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const delimitor: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const display: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const download: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const dragIndicator: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const edit: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const envelope: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const externalLink: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const eyeClosed: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const eyeOpen: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const eyeStriked: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const facebook: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fader: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fastForward: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const file: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const filter: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fnBackspace: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fnCaps: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fnCommand: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fnControl: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fnEscape: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fnOption: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fnReturn: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fnShift: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fnSpacebar: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fnTab: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const folder2: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const folder: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const folderMinus: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const folderPlus: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fork: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const form: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const frown: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fullscreenEnter: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const fullscreenExit: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const gear: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const ghost: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const github: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const haze: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const headingDecrease: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const headingIncrease: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const heart: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const hexagon: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const horizontalMore: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const icecream: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const image: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const infoCircle: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const infoSquare: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const instagram: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const italic: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const jellyfish: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const key: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const layers: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const layout: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const layoutColumns: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const layoutGrid: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const layoutHorizontal: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const layoutList: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const layoutMixed: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const layoutVertical: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const library: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const list: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const location: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const lock: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const login: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const logoutLeft: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const logoutRight: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const marker: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const menu: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const microphone: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const microphoneOff: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const minus: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const moonRough: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const moonStylized: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const move: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const moveDiagonal: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const moveDiagonalMirrored: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const moveHorizontal: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const moveVertical: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const mug: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const music: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const neutral: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const pangolin: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const parcel: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const pause: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const phone: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const phoneCall: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const phoneIncoming: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const phoneMissed: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const phoneOff: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const phoneOutgoing: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const pieChart: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const play: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const plus: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const power: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const refresh: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const refreshCCW: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const refreshCW: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const repeat: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const resizeImage: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const rewind: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const robot: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const search: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const server: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const settings: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const shield: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const shuffle: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const sidebar: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const skipBack: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const skipForward: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const sliders: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const smartphone: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const smile: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const snail: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const snowflake: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const snpachat: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const spoon: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const square: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const squareMinus: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const squarePlus: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const squareX: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const star: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const starHalf: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const strikethrough: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const sunBig: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const sunSmall: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const sword: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const tablet: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const terminal: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const text: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const title: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const trashcanEmpty: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const trashcanFilled: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const trello: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const triangle: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const triangleInverted: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const twitch: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const twitter: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const umbrella: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const underline: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const unlock: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const user: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const userAdd: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const userMultiple: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const userRemove: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const verticalMore: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const voicemail: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const volumeHigh: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const volumeLow: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const volumeMedium: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const volumeMute: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const webcam: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const wifi: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const wifiOff: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const wind: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const wrench: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const x: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const youtube: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const zoomIn: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export const zoomOut: {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (attributes?: {}) => string;
-    toSvg: (attributes?: {}) => SVGElement;
-};
-export namespace Pangolicons {
+declare namespace Bn {
     namespace icons {
-        export { airplay };
-        export { alignCenter };
-        export { alignJustify };
-        export { alignLeft };
-        export { alignRight };
-        export { archive };
-        export { arrowDown };
-        export { arrowLeft };
-        export { arrowLeftDown };
-        export { arrowLeftUp };
-        export { arrowRight };
-        export { arrowRightDown };
-        export { arrowRightUp };
-        export { arrowUp };
-        export { barChart };
-        export { barChartAlternative };
-        export { barChartPositive };
-        export { batteryCharged };
-        export { batteryEmpty };
-        export { bell };
-        export { bellOff };
-        export { bellRinging };
-        export { bluetooth };
-        export { bluetoothConnected };
-        export { bluetoothOff };
-        export { bluetoothSearching };
-        export { bold };
-        export { bookClosed };
-        export { bookOpen };
-        export { bookmark };
-        export { box };
-        export { calendar };
-        export { camera };
-        export { cameraOff };
-        export { castToMedia };
-        export { checkmark };
-        export { checkmarkCircle };
-        export { chevronDown };
-        export { chevronDownUp };
-        export { chevronFirst };
-        export { chevronLast };
-        export { chevronLeft };
-        export { chevronLeftRight };
-        export { chevronRight };
-        export { chevronUp };
-        export { chevronUpDown };
-        export { chevronrightLeft };
-        export { chevronsDown };
-        export { chevronsLeft };
-        export { chevronsRight };
-        export { chevronsUp };
-        export { circle };
-        export { circleArrowDown };
-        export { circleArrowLeft };
-        export { circleArrowLeftDown };
-        export { circleArrowLeftUp };
-        export { circleArrowRight };
-        export { circleArrowRightDown };
-        export { circleArrowRightUp };
-        export { circleArrowUp };
-        export { circleMinus };
-        export { circlePlus };
-        export { circleX };
-        export { clipboard };
-        export { clipboardNotes };
-        export { cloud };
-        export { cloudDrizzle };
-        export { cloudFog };
-        export { cloudHail };
-        export { cloudLightning };
-        export { cloudMoon };
-        export { cloudRain };
-        export { cloudSnow };
-        export { cloudStorm };
-        export { cloudSun };
-        export { clouds };
-        export { code };
-        export { codepen };
-        export { convertToLink };
-        export { convertToOrderedList };
-        export { convertToUnorderedList };
-        export { convertToUnstyledList };
-        export { cookie };
-        export { cornerArrowDownLeft };
-        export { cornerArrowDownRight };
-        export { cornerArrowLeftDown };
-        export { cornerArrowLeftUp };
-        export { cornerArrowRightDown };
-        export { cornerArrowRightUp };
-        export { cornerArrowUpLeft };
-        export { cornerArrowUpRight };
-        export { creditcard };
-        export { crown };
-        export { database };
-        export { delimitor };
-        export { display };
-        export { download };
-        export { dragIndicator };
-        export { edit };
-        export { envelope };
-        export { externalLink };
-        export { eyeClosed };
-        export { eyeOpen };
-        export { eyeStriked };
-        export { facebook };
-        export { fader };
-        export { fastForward };
-        export { file };
-        export { filter };
-        export { fnBackspace };
-        export { fnCaps };
-        export { fnCommand };
-        export { fnControl };
-        export { fnEscape };
-        export { fnOption };
-        export { fnReturn };
-        export { fnShift };
-        export { fnSpacebar };
-        export { fnTab };
-        export { folder2 };
-        export { folder };
-        export { folderMinus };
-        export { folderPlus };
-        export { fork };
-        export { form };
-        export { frown };
-        export { fullscreenEnter };
-        export { fullscreenExit };
-        export { gear };
-        export { ghost };
-        export { github };
-        export { haze };
-        export { headingDecrease };
-        export { headingIncrease };
-        export { heart };
-        export { hexagon };
-        export { horizontalMore };
-        export { icecream };
-        export { image };
-        export { infoCircle };
-        export { infoSquare };
-        export { instagram };
-        export { italic };
-        export { jellyfish };
-        export { key };
-        export { layers };
-        export { layout };
-        export { layoutColumns };
-        export { layoutGrid };
-        export { layoutHorizontal };
-        export { layoutList };
-        export { layoutMixed };
-        export { layoutVertical };
-        export { library };
-        export { list };
-        export { location };
-        export { lock };
-        export { login };
-        export { logoutLeft };
-        export { logoutRight };
-        export { marker };
-        export { menu };
-        export { microphone };
-        export { microphoneOff };
-        export { minus };
-        export { moonRough };
-        export { moonStylized };
-        export { move };
-        export { moveDiagonal };
-        export { moveDiagonalMirrored };
-        export { moveHorizontal };
-        export { moveVertical };
-        export { mug };
-        export { music };
-        export { neutral };
-        export { pangolin };
-        export { parcel };
-        export { pause };
-        export { phone };
-        export { phoneCall };
-        export { phoneIncoming };
-        export { phoneMissed };
-        export { phoneOff };
-        export { phoneOutgoing };
-        export { pieChart };
-        export { play };
-        export { plus };
-        export { power };
-        export { refresh };
-        export { refreshCCW };
-        export { refreshCW };
-        export { repeat };
-        export { resizeImage };
-        export { rewind };
-        export { robot };
-        export { search };
-        export { server };
-        export { settings };
-        export { shield };
-        export { shuffle };
-        export { sidebar };
-        export { skipBack };
-        export { skipForward };
-        export { sliders };
-        export { smartphone };
-        export { smile };
-        export { snail };
-        export { snowflake };
-        export { snpachat };
-        export { spoon };
-        export { square };
-        export { squareMinus };
-        export { squarePlus };
-        export { squareX };
-        export { star };
-        export { starHalf };
-        export { strikethrough };
-        export { sunBig };
-        export { sunSmall };
-        export { sword };
-        export { tablet };
-        export { terminal };
-        export { text };
-        export { title };
-        export { trashcanEmpty };
-        export { trashcanFilled };
-        export { trello };
-        export { triangle };
-        export { triangleInverted };
-        export { twitch };
-        export { twitter };
-        export { umbrella };
-        export { underline };
-        export { unlock };
-        export { user };
-        export { userAdd };
-        export { userMultiple };
-        export { userRemove };
-        export { verticalMore };
-        export { voicemail };
-        export { volumeHigh };
-        export { volumeLow };
-        export { volumeMedium };
-        export { volumeMute };
-        export { webcam };
-        export { wifi };
-        export { wifiOff };
-        export { wind };
-        export { wrench };
-        export { x };
-        export { youtube };
-        export { zoomIn };
-        export { zoomOut };
+        export { t as airplay };
+        export { n as alignCenter };
+        export { o as alignJustify };
+        export { i as alignLeft };
+        export { r as alignRight };
+        export { l as archive };
+        export { p as arrowDown };
+        export { h as arrowLeft };
+        export { s as arrowLeftDown };
+        export { c as arrowLeftUp };
+        export { y as arrowRight };
+        export { x as arrowRightDown };
+        export { g as arrowRightUp };
+        export { m as arrowUp };
+        export { d as barChart };
+        export { u as barChartAlternative };
+        export { w as barChartPositive };
+        export { f as batteryCharged };
+        export { M as batteryEmpty };
+        export { v as bell };
+        export { A as bellOff };
+        export { b as bellRinging };
+        export { k as bluetooth };
+        export { L as bluetoothConnected };
+        export { H as bluetoothOff };
+        export { C as bluetoothSearching };
+        export { V as bold };
+        export { R as bookClosed };
+        export { Z as bookOpen };
+        export { S as bookmark };
+        export { D as box };
+        export { z as calendar };
+        export { U as camera };
+        export { O as cameraOff };
+        export { T as castToMedia };
+        export { q as checkmark };
+        export { P as checkmarkCircle };
+        export { E as chevronDown };
+        export { I as chevronDownUp };
+        export { F as chevronFirst };
+        export { j as chevronLast };
+        export { B as chevronLeft };
+        export { W as chevronLeftRight };
+        export { $ as chevronRight };
+        export { X as chevronUp };
+        export { G as chevronUpDown };
+        export { N as chevronrightLeft };
+        export { J as chevronsDown };
+        export { Y as chevronsLeft };
+        export { _ as chevronsRight };
+        export { K as chevronsUp };
+        export { Q as circle };
+        export { ee as circleArrowDown };
+        export { ae as circleArrowLeft };
+        export { te as circleArrowLeftDown };
+        export { ne as circleArrowLeftUp };
+        export { oe as circleArrowRight };
+        export { ie as circleArrowRightDown };
+        export { re as circleArrowRightUp };
+        export { le as circleArrowUp };
+        export { pe as circleMinus };
+        export { he as circlePlus };
+        export { se as circleX };
+        export { ce as clipboard };
+        export { ye as clipboardNotes };
+        export { xe as cloud };
+        export { ge as cloudDrizzle };
+        export { me as cloudFog };
+        export { de as cloudHail };
+        export { ue as cloudLightning };
+        export { we as cloudMoon };
+        export { fe as cloudRain };
+        export { Me as cloudSnow };
+        export { ve as cloudStorm };
+        export { Ae as cloudSun };
+        export { be as clouds };
+        export { ke as code };
+        export { Le as codepen };
+        export { He as convertToLink };
+        export { Ce as convertToOrderedList };
+        export { Ve as convertToUnorderedList };
+        export { Re as convertToUnstyledList };
+        export { Ze as cookie };
+        export { Se as cornerArrowDownLeft };
+        export { De as cornerArrowDownRight };
+        export { ze as cornerArrowLeftDown };
+        export { Ue as cornerArrowLeftUp };
+        export { Oe as cornerArrowRightDown };
+        export { Te as cornerArrowRightUp };
+        export { qe as cornerArrowUpLeft };
+        export { Pe as cornerArrowUpRight };
+        export { Ee as creditcard };
+        export { Ie as crown };
+        export { Fe as database };
+        export { je as delimitor };
+        export { Be as display };
+        export { We as download };
+        export { $e as dragIndicator };
+        export { Xe as edit };
+        export { Ge as envelope };
+        export { Ne as externalLink };
+        export { Je as eyeClosed };
+        export { Ye as eyeOpen };
+        export { _e as eyeStriked };
+        export { Ke as facebook };
+        export { Qe as fader };
+        export { ea as fastForward };
+        export { aa as file };
+        export { ta as filter };
+        export { na as fnBackspace };
+        export { oa as fnCaps };
+        export { ia as fnCommand };
+        export { ra as fnControl };
+        export { la as fnEscape };
+        export { pa as fnOption };
+        export { ha as fnReturn };
+        export { sa as fnShift };
+        export { ca as fnSpacebar };
+        export { ya as fnTab };
+        export { xa as folder2 };
+        export { ga as folder };
+        export { ma as folderMinus };
+        export { da as folderPlus };
+        export { ua as fork };
+        export { wa as form };
+        export { fa as frown };
+        export { Ma as fullscreenEnter };
+        export { va as fullscreenExit };
+        export { Aa as gear };
+        export { ba as ghost };
+        export { ka as github };
+        export { La as guitar };
+        export { Ha as haze };
+        export { Ca as headingDecrease };
+        export { Va as headingIncrease };
+        export { Ra as heart };
+        export { Za as hexagon };
+        export { Sa as horizontalMore };
+        export { Da as icecream };
+        export { za as image };
+        export { Ua as infoCircle };
+        export { Oa as infoSquare };
+        export { Ta as instagram };
+        export { qa as italic };
+        export { Pa as jellyfish };
+        export { Ea as key };
+        export { Ia as layers };
+        export { Fa as layout };
+        export { ja as layoutColumns };
+        export { Ba as layoutGrid };
+        export { Wa as layoutHorizontal };
+        export { $a as layoutList };
+        export { Xa as layoutMixed };
+        export { Ga as layoutVertical };
+        export { Na as library };
+        export { Ja as list };
+        export { Ya as location };
+        export { _a as lock };
+        export { Ka as login };
+        export { Qa as logoutLeft };
+        export { et as logoutRight };
+        export { at as marker };
+        export { tt as menu };
+        export { nt as microphone };
+        export { ot as microphoneOff };
+        export { it as minus };
+        export { rt as moonRough };
+        export { lt as moonStylized };
+        export { pt as move };
+        export { ht as moveDiagonal };
+        export { st as moveDiagonalMirrored };
+        export { ct as moveHorizontal };
+        export { yt as moveVertical };
+        export { xt as mug };
+        export { gt as music };
+        export { mt as neutral };
+        export { dt as pangolin };
+        export { ut as parcel };
+        export { wt as pause };
+        export { ft as phone };
+        export { Mt as phoneCall };
+        export { vt as phoneIncoming };
+        export { At as phoneMissed };
+        export { bt as phoneOff };
+        export { kt as phoneOutgoing };
+        export { Lt as pieChart };
+        export { Ht as play };
+        export { Ct as plus };
+        export { Vt as pothos };
+        export { Rt as power };
+        export { Zt as rainbow };
+        export { St as refresh };
+        export { Dt as refreshCCW };
+        export { zt as refreshCW };
+        export { Ut as repeat };
+        export { Ot as resizeImage };
+        export { Tt as rewind };
+        export { qt as robot };
+        export { Pt as search };
+        export { Et as server };
+        export { It as settings };
+        export { Ft as shield };
+        export { jt as shuffle };
+        export { Bt as sidebar };
+        export { Wt as skipBack };
+        export { $t as skipForward };
+        export { Xt as sliders };
+        export { Gt as smartphone };
+        export { Nt as smile };
+        export { Jt as snail };
+        export { Yt as snowflake };
+        export { _t as snpachat };
+        export { Kt as spoon };
+        export { Qt as square };
+        export { en as squareMinus };
+        export { an as squarePlus };
+        export { tn as squareX };
+        export { nn as star };
+        export { on as starHalf };
+        export { rn as strikethrough };
+        export { ln as sunBig };
+        export { pn as sunSmall };
+        export { hn as sword };
+        export { sn as tablet };
+        export { cn as terminal };
+        export { yn as text };
+        export { xn as title };
+        export { gn as trashcanEmpty };
+        export { mn as trashcanFilled };
+        export { dn as trello };
+        export { un as triangle };
+        export { wn as triangleInverted };
+        export { fn as twitch };
+        export { Mn as twitter };
+        export { vn as umbrella };
+        export { An as underline };
+        export { bn as unlock };
+        export { kn as user };
+        export { Ln as userAdd };
+        export { Hn as userMultiple };
+        export { Cn as userRemove };
+        export { Vn as verticalMore };
+        export { Rn as voicemail };
+        export { Zn as volumeHigh };
+        export { Sn as volumeLow };
+        export { Dn as volumeMedium };
+        export { zn as volumeMute };
+        export { Un as webcam };
+        export { On as wifi };
+        export { Tn as wifiOff };
+        export { qn as wind };
+        export { Pn as wrench };
+        export { En as x };
+        export { In as youtube };
+        export { Fn as zoomIn };
+        export { jn as zoomOut };
     }
-    /**
-     *  @method
-     *	@description static method to replace a element with a icon, if that element has a pangolicons attribute.
-     *
-     * 	@param { Object } param0 - the object passed to the replace method with the element property
-     * 	@param { HTMLElement } param0.element - the HTMLElement to replace.
-     *
-     * 	@returns { SVGElement } the created svgElement with the icon
-     */
-    function replace({ element }: {
-        element: HTMLElement;
-    }): SVGElement;
-    /**
-     *  @method
-     *	@description static method to replace a element with a icon, if that element has a pangolicons attribute.
-     *
-     * 	@param { Object } param0 - the object passed to the replace method with the element property
-     * 	@param { HTMLElement } param0.element - the HTMLElement to replace.
-     *
-     * 	@returns { SVGElement } the created svgElement with the icon
-     */
-    function replace({ element }: {
-        element: HTMLElement;
-    }): SVGElement;
-    /**
-     * @description method to replace all icons with a pangolicons attribute on the page.
-     */
-    function replaceAll(): void;
-    /**
-     * @description method to replace all icons with a pangolicons attribute on the page.
-     */
-    function replaceAll(): void;
-    /**
-     *	@description method to search the Pangolicons.icons object for all icons which tags (and in extension name)
-     * matches the defined searchstring.
-     *
-     * 	@param { Object } param0 - the object passed to the replace method with the element property
-     * 	@param { String } param0.searchString - the String to search for
-     *
-     * 	@returns { Icon[] } an Array containing all icons found with the matching tags
-     */
-    function search({ searchString }: {
-        searchString: string;
-    }): (({ path, tags, name }: {
-        path: any;
-        tags?: any[];
-        name: any;
-    }) => {
+    function replace({ element: e }: {
+        element: any;
+    }): any;
+    function replace({ element: e }: {
+        element: any;
+    }): any;
+    function replaceAll(): any;
+    function replaceAll(): any;
+    function search({ searchString: e }: {
+        searchString: any;
+    }): {
         name: any;
         path: any;
         tags: any[];
-        toString: (attributes?: {}) => string;
-        toSvg: (attributes?: {}) => SVGElement;
-    })[];
-    /**
-     *	@description method to search the Pangolicons.icons object for all icons which tags (and in extension name)
-     * matches the defined searchstring.
-     *
-     * 	@param { Object } param0 - the object passed to the replace method with the element property
-     * 	@param { String } param0.searchString - the String to search for
-     *
-     * 	@returns { Icon[] } an Array containing all icons found with the matching tags
-     */
-    function search({ searchString }: {
-        searchString: string;
-    }): (({ path, tags, name }: {
-        path: any;
-        tags?: any[];
-        name: any;
-    }) => {
+        toString: (t?: {}) => string;
+        toSvg: (t?: {}) => SVGSVGElement;
+    }[];
+    function search({ searchString: e }: {
+        searchString: any;
+    }): {
         name: any;
         path: any;
         tags: any[];
-        toString: (attributes?: {}) => string;
-        toSvg: (attributes?: {}) => SVGElement;
-    })[];
+        toString: (t?: {}) => string;
+        toSvg: (t?: {}) => SVGSVGElement;
+    }[];
 }
+declare namespace t {
+    export { n as name };
+    export { a as path };
+    export { t as tags };
+    export function toString(t?: {}): string;
+    export function toSvg(t?: {}): SVGSVGElement;
+}
+declare namespace n { }
+declare namespace o { }
+declare namespace i { }
+declare namespace r { }
+declare namespace l { }
+declare namespace p { }
+declare namespace h { }
+declare namespace s { }
+declare namespace c { }
+declare namespace y { }
+declare namespace x { }
+declare namespace g { }
+declare namespace m { }
+declare namespace d { }
+declare namespace u { }
+declare namespace w { }
+declare namespace f { }
+declare namespace M { }
+declare namespace v { }
+declare namespace A { }
+declare namespace b { }
+declare namespace k { }
+declare namespace L { }
+declare namespace H { }
+declare namespace C { }
+declare namespace V { }
+declare namespace R { }
+declare namespace Z { }
+declare namespace S { }
+declare namespace D { }
+declare namespace z { }
+declare namespace U { }
+declare namespace O { }
+declare namespace T { }
+declare namespace q { }
+declare namespace P { }
+declare namespace E { }
+declare namespace I { }
+declare namespace F { }
+declare namespace j { }
+declare namespace B { }
+declare namespace W { }
+declare namespace $ { }
+declare namespace X { }
+declare namespace G { }
+declare namespace N { }
+declare namespace J { }
+declare namespace Y { }
+declare namespace _ { }
+declare namespace K { }
+declare namespace Q { }
+declare namespace ee { }
+declare namespace ae { }
+declare namespace te { }
+declare namespace ne { }
+declare namespace oe { }
+declare namespace ie { }
+declare namespace re { }
+declare namespace le { }
+declare namespace pe { }
+declare namespace he { }
+declare namespace se { }
+declare namespace ce { }
+declare namespace ye { }
+declare namespace xe { }
+declare namespace ge { }
+declare namespace me { }
+declare namespace de { }
+declare namespace ue { }
+declare namespace we { }
+declare namespace fe { }
+declare namespace Me { }
+declare namespace ve { }
+declare namespace Ae { }
+declare namespace be { }
+declare namespace ke { }
+declare namespace Le { }
+declare namespace He { }
+declare namespace Ce { }
+declare namespace Ve { }
+declare namespace Re { }
+declare namespace Ze { }
+declare namespace Se { }
+declare namespace De { }
+declare namespace ze { }
+declare namespace Ue { }
+declare namespace Oe { }
+declare namespace Te { }
+declare namespace qe { }
+declare namespace Pe { }
+declare namespace Ee { }
+declare namespace Ie { }
+declare namespace Fe { }
+declare namespace je { }
+declare namespace Be { }
+declare namespace We { }
+declare namespace $e { }
+declare namespace Xe { }
+declare namespace Ge { }
+declare namespace Ne { }
+declare namespace Je { }
+declare namespace Ye { }
+declare namespace _e { }
+declare namespace Ke { }
+declare namespace Qe { }
+declare namespace ea { }
+declare namespace aa { }
+declare namespace ta { }
+declare namespace na { }
+declare namespace oa { }
+declare namespace ia { }
+declare namespace ra { }
+declare namespace la { }
+declare namespace pa { }
+declare namespace ha { }
+declare namespace sa { }
+declare namespace ca { }
+declare namespace ya { }
+declare namespace ga { }
+declare namespace xa { }
+declare namespace ma { }
+declare namespace da { }
+declare namespace ua { }
+declare namespace wa { }
+declare namespace fa { }
+declare namespace Ma { }
+declare namespace va { }
+declare namespace Aa { }
+declare namespace ba { }
+declare namespace ka { }
+declare namespace La { }
+declare namespace Ha { }
+declare namespace Ca { }
+declare namespace Va { }
+declare namespace Ra { }
+declare namespace Za { }
+declare namespace Sa { }
+declare namespace Da { }
+declare namespace za { }
+declare namespace Ua { }
+declare namespace Oa { }
+declare namespace Ta { }
+declare namespace qa { }
+declare namespace Pa { }
+declare namespace Ea { }
+declare namespace Ia { }
+declare namespace Fa { }
+declare namespace ja { }
+declare namespace Ba { }
+declare namespace Wa { }
+declare namespace $a { }
+declare namespace Xa { }
+declare namespace Ga { }
+declare namespace Na { }
+declare namespace Ja { }
+declare namespace Ya { }
+declare namespace _a { }
+declare namespace Ka { }
+declare namespace Qa { }
+declare namespace et { }
+declare namespace at { }
+declare namespace tt { }
+declare namespace nt { }
+declare namespace ot { }
+declare namespace it { }
+declare namespace rt { }
+declare namespace lt { }
+declare namespace pt { }
+declare namespace ht { }
+declare namespace st { }
+declare namespace ct { }
+declare namespace yt { }
+declare namespace xt { }
+declare namespace gt { }
+declare namespace mt { }
+declare namespace dt { }
+declare namespace ut { }
+declare namespace wt { }
+declare namespace ft { }
+declare namespace Mt { }
+declare namespace vt { }
+declare namespace At { }
+declare namespace bt { }
+declare namespace kt { }
+declare namespace Lt { }
+declare namespace Ht { }
+declare namespace Ct { }
+declare namespace Vt { }
+declare namespace Rt { }
+declare namespace Zt { }
+declare namespace St { }
+declare namespace Dt { }
+declare namespace zt { }
+declare namespace Ut { }
+declare namespace Ot { }
+declare namespace Tt { }
+declare namespace qt { }
+declare namespace Pt { }
+declare namespace Et { }
+declare namespace It { }
+declare namespace Ft { }
+declare namespace jt { }
+declare namespace Bt { }
+declare namespace Wt { }
+declare namespace $t { }
+declare namespace Xt { }
+declare namespace Gt { }
+declare namespace Nt { }
+declare namespace Jt { }
+declare namespace Yt { }
+declare namespace _t { }
+declare namespace Kt { }
+declare namespace Qt { }
+declare namespace en { }
+declare namespace an { }
+declare namespace tn { }
+declare namespace nn { }
+declare namespace on { }
+declare namespace rn { }
+declare namespace ln { }
+declare namespace pn { }
+declare namespace hn { }
+declare namespace sn { }
+declare namespace cn { }
+declare namespace yn { }
+declare namespace xn { }
+declare namespace gn { }
+declare namespace mn { }
+declare namespace dn { }
+declare namespace un { }
+declare namespace wn { }
+declare namespace fn { }
+declare namespace Mn { }
+declare namespace vn { }
+declare namespace An { }
+declare namespace bn { }
+declare namespace kn { }
+declare namespace Ln { }
+declare namespace Hn { }
+declare namespace Cn { }
+declare namespace Vn { }
+declare namespace Rn { }
+declare namespace Zn { }
+declare namespace Sn { }
+declare namespace Dn { }
+declare namespace zn { }
+declare namespace Un { }
+declare namespace On { }
+declare namespace Tn { }
+declare namespace qn { }
+declare namespace Pn { }
+declare namespace En { }
+declare namespace In { }
+declare namespace Fn { }
+declare namespace jn { }
+declare function a({ path: a, tags: t, name: n }: {
+    path: any;
+    tags?: any[];
+    name: any;
+}): {
+    name: any;
+    path: any;
+    tags: any[];
+    toString: (t?: {}) => string;
+    toSvg: (t?: {}) => SVGSVGElement;
+};
+export { Bn as Pangolicons, t as airplay, n as alignCenter, o as alignJustify, i as alignLeft, r as alignRight, l as archive, p as arrowDown, h as arrowLeft, s as arrowLeftDown, c as arrowLeftUp, y as arrowRight, x as arrowRightDown, g as arrowRightUp, m as arrowUp, d as barChart, u as barChartAlternative, w as barChartPositive, f as batteryCharged, M as batteryEmpty, v as bell, A as bellOff, b as bellRinging, k as bluetooth, L as bluetoothConnected, H as bluetoothOff, C as bluetoothSearching, V as bold, R as bookClosed, Z as bookOpen, S as bookmark, D as box, z as calendar, U as camera, O as cameraOff, T as castToMedia, q as checkmark, P as checkmarkCircle, E as chevronDown, I as chevronDownUp, F as chevronFirst, j as chevronLast, B as chevronLeft, W as chevronLeftRight, $ as chevronRight, X as chevronUp, G as chevronUpDown, N as chevronrightLeft, J as chevronsDown, Y as chevronsLeft, _ as chevronsRight, K as chevronsUp, Q as circle, ee as circleArrowDown, ae as circleArrowLeft, te as circleArrowLeftDown, ne as circleArrowLeftUp, oe as circleArrowRight, ie as circleArrowRightDown, re as circleArrowRightUp, le as circleArrowUp, pe as circleMinus, he as circlePlus, se as circleX, ce as clipboard, ye as clipboardNotes, xe as cloud, ge as cloudDrizzle, me as cloudFog, de as cloudHail, ue as cloudLightning, we as cloudMoon, fe as cloudRain, Me as cloudSnow, ve as cloudStorm, Ae as cloudSun, be as clouds, ke as code, Le as codepen, He as convertToLink, Ce as convertToOrderedList, Ve as convertToUnorderedList, Re as convertToUnstyledList, Ze as cookie, Se as cornerArrowDownLeft, De as cornerArrowDownRight, ze as cornerArrowLeftDown, Ue as cornerArrowLeftUp, Oe as cornerArrowRightDown, Te as cornerArrowRightUp, qe as cornerArrowUpLeft, Pe as cornerArrowUpRight, Ee as creditcard, Ie as crown, Fe as database, je as delimitor, Be as display, We as download, $e as dragIndicator, Xe as edit, Ge as envelope, Ne as externalLink, Je as eyeClosed, Ye as eyeOpen, _e as eyeStriked, Ke as facebook, Qe as fader, ea as fastForward, aa as file, ta as filter, na as fnBackspace, oa as fnCaps, ia as fnCommand, ra as fnControl, la as fnEscape, pa as fnOption, ha as fnReturn, sa as fnShift, ca as fnSpacebar, ya as fnTab, ga as folder, xa as folder2, ma as folderMinus, da as folderPlus, ua as fork, wa as form, fa as frown, Ma as fullscreenEnter, va as fullscreenExit, Aa as gear, ba as ghost, ka as github, La as guitar, Ha as haze, Ca as headingDecrease, Va as headingIncrease, Ra as heart, Za as hexagon, Sa as horizontalMore, Da as icecream, za as image, Ua as infoCircle, Oa as infoSquare, Ta as instagram, qa as italic, Pa as jellyfish, Ea as key, Ia as layers, Fa as layout, ja as layoutColumns, Ba as layoutGrid, Wa as layoutHorizontal, $a as layoutList, Xa as layoutMixed, Ga as layoutVertical, Na as library, Ja as list, Ya as location, _a as lock, Ka as login, Qa as logoutLeft, et as logoutRight, at as marker, tt as menu, nt as microphone, ot as microphoneOff, it as minus, rt as moonRough, lt as moonStylized, pt as move, ht as moveDiagonal, st as moveDiagonalMirrored, ct as moveHorizontal, yt as moveVertical, xt as mug, gt as music, mt as neutral, dt as pangolin, ut as parcel, wt as pause, ft as phone, Mt as phoneCall, vt as phoneIncoming, At as phoneMissed, bt as phoneOff, kt as phoneOutgoing, Lt as pieChart, Ht as play, Ct as plus, Vt as pothos, Rt as power, Zt as rainbow, St as refresh, Dt as refreshCCW, zt as refreshCW, Ut as repeat, Ot as resizeImage, Tt as rewind, qt as robot, Pt as search, Et as server, It as settings, Ft as shield, jt as shuffle, Bt as sidebar, Wt as skipBack, $t as skipForward, Xt as sliders, Gt as smartphone, Nt as smile, Jt as snail, Yt as snowflake, _t as snpachat, Kt as spoon, Qt as square, en as squareMinus, an as squarePlus, tn as squareX, nn as star, on as starHalf, rn as strikethrough, ln as sunBig, pn as sunSmall, hn as sword, sn as tablet, cn as terminal, yn as text, xn as title, gn as trashcanEmpty, mn as trashcanFilled, dn as trello, un as triangle, wn as triangleInverted, fn as twitch, Mn as twitter, vn as umbrella, An as underline, bn as unlock, kn as user, Ln as userAdd, Hn as userMultiple, Cn as userRemove, Vn as verticalMore, Rn as voicemail, Zn as volumeHigh, Sn as volumeLow, Dn as volumeMedium, zn as volumeMute, Un as webcam, On as wifi, Tn as wifiOff, qn as wind, Pn as wrench, En as x, In as youtube, Fn as zoomIn, jn as zoomOut };
 //# sourceMappingURL=pangolicons.esm.d.mts.map
