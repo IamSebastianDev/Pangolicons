@@ -35,10 +35,13 @@
 			<Pangol name="clipboardNotes">Docs</Pangol>
 		</ButtonLink>
 		<ButtonLink
-			href="https://github.com/iamsebastiandev/pangolicons/packages"
+			href="https://github.com/IamSebastianDev/Pangolicons/{pkg.name !==
+			'pangolicons'
+				? `tree/master/packages/${pkg.name}`
+				: ''}"
 			title={pkg.name}
 		>
-			<Pangol name="code">Source</Pangol>
+			<Pangol name="github">Github</Pangol>
 		</ButtonLink>
 	</div>
 </Card>
