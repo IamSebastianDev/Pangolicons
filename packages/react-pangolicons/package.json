@@ -1,9 +1,12 @@
 {
 	"name": "react-pangolicons",
-	"version": "1.0.0",
+	"version": "1.0.1",
+	"description": "React package containing all Pangolicons.",
 	"main": "./dist/index.cjs.js",
 	"module": "./dist/index.esm.mjs",
 	"types": "./dist/types/index.d.ts",
+	"author": "Sebastian Heinz",
+	"license": "MIT",
 	"scripts": {
 		"compile": "node compile.mjs",
 		"build": "rollup -c",
