@@ -89,7 +89,7 @@ const compile = async ({ src, iconsSrc, index }) => {
 
 const createComponentName = ({ name }) => {
 	const [toCap, ...rest] = name;
-	return `Pangol${[toCap.toUpperCase(), ...rest].join('')}`;
+	return `${[toCap.toUpperCase(), ...rest].join('')}`;
 };
 
 const createSvelteFileContents = ({ name, svgPath }) => {
@@ -98,21 +98,24 @@ const createSvelteFileContents = ({ name, svgPath }) => {
 			let className = '';
 			let size = '24';
 			let strokeWidth = '1.5';
+			let color = "currentColor";
+			let linejoin = "round";
+			let linecap = "round";
 
-			export let attributes = { className, size, strokeWidth };
-			$: ({ className, size, strokeWidth } = attributes);
+			export let attributes = { className, size, strokeWidth, color, linejoin, linecap };
+			$: ({ className, size, strokeWidth, color, linejoin, linecap } = attributes);
 		</script>
 
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width="{size}"
-			height="{size}"
+			width={size}
+			height={size}
 			fill="none"
 			viewBox="0 0 24 24"
-			stroke="currentColor"
-			stroke-width="{strokeWidth}"
-			stroke-linecap="round"
-			stroke-linejoin="round"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap={linecap}
+			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-${name} {className}"
 		>
 			${svgPath}
