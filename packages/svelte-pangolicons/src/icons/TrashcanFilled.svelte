@@ -1,0 +1,28 @@
+
+		<script>
+			let className = '';
+			let size = '24';
+			let strokeWidth = '1.5';
+			let color = "currentColor";
+			let linejoin = "round";
+			let linecap = "round";
+
+			export let attributes = { className, size, strokeWidth, color, linejoin, linecap };
+			$: ({ className, size, strokeWidth, color, linejoin, linecap } = attributes);
+		</script>
+
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width={size}
+			height={size}
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke={color}
+			stroke-width={strokeWidth}
+			stroke-linecap={linecap}
+			stroke-linejoin={linejoin}
+			class="pangolicons pangolicons-trashcanFilled {className}"
+		>
+			<path  d="M5.13,6v13.7A2.32,2.32,0,0,0,7.44,22h9.12a2.32,2.32,0,0,0,2.31-2.31V6"/><line  x1="3.98" y1="5.97" x2="20.02" y2="5.97"/><path  d="M8.34,5.54C8.34,4.78,9,2,9.71,2h4.58c.76,0,1.37,2.78,1.37,3.54"/><line  x1="9.71" y1="9.5" x2="9.71" y2="18.14"/><line  x1="14.29" y1="9.5" x2="14.29" y2="18.14"/>
+		</svg>
+	
