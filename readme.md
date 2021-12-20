@@ -1,44 +1,43 @@
 <!-- @format -->
 
 <p align="center">
-    <img src="./pangollogo.png" alt="logo">
+    <img src="https://user-images.githubusercontent.com/48380512/146765938-b7bcbd8e-d951-4fa2-a320-c2c03897487f.png" alt="logo">
 </p>
 
 # Pangolicons
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-[![Version](https://img.shields.io/badge/version-3.0.3-informational?style=flat-square)](http://badges.mit-license.org)
+[![Version](https://img.shields.io/badge/version-3.0.14-informational?style=flat-square)](http://badges.mit-license.org)
 [![Size](https://img.shields.io/badge/size-71kb-informational?style=flat-square)]("")
 
 Pangolicons is a modern & minimal open source SVG Icon library with a simple, fully tree-shakeable API. You can see the Icons in action and learn more about Pangolicons [here](http://pangolicons.xyz).
 
 ## 🔖 Table of contents
 
-- [Pangolicons](#pangolicons)
-  - [🔖 Table of contents](#---table-of-contents)
-  - [🚀 Getting started](#---getting-started)
-    - [In the browser](#in-the-browser)
-    - [In the browser - the modern way](#in-the-browser---the-modern-way)
-    - [Via npm](#via-npm)
-  - [🎨 Creating Icons](#---creating-icons)
-    - [Directly in the markup](#directly-in-the-markup)
-    - [With client side JavaScript](#with-client-side-javascript)
-    - [With node.js and SSR frameworks](#with-nodejs-and-ssr-frameworks)
-  - [🔧 API](#---api)
-    - [`Pangolicons`](#-pangolicons-)
-    - [`Pangolicons.icons`](#-pangoliconsicons-)
-    - [`Pangolicons.replaceAll(): void`](#-pangoliconsreplaceall----void-)
-    - [`Pangolicons.replace({ element: HTMLElement }): SVGElement`](#-pangoliconsreplace---element--htmlelement-----svgelement-)
-    - [`Pangolicons.search({ searchString: String }): Icon[]`](#-pangoliconssearch---searchstring--string-----icon---)
-    - [`Icon`](#-icon-)
-    - [`Icon.name"`](#-iconname-)
-    - [`Icon.tags`](#-icontags-)
-    - [`Icon.path`](#-iconpath-)
-    - [`Icon.toString({ ...attributes }?): string`](#-icontostring---attributes------string-)
-    - [`Icon.toSvg({ ...attributes }?): SVGElement`](#-icontosvg---attributes------svgelement-)
-    - [`defaultAttributes`](#-defaultattributes-)
-  - [📋 License](#---license)
-  - [🦄 Inspiration](#---inspiration)
+-   [Pangolicons](#pangolicons)
+    -   [🚀 Getting started](#🚀-getting-started)
+        -   [In the browser](#in-the-browser)
+        -   [In the browser - the modern way](#in-the-browser---the-modern-way)
+        -   [Via npm](#via-npm)
+    -   [🎨 Creating Icons](#🎨-creating-icons)
+        -   [Directly in the markup](#directly-in-the-markup)
+        -   [With client side JavaScript](#with-client-side-javascript)
+        -   [With node.js and SSR frameworks](#with-nodejs-and-ssr-frameworks)
+    -   [🔧 API](#🔧-api)
+        -   [`Pangolicons`](#-pangolicons1)
+        -   [`Pangolicons.icons`](#-pangoliconsicons)
+        -   [`Pangolicons.replaceAll(): void`](#-pangoliconsreplaceall-void)
+        -   [`Pangolicons.replace({ element: HTMLElement }): SVGElement`](#pangoliconsreplace-element-htmlelement--svgelement)
+        -   [`Pangolicons.search({ searchString: String }): Icon[]`](#-pangoliconssearch-searchstring-string--icon)
+        -   [`Icon`](#-icon)
+        -   [`Icon.name"`](#-iconname)
+        -   [`Icon.tags`](#-icontags)
+        -   [`Icon.path`](#-iconpath)
+        -   [`Icon.toString({ ...attributes }?): string`](#icontostring-attributes--string)
+        -   [`Icon.toSvg({ ...attributes }?): SVGElement`](#icontosvg-attributes--svgelement)
+        -   [`defaultAttributes`](#defaultattributes)
+    -   [📋 License](#📋-license)
+    -   [🦄 Inspiration](#🦄-inspiration)
 
 ## 🚀 Getting started
 
