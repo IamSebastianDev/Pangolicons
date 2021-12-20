@@ -22,6 +22,7 @@ export default {
 		icons: [
 			'./docs/static/assets/icons/svgs',
 			'./packages/svelte-pangolicons/svgs',
+			'./packages/react-pangolicons/svgs',
 		],
 		compressed: './docs/static/assets/icons/compressed',
 	},
