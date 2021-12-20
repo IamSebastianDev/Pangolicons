@@ -13,7 +13,7 @@
 
 <script>
 	import Section from '$lib/UI/Section.svelte';
-	import Package from '../../lib/Packages/Package.svelte';
+	import Package from '$lib/Packages/Package.svelte';
 
 	export let packages;
 </script>
