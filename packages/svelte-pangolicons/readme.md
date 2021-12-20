@@ -17,13 +17,19 @@ You can then import the Icons you want to use into your component.
 ```html
 <script>
 	// Import the icons you want to use
-	import { PangolPangolin } from 'svelte-pangolicons';
+	import { Pangolin } from 'svelte-pangolicons';
+
+	// if the Icon's conflicts with one of your own components,
+	// you can import them by a different name
+
+	import { Pangolin as PangolinIcon } from 'svelte-pangolicons';
 </script>
 
-<PangolPangolin attributes="{{...}}" />
+<Pangolin />
+<PangolinIcon />
 ```
 
-All icons follow the `Pangol` + `IconName` naming scheme in PascalCase.
+All icons are converted to PascalCase to work with svelte out of the box.
 
 ### `Attributes`
 
@@ -33,15 +39,28 @@ You might pass a `attributes` object to the component containing the following p
 | ----------- | ------- | -------------------------------------------------- |
 | size        | String? | The size of the Icon.                              |
 | className   | String? | A custom class name to append to the icon classes. |
-| strokeWidth | Number? | The stroke-width property of the svg               |
+| strokeWidth | String? | The stroke-width property of the svg               |
+| color       | String? | The color of the stroke                            |
+| linejoin    | String? | The linejoin of the stroke                         |
+| linecap     | String? | The linecap of the stroke                          |
 
 ```html
 <script>
-	const attributes = { size: '24', strokeWidth: 1.5, className: 'nav-icon' };
+	// The attributes below are the default attributes every icon has
+
+	const attributes = {
+		size: '24',
+		strokeWidth: '1.5',
+		className: 'pangolicon',
+		color: 'currentColor',
+		linejoin: 'round',
+		linecap: 'round',
+	};
 </script>
 
 ...
-<PangolPangolin {attributes} />
+
+<Pangolin {attributes} />
 ```
 
 ## 📋 License
