@@ -1,38 +1,44 @@
 {
-  "name": "react-pangolicons",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "react-pangolicons",
+	"version": "1.0.0",
+	"main": "./dist/index.cjs.js",
+	"module": "./dist/index.esm.mjs",
+	"types": "./dist/types/index.d.ts",
+	"scripts": {
+		"compile": "node compile.mjs",
+		"build": "rollup -c",
+		"prepublish": "npm run compile && npm run build"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"peerDependencies": {
+		"react": ">=16.8.0",
+		"react-dom": ">=16.8.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.16.0",
+		"@babel/core": "^7.16.5",
+		"@babel/preset-env": "^7.16.5",
+		"@babel/preset-react": "^7.16.5",
+		"@rollup/plugin-commonjs": "^21.0.1",
+		"@rollup/plugin-node-resolve": "^13.1.1",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-scripts": "5.0.0",
+		"rollup": "^2.61.1",
+		"rollup-plugin-babel": "^4.4.0",
+		"rollup-plugin-peer-deps-external": "^2.2.4",
+		"rollup-plugin-postcss": "^4.0.2",
+		"rollup-plugin-terser": "^7.0.2"
+	}
 }
