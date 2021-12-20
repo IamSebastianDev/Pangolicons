@@ -6780,13 +6780,13 @@ var init_getReadme_91c24d95 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/Pangol-c1120d42.js
+// .svelte-kit/output/server/chunks/Pangol-d375e395.js
 import * as Pangolicons from "pangolicons";
 var Icon, Pangol;
-var init_Pangol_c1120d42 = __esm({
-  ".svelte-kit/output/server/chunks/Pangol-c1120d42.js"() {
+var init_Pangol_d375e395 = __esm({
+  ".svelte-kit/output/server/chunks/Pangol-d375e395.js"() {
     init_shims();
-    init_app_33a28bba();
+    init_app_f55b2bf2();
     Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let icon;
       let { name } = $$props;
@@ -6819,7 +6819,7 @@ var init_Pangol_c1120d42 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/colorScheme-2442fd28.js
+// .svelte-kit/output/server/chunks/colorScheme-fdd96147.js
 function writable2(value, start = noop3) {
   let stop;
   const subscribers = new Set();
@@ -6862,28 +6862,28 @@ function writable2(value, start = noop3) {
   return { set, update, subscribe: subscribe2 };
 }
 var subscriber_queue2, schemeIsDark;
-var init_colorScheme_2442fd28 = __esm({
-  ".svelte-kit/output/server/chunks/colorScheme-2442fd28.js"() {
+var init_colorScheme_fdd96147 = __esm({
+  ".svelte-kit/output/server/chunks/colorScheme-fdd96147.js"() {
     init_shims();
-    init_app_33a28bba();
+    init_app_f55b2bf2();
     subscriber_queue2 = [];
     schemeIsDark = writable2(false);
   }
 });
 
-// .svelte-kit/output/server/chunks/__layout-f0df1511.js
-var layout_f0df1511_exports = {};
-__export(layout_f0df1511_exports, {
+// .svelte-kit/output/server/chunks/__layout-c0f561b3.js
+var layout_c0f561b3_exports = {};
+__export(layout_c0f561b3_exports, {
   default: () => _layout
 });
 import "pangolicons";
 var NavItem, NavLink, NavList, NavMobile, Navigation, Link, Footer, _layout;
-var init_layout_f0df1511 = __esm({
-  ".svelte-kit/output/server/chunks/__layout-f0df1511.js"() {
+var init_layout_c0f561b3 = __esm({
+  ".svelte-kit/output/server/chunks/__layout-c0f561b3.js"() {
     init_shims();
-    init_app_33a28bba();
-    init_Pangol_c1120d42();
-    init_colorScheme_2442fd28();
+    init_app_f55b2bf2();
+    init_Pangol_d375e395();
+    init_colorScheme_fdd96147();
     init_ssr();
     NavItem = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { classes = "" } = $$props;
@@ -7090,17 +7090,17 @@ ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
   }
 });
 
-// .svelte-kit/output/server/chunks/__error-532b32c1.js
-var error_532b32c1_exports = {};
-__export(error_532b32c1_exports, {
+// .svelte-kit/output/server/chunks/__error-f294021d.js
+var error_f294021d_exports = {};
+__export(error_f294021d_exports, {
   default: () => _error,
   load: () => load
 });
 var load, _error;
-var init_error_532b32c1 = __esm({
-  ".svelte-kit/output/server/chunks/__error-532b32c1.js"() {
+var init_error_f294021d = __esm({
+  ".svelte-kit/output/server/chunks/__error-f294021d.js"() {
     init_shims();
-    init_app_33a28bba();
+    init_app_f55b2bf2();
     init_ssr();
     load = ({ error: error2, status }) => {
       return { props: { error: error2, status } };
@@ -7118,12 +7118,12 @@ var init_error_532b32c1 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/Card-3ea181a6.js
+// .svelte-kit/output/server/chunks/Card-ce7b207d.js
 var Section, ButtonLink, Card;
-var init_Card_3ea181a6 = __esm({
-  ".svelte-kit/output/server/chunks/Card-3ea181a6.js"() {
+var init_Card_ce7b207d = __esm({
+  ".svelte-kit/output/server/chunks/Card-ce7b207d.js"() {
     init_shims();
-    init_app_33a28bba();
+    init_app_f55b2bf2();
     Section = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { id } = $$props;
       if ($$props.id === void 0 && $$bindings.id && id !== void 0)
@@ -7151,20 +7151,20 @@ var init_Card_3ea181a6 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-504cb94e.js
-var index_504cb94e_exports = {};
-__export(index_504cb94e_exports, {
+// .svelte-kit/output/server/chunks/index-2e8741e2.js
+var index_2e8741e2_exports = {};
+__export(index_2e8741e2_exports, {
   default: () => Routes
 });
 import { Pangolicons as Pangolicons2 } from "pangolicons";
 var HeroLinks, Hero, Iconcard, IconSearch, IconController, Display, Routes;
-var init_index_504cb94e = __esm({
-  ".svelte-kit/output/server/chunks/index-504cb94e.js"() {
+var init_index_2e8741e2 = __esm({
+  ".svelte-kit/output/server/chunks/index-2e8741e2.js"() {
     init_shims();
-    init_app_33a28bba();
-    init_Card_3ea181a6();
-    init_Pangol_c1120d42();
-    init_colorScheme_2442fd28();
+    init_app_f55b2bf2();
+    init_Card_ce7b207d();
+    init_Pangol_d375e395();
+    init_colorScheme_fdd96147();
     init_ssr();
     HeroLinks = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"flex flex-col md:flex-row justify-center md:items-center py-2 md:mx-auto"}">${validate_component(ButtonLink, "ButtonLink").$$render($$result, {
@@ -7301,9 +7301,9 @@ ${validate_component(Display, "Display").$$render($$result, {}, {}, {})}`;
   }
 });
 
-// .svelte-kit/output/server/chunks/index-7ee6c076.js
-var index_7ee6c076_exports = {};
-__export(index_7ee6c076_exports, {
+// .svelte-kit/output/server/chunks/index-533ff8b9.js
+var index_533ff8b9_exports = {};
+__export(index_533ff8b9_exports, {
   default: () => Packages,
   load: () => load2
 });
@@ -7315,12 +7315,12 @@ async function load2({ fetch: fetch2 }) {
   return { status: res.status, error: new Error() };
 }
 var Package, Packages;
-var init_index_7ee6c076 = __esm({
-  ".svelte-kit/output/server/chunks/index-7ee6c076.js"() {
+var init_index_533ff8b9 = __esm({
+  ".svelte-kit/output/server/chunks/index-533ff8b9.js"() {
     init_shims();
-    init_app_33a28bba();
-    init_Card_3ea181a6();
-    init_Pangol_c1120d42();
+    init_app_f55b2bf2();
+    init_Card_ce7b207d();
+    init_Pangol_d375e395();
     init_ssr();
     Package = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { pkg } = $$props;
@@ -7346,10 +7346,10 @@ var init_index_7ee6c076 = __esm({
           default: () => `${validate_component(Pangol, "Pangol").$$render($$result, { name: "clipboardNotes" }, {}, { default: () => `Docs` })}`
         })}
 		${validate_component(ButtonLink, "ButtonLink").$$render($$result, {
-          href: "https://github.com/iamsebastiandev/pangolicons/packages",
+          href: "https://github.com/IamSebastianDev/Pangolicons/" + (pkg.name !== "pangolicons" ? `tree/master/packages/${pkg.name}` : ""),
           title: pkg.name
         }, {}, {
-          default: () => `${validate_component(Pangol, "Pangol").$$render($$result, { name: "code" }, {}, { default: () => `Source` })}`
+          default: () => `${validate_component(Pangol, "Pangol").$$render($$result, { name: "github" }, {}, { default: () => `Github` })}`
         })}</div>`
       })}`;
     });
@@ -55551,17 +55551,17 @@ var init_es = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/_name_-3bd30c00.js
-var name_3bd30c00_exports = {};
-__export(name_3bd30c00_exports, {
+// .svelte-kit/output/server/chunks/_name_-cb9dc3f0.js
+var name_cb9dc3f0_exports = {};
+__export(name_cb9dc3f0_exports, {
   default: () => U5Bnameu5D,
   load: () => load3
 });
 var css, load3, U5Bnameu5D;
-var init_name_3bd30c00 = __esm({
-  ".svelte-kit/output/server/chunks/_name_-3bd30c00.js"() {
+var init_name_cb9dc3f0 = __esm({
+  ".svelte-kit/output/server/chunks/_name_-cb9dc3f0.js"() {
     init_shims();
-    init_app_33a28bba();
+    init_app_f55b2bf2();
     init_marked_esm();
     init_es();
     init_ssr();
@@ -55600,7 +55600,7 @@ var init_name_3bd30c00 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/app-33a28bba.js
+// .svelte-kit/output/server/chunks/app-f55b2bf2.js
 function noop3() {
 }
 function run(fn) {
@@ -55713,9 +55713,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-679ad01d.js",
+      file: assets + "/_app/start-c1b2199b.js",
       css: [assets + "/_app/assets/start-464e9d0a.css"],
-      js: [assets + "/_app/start-679ad01d.js", assets + "/_app/chunks/vendor-6996fb32.js"]
+      js: [assets + "/_app/start-c1b2199b.js", assets + "/_app/chunks/vendor-6996fb32.js"]
     },
     fetched: void 0,
     floc: false,
@@ -55759,8 +55759,8 @@ function render(request, {
   return respond(__spreadProps(__spreadValues({}, request), { host }), options2, { prerender });
 }
 var current_component, escaped2, missing_component, on_destroy, css2, Root, base, assets, user_hooks, template, options2, default_settings, d, empty, manifest, get_hooks, module_lookup, metadata_lookup;
-var init_app_33a28bba = __esm({
-  ".svelte-kit/output/server/chunks/app-33a28bba.js"() {
+var init_app_f55b2bf2 = __esm({
+  ".svelte-kit/output/server/chunks/app-f55b2bf2.js"() {
     init_shims();
     init_ssr();
     Promise.resolve();
@@ -55942,13 +55942,13 @@ ${``}`;
       externalFetch: hooks.externalFetch || fetch
     });
     module_lookup = {
-      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_f0df1511(), layout_f0df1511_exports)),
-      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_532b32c1(), error_532b32c1_exports)),
-      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_504cb94e(), index_504cb94e_exports)),
-      "src/routes/packages/index.svelte": () => Promise.resolve().then(() => (init_index_7ee6c076(), index_7ee6c076_exports)),
-      "src/routes/docs/[name].svelte": () => Promise.resolve().then(() => (init_name_3bd30c00(), name_3bd30c00_exports))
+      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_c0f561b3(), layout_c0f561b3_exports)),
+      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_f294021d(), error_f294021d_exports)),
+      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_2e8741e2(), index_2e8741e2_exports)),
+      "src/routes/packages/index.svelte": () => Promise.resolve().then(() => (init_index_533ff8b9(), index_533ff8b9_exports)),
+      "src/routes/docs/[name].svelte": () => Promise.resolve().then(() => (init_name_cb9dc3f0(), name_cb9dc3f0_exports))
     };
-    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-1ce44b81.js", "css": ["assets/pages/__layout.svelte-21d06fbf.css"], "js": ["pages/__layout.svelte-1ce44b81.js", "chunks/vendor-6996fb32.js", "chunks/Pangol-b2238606.js", "chunks/colorScheme-ec0d8dfc.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-d67c260a.js", "css": [], "js": ["pages/__error.svelte-d67c260a.js", "chunks/vendor-6996fb32.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-86175f0d.js", "css": ["assets/pages/index.svelte-9b758041.css"], "js": ["pages/index.svelte-86175f0d.js", "chunks/vendor-6996fb32.js", "chunks/Card-e2c27a64.js", "chunks/Pangol-b2238606.js", "chunks/colorScheme-ec0d8dfc.js"], "styles": [] }, "src/routes/packages/index.svelte": { "entry": "pages/packages/index.svelte-e3780b40.js", "css": [], "js": ["pages/packages/index.svelte-e3780b40.js", "chunks/vendor-6996fb32.js", "chunks/Card-e2c27a64.js", "chunks/Pangol-b2238606.js"], "styles": [] }, "src/routes/docs/[name].svelte": { "entry": "pages/docs/_name_.svelte-1e306d0e.js", "css": ["assets/pages/docs/_name_.svelte-cbc8f865.css"], "js": ["pages/docs/_name_.svelte-1e306d0e.js", "chunks/vendor-6996fb32.js"], "styles": [] } };
+    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-1ce44b81.js", "css": ["assets/pages/__layout.svelte-21d06fbf.css"], "js": ["pages/__layout.svelte-1ce44b81.js", "chunks/vendor-6996fb32.js", "chunks/Pangol-b2238606.js", "chunks/colorScheme-ec0d8dfc.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-d67c260a.js", "css": [], "js": ["pages/__error.svelte-d67c260a.js", "chunks/vendor-6996fb32.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-86175f0d.js", "css": ["assets/pages/index.svelte-9b758041.css"], "js": ["pages/index.svelte-86175f0d.js", "chunks/vendor-6996fb32.js", "chunks/Card-e2c27a64.js", "chunks/Pangol-b2238606.js", "chunks/colorScheme-ec0d8dfc.js"], "styles": [] }, "src/routes/packages/index.svelte": { "entry": "pages/packages/index.svelte-8ba86823.js", "css": [], "js": ["pages/packages/index.svelte-8ba86823.js", "chunks/vendor-6996fb32.js", "chunks/Card-e2c27a64.js", "chunks/Pangol-b2238606.js"], "styles": [] }, "src/routes/docs/[name].svelte": { "entry": "pages/docs/_name_.svelte-1e306d0e.js", "css": ["assets/pages/docs/_name_.svelte-cbc8f865.css"], "js": ["pages/docs/_name_.svelte-1e306d0e.js", "chunks/vendor-6996fb32.js"], "styles": [] } };
   }
 });
 
@@ -55958,7 +55958,7 @@ init_shims();
 // .svelte-kit/output/server/app.js
 init_shims();
 init_ssr();
-init_app_33a28bba();
+init_app_f55b2bf2();
 
 // .svelte-kit/node/middlewares.js
 import {
