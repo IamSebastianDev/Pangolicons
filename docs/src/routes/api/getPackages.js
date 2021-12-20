@@ -1,6 +1,6 @@
 /** @format */
 
-const packageList = ['pangolicons', 'svelte-pangolicons'];
+const packageList = ['pangolicons', 'svelte-pangolicons', 'react-pangolicons'];
 const endpoint = 'https://registry.npmjs.org/';
 
 const grabPackageData = async ({ packageList, endpoint }) => {
