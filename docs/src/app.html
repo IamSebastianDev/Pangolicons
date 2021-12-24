@@ -49,31 +49,23 @@
 		/>
 		<meta name="theme-color" content="#ffffff" />
 
-		<!-- Handle the user preferred colour scheme -->
+		<!-- Handle dark & light mode -->
 
 		<script>
-			const storageIdentifier = 'pangolicons__preferColourSchemeDark';
-			const userPrefersDarkTheme =
-				window.localStorage.getItem(storageIdentifier);
+			const storageIdentifier = 'Pangolicons__UserColourTheme';
+			const userTheme = window.localStorage.getItem(storageIdentifier);
+			const userPrefersDarkTheme = window.matchMedia(
+				'(prefers-color-scheme: dark)'
+			).matches;
 
-			if (
-				userPrefersDarkTheme === 'true' ||
-				(userPrefersDarkTheme === undefined &&
-					window.matchMedia('(prefers-color-scheme: dark)'))
-			) {
+			if (userTheme === 'dark' || (!userTheme && userPrefersDarkTheme)) {
+				window.localStorage.setItem(storageIdentifier, 'dark');
 				document.documentElement.classList.add('dark');
-				localStorage.setItem(storageIdentifier, true);
+			} else {
+				window.localStorage.setItem(storageIdentifier, 'light');
 			}
 		</script>
 	</head>
-	<style>
-		html {
-			background-color: rgba(255, 255, 255, 1);
-		}
-		html.dark {
-			background-color: rgb(30, 41, 59, 1);
-		}
-	</style>
 	<body style="overflow-x: hidden">
 		<div id="svelte">%svelte.body%</div>
 	</body>
