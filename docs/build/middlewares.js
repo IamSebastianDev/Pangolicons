@@ -6780,15 +6780,6 @@ var init_getReadme_91c24d95 = __esm({
   }
 });
 
-<<<<<<< HEAD
-// .svelte-kit/output/server/chunks/Pangol-d375e395.js
-import * as Pangolicons from "pangolicons";
-var Icon, Pangol;
-var init_Pangol_d375e395 = __esm({
-  ".svelte-kit/output/server/chunks/Pangol-d375e395.js"() {
-    init_shims();
-    init_app_f55b2bf2();
-=======
 // .svelte-kit/output/server/chunks/icon-66d3855b.js
 var icon_66d3855b_exports = {};
 __export(icon_66d3855b_exports, {
@@ -6832,14 +6823,13 @@ var init_icon_66d3855b = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/Pangol-0066f473.js
+// .svelte-kit/output/server/chunks/Pangol-518dc8e3.js
 import * as Pangolicons from "pangolicons";
 var Icon, Pangol;
-var init_Pangol_0066f473 = __esm({
-  ".svelte-kit/output/server/chunks/Pangol-0066f473.js"() {
+var init_Pangol_518dc8e3 = __esm({
+  ".svelte-kit/output/server/chunks/Pangol-518dc8e3.js"() {
     init_shims();
-    init_app_5ea73dc3();
->>>>>>> development
+    init_app_5f7d365b();
     Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let icon;
       let { name } = $$props;
@@ -6872,11 +6862,7 @@ var init_Pangol_0066f473 = __esm({
   }
 });
 
-<<<<<<< HEAD
-// .svelte-kit/output/server/chunks/colorScheme-fdd96147.js
-=======
-// .svelte-kit/output/server/chunks/colorScheme-d8529ec3.js
->>>>>>> development
+// .svelte-kit/output/server/chunks/colorScheme-91c83624.js
 function writable2(value, start = noop3) {
   let stop;
   const subscribers = new Set();
@@ -6918,51 +6904,30 @@ function writable2(value, start = noop3) {
   }
   return { set, update, subscribe: subscribe2 };
 }
-var subscriber_queue2, schemeIsDark;
-<<<<<<< HEAD
-var init_colorScheme_fdd96147 = __esm({
-  ".svelte-kit/output/server/chunks/colorScheme-fdd96147.js"() {
+var subscriber_queue2, colorScheme, rainbow;
+var init_colorScheme_91c83624 = __esm({
+  ".svelte-kit/output/server/chunks/colorScheme-91c83624.js"() {
     init_shims();
-    init_app_f55b2bf2();
-=======
-var init_colorScheme_d8529ec3 = __esm({
-  ".svelte-kit/output/server/chunks/colorScheme-d8529ec3.js"() {
-    init_shims();
-    init_app_5ea73dc3();
->>>>>>> development
+    init_app_5f7d365b();
     subscriber_queue2 = [];
-    schemeIsDark = writable2(false);
+    colorScheme = writable2();
+    rainbow = writable2(false);
   }
 });
 
-<<<<<<< HEAD
-// .svelte-kit/output/server/chunks/__layout-c0f561b3.js
-var layout_c0f561b3_exports = {};
-__export(layout_c0f561b3_exports, {
-=======
-// .svelte-kit/output/server/chunks/__layout-e004f785.js
-var layout_e004f785_exports = {};
-__export(layout_e004f785_exports, {
->>>>>>> development
+// .svelte-kit/output/server/chunks/__layout-128945ab.js
+var layout_128945ab_exports = {};
+__export(layout_128945ab_exports, {
   default: () => _layout
 });
 import "pangolicons";
 var NavItem, NavLink, NavList, NavMobile, Navigation, Link, Footer, _layout;
-<<<<<<< HEAD
-var init_layout_c0f561b3 = __esm({
-  ".svelte-kit/output/server/chunks/__layout-c0f561b3.js"() {
+var init_layout_128945ab = __esm({
+  ".svelte-kit/output/server/chunks/__layout-128945ab.js"() {
     init_shims();
-    init_app_f55b2bf2();
-    init_Pangol_d375e395();
-    init_colorScheme_fdd96147();
-=======
-var init_layout_e004f785 = __esm({
-  ".svelte-kit/output/server/chunks/__layout-e004f785.js"() {
-    init_shims();
-    init_app_5ea73dc3();
-    init_Pangol_0066f473();
-    init_colorScheme_d8529ec3();
->>>>>>> development
+    init_app_5f7d365b();
+    init_Pangol_518dc8e3();
+    init_colorScheme_91c83624();
     init_ssr();
     NavItem = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { classes = "" } = $$props;
@@ -7045,8 +7010,10 @@ ${validate_component(NavItem, "NavItem").$$render($$result, {}, {}, {
       })}</div></div>` : ``}`;
     });
     Navigation = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let $schemeIsDark, $$unsubscribe_schemeIsDark;
-      $$unsubscribe_schemeIsDark = subscribe(schemeIsDark, (value) => $schemeIsDark = value);
+      let $rainbow, $$unsubscribe_rainbow;
+      let $colorScheme, $$unsubscribe_colorScheme;
+      $$unsubscribe_rainbow = subscribe(rainbow, (value) => $rainbow = value);
+      $$unsubscribe_colorScheme = subscribe(colorScheme, (value) => $colorScheme = value);
       let attributes = {
         "stroke-width": 1.5,
         width: 24,
@@ -7086,13 +7053,11 @@ ${validate_component(NavItem, "NavItem").$$render($$result, {}, {}, {
 	${validate_component(NavLink, "NavLink").$$render($$result, {
           classes: "p-2 mx-4 hover:bg-pangol-300 dark:hover:bg-white hover:text-white dark:hover:text-pangol-500 rounded-sm"
         }, {}, {
-          default: () => `${validate_component(Pangol, "Pangol").$$render($$result, {
-            name: $schemeIsDark ? "sunBig" : "moonStylized",
-            attributes
-          }, {}, {})}`
+          default: () => `${$rainbow ? `${validate_component(Pangol, "Pangol").$$render($$result, { name: "rainbow", attributes }, {}, {})}` : `${$colorScheme === "light" ? `${validate_component(Pangol, "Pangol").$$render($$result, { name: "moonStylized", attributes }, {}, {})}` : `${validate_component(Pangol, "Pangol").$$render($$result, { name: "sunSmall", attributes }, {}, {})}`}`}`
         })}</nav>`;
       } while (!$$settled);
-      $$unsubscribe_schemeIsDark();
+      $$unsubscribe_rainbow();
+      $$unsubscribe_colorScheme();
       return $$rendered;
     });
     Link = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -7158,9 +7123,7 @@ ${validate_component(NavItem, "NavItem").$$render($$result, {}, {}, {
 	</p></footer>`;
     });
     _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `
-
-${validate_component(Navigation, "Navigation").$$render($$result, {}, {}, {})}
+      return `${validate_component(Navigation, "Navigation").$$render($$result, {}, {}, {})}
 
 <main class="${"max-w-screen-lg mx-auto md:px-0 px-5"}">${slots.default ? slots.default({}) : ``}</main>
 
@@ -7169,30 +7132,17 @@ ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
   }
 });
 
-<<<<<<< HEAD
-// .svelte-kit/output/server/chunks/__error-f294021d.js
-var error_f294021d_exports = {};
-__export(error_f294021d_exports, {
-=======
-// .svelte-kit/output/server/chunks/__error-8cc2d8f8.js
-var error_8cc2d8f8_exports = {};
-__export(error_8cc2d8f8_exports, {
->>>>>>> development
+// .svelte-kit/output/server/chunks/__error-d81937fe.js
+var error_d81937fe_exports = {};
+__export(error_d81937fe_exports, {
   default: () => _error,
   load: () => load
 });
 var load, _error;
-<<<<<<< HEAD
-var init_error_f294021d = __esm({
-  ".svelte-kit/output/server/chunks/__error-f294021d.js"() {
+var init_error_d81937fe = __esm({
+  ".svelte-kit/output/server/chunks/__error-d81937fe.js"() {
     init_shims();
-    init_app_f55b2bf2();
-=======
-var init_error_8cc2d8f8 = __esm({
-  ".svelte-kit/output/server/chunks/__error-8cc2d8f8.js"() {
-    init_shims();
-    init_app_5ea73dc3();
->>>>>>> development
+    init_app_5f7d365b();
     init_ssr();
     load = ({ error: error2, status }) => {
       return { props: { error: error2, status } };
@@ -7210,21 +7160,12 @@ var init_error_8cc2d8f8 = __esm({
   }
 });
 
-<<<<<<< HEAD
-// .svelte-kit/output/server/chunks/Card-ce7b207d.js
+// .svelte-kit/output/server/chunks/Card-dbbfc5af.js
 var Section, ButtonLink, Card;
-var init_Card_ce7b207d = __esm({
-  ".svelte-kit/output/server/chunks/Card-ce7b207d.js"() {
+var init_Card_dbbfc5af = __esm({
+  ".svelte-kit/output/server/chunks/Card-dbbfc5af.js"() {
     init_shims();
-    init_app_f55b2bf2();
-=======
-// .svelte-kit/output/server/chunks/Card-70e57e17.js
-var Section, ButtonLink, Card;
-var init_Card_70e57e17 = __esm({
-  ".svelte-kit/output/server/chunks/Card-70e57e17.js"() {
-    init_shims();
-    init_app_5ea73dc3();
->>>>>>> development
+    init_app_5f7d365b();
     Section = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { id } = $$props;
       if ($$props.id === void 0 && $$bindings.id && id !== void 0)
@@ -7252,36 +7193,20 @@ var init_Card_70e57e17 = __esm({
   }
 });
 
-<<<<<<< HEAD
-// .svelte-kit/output/server/chunks/index-2e8741e2.js
-var index_2e8741e2_exports = {};
-__export(index_2e8741e2_exports, {
-=======
-// .svelte-kit/output/server/chunks/index-16b35ce1.js
-var index_16b35ce1_exports = {};
-__export(index_16b35ce1_exports, {
->>>>>>> development
+// .svelte-kit/output/server/chunks/index-0985510e.js
+var index_0985510e_exports = {};
+__export(index_0985510e_exports, {
   default: () => Routes
 });
 import { Pangolicons as Pangolicons2 } from "pangolicons";
 var HeroLinks, Hero, Iconcard, IconSearch, IconController, Display, Routes;
-<<<<<<< HEAD
-var init_index_2e8741e2 = __esm({
-  ".svelte-kit/output/server/chunks/index-2e8741e2.js"() {
+var init_index_0985510e = __esm({
+  ".svelte-kit/output/server/chunks/index-0985510e.js"() {
     init_shims();
-    init_app_f55b2bf2();
-    init_Card_ce7b207d();
-    init_Pangol_d375e395();
-    init_colorScheme_fdd96147();
-=======
-var init_index_16b35ce1 = __esm({
-  ".svelte-kit/output/server/chunks/index-16b35ce1.js"() {
-    init_shims();
-    init_app_5ea73dc3();
-    init_Card_70e57e17();
-    init_Pangol_0066f473();
-    init_colorScheme_d8529ec3();
->>>>>>> development
+    init_app_5f7d365b();
+    init_Card_dbbfc5af();
+    init_Pangol_518dc8e3();
+    init_colorScheme_91c83624();
     init_ssr();
     HeroLinks = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"flex flex-col md:flex-row justify-center md:items-center py-2 md:mx-auto"}">${validate_component(ButtonLink, "ButtonLink").$$render($$result, {
@@ -7355,19 +7280,41 @@ var init_index_16b35ce1 = __esm({
     });
     Display = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let color;
+      let getColor;
       let filteredIcons;
-      let $schemeIsDark, $$unsubscribe_schemeIsDark;
-      $$unsubscribe_schemeIsDark = subscribe(schemeIsDark, (value) => $schemeIsDark = value);
+      let $rainbow, $$unsubscribe_rainbow;
+      let $colorScheme, $$unsubscribe_colorScheme;
+      $$unsubscribe_rainbow = subscribe(rainbow, (value) => $rainbow = value);
+      $$unsubscribe_colorScheme = subscribe(colorScheme, (value) => $colorScheme = value);
+      let frames = 0;
       const { icons } = Pangolicons2;
       const numberOfIcons = Object.keys(icons).length;
       let strokeWidth = 1.5;
       let size = 24;
+      const createColorArray = ({ numberOfIcons: numberOfIcons2 }) => {
+        let rainbow2 = new Array(numberOfIcons2);
+        const toHex = (i22, phase) => {
+          let sin = Math.sin(Math.PI / size * 2 * i22 + phase);
+          let int = Math.floor(sin * 127) + 128;
+          let hex = int.toString(16);
+          return hex.length === 1 ? "0" + hex : hex;
+        };
+        for (var i2 = 0; i2 < numberOfIcons2; i2++) {
+          let red = toHex(i2, 0 * Math.PI * 2 / 3);
+          let blue = toHex(i2, 1 * Math.PI * 2 / 3);
+          let green = toHex(i2, 2 * Math.PI * 2 / 3);
+          rainbow2[i2] = "#" + red + green + blue;
+        }
+        return rainbow2;
+      };
+      const ArrayOfColors = createColorArray({ numberOfIcons });
       let searchString = "";
       let $$settled;
       let $$rendered;
       do {
         $$settled = true;
-        color = $schemeIsDark ? "#fafafa" : "#1e293b";
+        color = $colorScheme === "dark" ? "#ffffff" : "#1e293b";
+        getColor = ({ index, numberOfIcons: numberOfIcons2 }) => $rainbow ? ArrayOfColors[(index + frames) % numberOfIcons2] : color;
         filteredIcons = Pangolicons2.search({ searchString }) || Object.values(icons);
         $$rendered = `
 
@@ -7400,13 +7347,17 @@ ${validate_component(Section, "Section").$$render($$result, { id: "icon-display"
               "stroke-width": strokeWidth,
               width: size,
               height: size,
-              color
+              color: getColor({
+                index,
+                numberOfIcons: filteredIcons.length | numberOfIcons
+              })
             }
           }, {}, {})}`) : `<p class="${"col-span-full text-center font-open text-slate-800 dark:text-slate-300 text-2xl tracking-wider"}">Found no Icon matching &quot;${escape2(searchString)}&quot;
 			</p>`}</div>`
         })}`;
       } while (!$$settled);
-      $$unsubscribe_schemeIsDark();
+      $$unsubscribe_rainbow();
+      $$unsubscribe_colorScheme();
       return $$rendered;
     });
     Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -7418,15 +7369,9 @@ ${validate_component(Display, "Display").$$render($$result, {}, {}, {})}`;
   }
 });
 
-<<<<<<< HEAD
-// .svelte-kit/output/server/chunks/index-533ff8b9.js
-var index_533ff8b9_exports = {};
-__export(index_533ff8b9_exports, {
-=======
-// .svelte-kit/output/server/chunks/index-406bb4cb.js
-var index_406bb4cb_exports = {};
-__export(index_406bb4cb_exports, {
->>>>>>> development
+// .svelte-kit/output/server/chunks/index-ae664ad6.js
+var index_ae664ad6_exports = {};
+__export(index_ae664ad6_exports, {
   default: () => Packages,
   load: () => load2
 });
@@ -7438,21 +7383,12 @@ async function load2({ fetch: fetch2 }) {
   return { status: res.status, error: new Error() };
 }
 var Package, Packages;
-<<<<<<< HEAD
-var init_index_533ff8b9 = __esm({
-  ".svelte-kit/output/server/chunks/index-533ff8b9.js"() {
+var init_index_ae664ad6 = __esm({
+  ".svelte-kit/output/server/chunks/index-ae664ad6.js"() {
     init_shims();
-    init_app_f55b2bf2();
-    init_Card_ce7b207d();
-    init_Pangol_d375e395();
-=======
-var init_index_406bb4cb = __esm({
-  ".svelte-kit/output/server/chunks/index-406bb4cb.js"() {
-    init_shims();
-    init_app_5ea73dc3();
-    init_Card_70e57e17();
-    init_Pangol_0066f473();
->>>>>>> development
+    init_app_5f7d365b();
+    init_Card_dbbfc5af();
+    init_Pangol_518dc8e3();
     init_ssr();
     Package = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { pkg } = $$props;
@@ -55683,30 +55619,17 @@ var init_es = __esm({
   }
 });
 
-<<<<<<< HEAD
-// .svelte-kit/output/server/chunks/_name_-cb9dc3f0.js
-var name_cb9dc3f0_exports = {};
-__export(name_cb9dc3f0_exports, {
-=======
-// .svelte-kit/output/server/chunks/_name_-3fc5b36b.js
-var name_3fc5b36b_exports = {};
-__export(name_3fc5b36b_exports, {
->>>>>>> development
+// .svelte-kit/output/server/chunks/_name_-8bf8fbe2.js
+var name_8bf8fbe2_exports = {};
+__export(name_8bf8fbe2_exports, {
   default: () => U5Bnameu5D,
   load: () => load3
 });
 var css, load3, U5Bnameu5D;
-<<<<<<< HEAD
-var init_name_cb9dc3f0 = __esm({
-  ".svelte-kit/output/server/chunks/_name_-cb9dc3f0.js"() {
+var init_name_8bf8fbe2 = __esm({
+  ".svelte-kit/output/server/chunks/_name_-8bf8fbe2.js"() {
     init_shims();
-    init_app_f55b2bf2();
-=======
-var init_name_3fc5b36b = __esm({
-  ".svelte-kit/output/server/chunks/_name_-3fc5b36b.js"() {
-    init_shims();
-    init_app_5ea73dc3();
->>>>>>> development
+    init_app_5f7d365b();
     init_marked_esm();
     init_es();
     init_ssr();
@@ -55745,11 +55668,7 @@ var init_name_3fc5b36b = __esm({
   }
 });
 
-<<<<<<< HEAD
-// .svelte-kit/output/server/chunks/app-f55b2bf2.js
-=======
-// .svelte-kit/output/server/chunks/app-5ea73dc3.js
->>>>>>> development
+// .svelte-kit/output/server/chunks/app-5f7d365b.js
 function noop3() {
 }
 function run(fn) {
@@ -55862,15 +55781,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-<<<<<<< HEAD
-      file: assets + "/_app/start-c1b2199b.js",
+      file: assets + "/_app/start-8dbb2a18.js",
       css: [assets + "/_app/assets/start-464e9d0a.css"],
-      js: [assets + "/_app/start-c1b2199b.js", assets + "/_app/chunks/vendor-6996fb32.js"]
-=======
-      file: assets + "/_app/start-68698215.js",
-      css: [assets + "/_app/assets/start-464e9d0a.css"],
-      js: [assets + "/_app/start-68698215.js", assets + "/_app/chunks/vendor-6996fb32.js"]
->>>>>>> development
+      js: [assets + "/_app/start-8dbb2a18.js", assets + "/_app/chunks/vendor-59710896.js"]
     },
     fetched: void 0,
     floc: false,
@@ -55914,13 +55827,8 @@ function render(request, {
   return respond(__spreadProps(__spreadValues({}, request), { host }), options2, { prerender });
 }
 var current_component, escaped2, missing_component, on_destroy, css2, Root, base, assets, user_hooks, template, options2, default_settings, d, empty, manifest, get_hooks, module_lookup, metadata_lookup;
-<<<<<<< HEAD
-var init_app_f55b2bf2 = __esm({
-  ".svelte-kit/output/server/chunks/app-f55b2bf2.js"() {
-=======
-var init_app_5ea73dc3 = __esm({
-  ".svelte-kit/output/server/chunks/app-5ea73dc3.js"() {
->>>>>>> development
+var init_app_5f7d365b = __esm({
+  ".svelte-kit/output/server/chunks/app-5f7d365b.js"() {
     init_shims();
     init_ssr();
     Promise.resolve();
@@ -56024,31 +55932,23 @@ ${``}`;
 		/>
 		<meta name="theme-color" content="#ffffff" />
 
-		<!-- Handle the user preferred colour scheme -->
+		<!-- Handle dark & light mode -->
 
 		<script>
-			const storageIdentifier = 'pangolicons__preferColourSchemeDark';
-			const userPrefersDarkTheme =
-				window.localStorage.getItem(storageIdentifier);
+			const storageIdentifier = 'Pangolicons__UserColourTheme';
+			const userTheme = window.localStorage.getItem(storageIdentifier);
+			const userPrefersDarkTheme = window.matchMedia(
+				'(prefers-color-scheme: dark)'
+			).matches;
 
-			if (
-				userPrefersDarkTheme === 'true' ||
-				(userPrefersDarkTheme === undefined &&
-					window.matchMedia('(prefers-color-scheme: dark)'))
-			) {
+			if (userTheme === 'dark' || (!userTheme && userPrefersDarkTheme)) {
+				window.localStorage.setItem(storageIdentifier, 'dark');
 				document.documentElement.classList.add('dark');
-				localStorage.setItem(storageIdentifier, true);
+			} else {
+				window.localStorage.setItem(storageIdentifier, 'light');
 			}
 		<\/script>
 	</head>
-	<style>
-		html {
-			background-color: rgba(255, 255, 255, 1);
-		}
-		html.dark {
-			background-color: rgb(30, 41, 59, 1);
-		}
-	</style>
 	<body style="overflow-x: hidden">
 		<div id="svelte">` + body + "</div>\n	</body>\n</html>\n";
     options2 = null;
@@ -56108,23 +56008,13 @@ ${``}`;
       externalFetch: hooks.externalFetch || fetch
     });
     module_lookup = {
-<<<<<<< HEAD
-      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_c0f561b3(), layout_c0f561b3_exports)),
-      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_f294021d(), error_f294021d_exports)),
-      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_2e8741e2(), index_2e8741e2_exports)),
-      "src/routes/packages/index.svelte": () => Promise.resolve().then(() => (init_index_533ff8b9(), index_533ff8b9_exports)),
-      "src/routes/docs/[name].svelte": () => Promise.resolve().then(() => (init_name_cb9dc3f0(), name_cb9dc3f0_exports))
+      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_128945ab(), layout_128945ab_exports)),
+      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_d81937fe(), error_d81937fe_exports)),
+      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_0985510e(), index_0985510e_exports)),
+      "src/routes/packages/index.svelte": () => Promise.resolve().then(() => (init_index_ae664ad6(), index_ae664ad6_exports)),
+      "src/routes/docs/[name].svelte": () => Promise.resolve().then(() => (init_name_8bf8fbe2(), name_8bf8fbe2_exports))
     };
-    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-1ce44b81.js", "css": ["assets/pages/__layout.svelte-21d06fbf.css"], "js": ["pages/__layout.svelte-1ce44b81.js", "chunks/vendor-6996fb32.js", "chunks/Pangol-b2238606.js", "chunks/colorScheme-ec0d8dfc.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-d67c260a.js", "css": [], "js": ["pages/__error.svelte-d67c260a.js", "chunks/vendor-6996fb32.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-86175f0d.js", "css": ["assets/pages/index.svelte-9b758041.css"], "js": ["pages/index.svelte-86175f0d.js", "chunks/vendor-6996fb32.js", "chunks/Card-e2c27a64.js", "chunks/Pangol-b2238606.js", "chunks/colorScheme-ec0d8dfc.js"], "styles": [] }, "src/routes/packages/index.svelte": { "entry": "pages/packages/index.svelte-8ba86823.js", "css": [], "js": ["pages/packages/index.svelte-8ba86823.js", "chunks/vendor-6996fb32.js", "chunks/Card-e2c27a64.js", "chunks/Pangol-b2238606.js"], "styles": [] }, "src/routes/docs/[name].svelte": { "entry": "pages/docs/_name_.svelte-1e306d0e.js", "css": ["assets/pages/docs/_name_.svelte-cbc8f865.css"], "js": ["pages/docs/_name_.svelte-1e306d0e.js", "chunks/vendor-6996fb32.js"], "styles": [] } };
-=======
-      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_e004f785(), layout_e004f785_exports)),
-      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_8cc2d8f8(), error_8cc2d8f8_exports)),
-      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_16b35ce1(), index_16b35ce1_exports)),
-      "src/routes/packages/index.svelte": () => Promise.resolve().then(() => (init_index_406bb4cb(), index_406bb4cb_exports)),
-      "src/routes/docs/[name].svelte": () => Promise.resolve().then(() => (init_name_3fc5b36b(), name_3fc5b36b_exports))
-    };
-    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-1ce44b81.js", "css": ["assets/pages/__layout.svelte-21d06fbf.css"], "js": ["pages/__layout.svelte-1ce44b81.js", "chunks/vendor-6996fb32.js", "chunks/Pangol-b2238606.js", "chunks/colorScheme-ec0d8dfc.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-d67c260a.js", "css": [], "js": ["pages/__error.svelte-d67c260a.js", "chunks/vendor-6996fb32.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-07fdabe0.js", "css": ["assets/pages/index.svelte-9b758041.css"], "js": ["pages/index.svelte-07fdabe0.js", "chunks/vendor-6996fb32.js", "chunks/Card-e2c27a64.js", "chunks/Pangol-b2238606.js", "chunks/colorScheme-ec0d8dfc.js"], "styles": [] }, "src/routes/packages/index.svelte": { "entry": "pages/packages/index.svelte-8ba86823.js", "css": [], "js": ["pages/packages/index.svelte-8ba86823.js", "chunks/vendor-6996fb32.js", "chunks/Card-e2c27a64.js", "chunks/Pangol-b2238606.js"], "styles": [] }, "src/routes/docs/[name].svelte": { "entry": "pages/docs/_name_.svelte-1e306d0e.js", "css": ["assets/pages/docs/_name_.svelte-cbc8f865.css"], "js": ["pages/docs/_name_.svelte-1e306d0e.js", "chunks/vendor-6996fb32.js"], "styles": [] } };
->>>>>>> development
+    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-7ae74a57.js", "css": ["assets/pages/__layout.svelte-c4c34460.css"], "js": ["pages/__layout.svelte-7ae74a57.js", "chunks/vendor-59710896.js", "chunks/Pangol-e08da048.js", "chunks/colorScheme-a090f1b5.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-0ff606d0.js", "css": [], "js": ["pages/__error.svelte-0ff606d0.js", "chunks/vendor-59710896.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-1f86c88d.js", "css": ["assets/pages/index.svelte-9b758041.css"], "js": ["pages/index.svelte-1f86c88d.js", "chunks/vendor-59710896.js", "chunks/Card-fb84abcc.js", "chunks/Pangol-e08da048.js", "chunks/colorScheme-a090f1b5.js"], "styles": [] }, "src/routes/packages/index.svelte": { "entry": "pages/packages/index.svelte-f104ff3e.js", "css": [], "js": ["pages/packages/index.svelte-f104ff3e.js", "chunks/vendor-59710896.js", "chunks/Card-fb84abcc.js", "chunks/Pangol-e08da048.js"], "styles": [] }, "src/routes/docs/[name].svelte": { "entry": "pages/docs/_name_.svelte-243654cd.js", "css": ["assets/pages/docs/_name_.svelte-cbc8f865.css"], "js": ["pages/docs/_name_.svelte-243654cd.js", "chunks/vendor-59710896.js"], "styles": [] } };
   }
 });
 
@@ -56134,11 +56024,7 @@ init_shims();
 // .svelte-kit/output/server/app.js
 init_shims();
 init_ssr();
-<<<<<<< HEAD
-init_app_f55b2bf2();
-=======
-init_app_5ea73dc3();
->>>>>>> development
+init_app_5f7d365b();
 
 // .svelte-kit/node/middlewares.js
 import {

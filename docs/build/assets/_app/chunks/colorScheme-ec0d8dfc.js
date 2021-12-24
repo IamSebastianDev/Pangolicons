@@ -1,1 +1,0 @@
-import{C as a}from"./vendor-6996fb32.js";const t="pangolicons__preferColourSchemeDark",o=a(!1),c=()=>{const e=document.documentElement.classList.contains("dark");o.set(e),localStorage.setItem(t,e)},n=()=>{document.documentElement.classList.toggle("dark"),o.update(s=>!s);const e=window.localStorage.getItem(t);window.localStorage.setItem(t,e!=="true")};export{c as i,o as s,n as t};
