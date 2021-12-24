@@ -7,10 +7,10 @@
 # Pangolicons
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-[![Version](https://img.shields.io/badge/version-3.0.15-informational?style=flat-square)](http://badges.mit-license.org)
+[![Version](https://img.shields.io/badge/version-3.1.0-informational?style=flat-square)](http://badges.mit-license.org)
 [![Size](https://img.shields.io/badge/size-71kb-informational?style=flat-square)]("")
 
-Pangolicons is a modern & minimal open source SVG Icon library with a simple, fully tree-shakeable API. You can see the Icons in action and learn more about Pangolicons [here](http://pangolicons.xyz).
+Pangolicons is a modern & minimal open source SVG Icon library with a simple, fully tree-shakeable API. You can see the Icons in action and learn more about Pangolicons [here](https://pangolicons.xyz).
 
 ## 🔖 Table of contents
 

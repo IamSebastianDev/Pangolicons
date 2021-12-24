@@ -1,6 +1,6 @@
 {
 	"name": "pangolicons",
-	"version": "3.0.15",
+	"version": "3.1.0",
 	"description": "Pangolicons is a cute open source svg icon library inspired by feather icons.",
 	"main": "./dist/pangolicons.js",
 	"module": "./dist/pangolicons.esm.mjs",
