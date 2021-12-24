@@ -1,38 +1,25 @@
-# create-svelte
+<!-- @format -->
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/48380512/146765938-b7bcbd8e-d951-4fa2-a320-c2c03897487f.png" alt="logo">
+</p>
 
-## Creating a project
+# Pangolicons
 
-If you're seeing this, you've probably already done this step. Congrats!
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+[![Version](https://img.shields.io/badge/version-3.0.15-informational?style=flat-square)](http://badges.mit-license.org)
+[![Size](https://img.shields.io/badge/size-71kb-informational?style=flat-square)]("")
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+Pangolicons is a modern & minimal open source SVG Icon library with a simple, fully tree-shakeable API. You can see the Icons in action and learn more about Pangolicons [here](https://pangolicons.xyz).
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+Or take a look at the [documentation](https://pangolicons.xyz/docs/pangolicons).
 
-> Note: the `@next` is temporary
+This is the repo for the documenatation site, build with SvelteKit & TailwindCSS.
 
-## Developing
+## 📋 License
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Pangolicons is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
-```bash
-npm run dev
+## 🦄 Inspiration
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+Pangolicons is heavily inspired by [Feather Icons](https://github.com/feathericons/feather) & [Lucide Icons](https://github.com/lucide-icons/lucide).
