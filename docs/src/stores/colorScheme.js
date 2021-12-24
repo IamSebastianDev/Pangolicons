@@ -2,28 +2,41 @@
 
 import { writable } from 'svelte/store';
 
-const storageIdentifier = 'pangolicons__preferColourSchemeDark';
-const schemeIsDark = writable(false);
+const storageIdentifier = 'Pangolicons__UserColourTheme';
 
-const initalizeColorScheme = () => {
-	const isDark = document.documentElement.classList.contains('dark');
-	// const isDark = localStorage.getItem(storageIdentifier);
+const colorScheme = writable();
+const rainbow = writable(false);
+let counter = 0;
+let easterEgg = 8;
 
-	schemeIsDark.set(isDark);
-	localStorage.setItem(storageIdentifier, isDark);
+const setTheme = (name) => {
+	colorScheme.set(name);
+
+	localStorage.setItem(storageIdentifier, name);
+	document.documentElement.className = name;
+};
+
+const setInitial = () => {
+	setTheme(window.localStorage.getItem(storageIdentifier));
 };
 
 const toggleColorScheme = () => {
-	document.documentElement.classList.toggle('dark');
-	schemeIsDark.update((scheme) => !scheme);
+	const userTheme = localStorage.getItem(storageIdentifier);
+	counter != easterEgg && counter++;
 
-	// handle local storage to update user's preference
+	if (counter === easterEgg) {
+		rainbow.set(true);
+		counter = 0;
+		return;
+	} else {
+		rainbow.set(false);
+	}
 
-	const userPrefersDarkTheme = window.localStorage.getItem(storageIdentifier);
-	window.localStorage.setItem(
-		storageIdentifier,
-		userPrefersDarkTheme === 'true' ? false : true
-	);
+	if (userTheme === 'dark') {
+		setTheme('light');
+	} else {
+		setTheme('dark');
+	}
 };
 
-export { schemeIsDark, initalizeColorScheme, toggleColorScheme };
+export { colorScheme, rainbow, toggleColorScheme, setInitial };

@@ -5,7 +5,8 @@
 	import NavMobile from './NavMobile.svelte';
 
 	import {
-		schemeIsDark,
+		colorScheme,
+		rainbow,
 		toggleColorScheme,
 	} from '../../stores/colorScheme.js';
 
@@ -47,6 +48,12 @@
 		on:click={toggleColorScheme}
 		classes="p-2 mx-4 hover:bg-pangol-300 dark:hover:bg-white hover:text-white dark:hover:text-pangol-500 rounded-sm"
 	>
-		<Pangol name={$schemeIsDark ? 'sunBig' : 'moonStylized'} {attributes} />
+		{#if $rainbow}
+			<Pangol name="rainbow" {attributes} />
+		{:else if $colorScheme === 'light'}
+			<Pangol name="moonStylized" {attributes} />
+		{:else}
+			<Pangol name="sunSmall" {attributes} />
+		{/if}
 	</NavLink>
 </nav>

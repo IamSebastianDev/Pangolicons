@@ -1,7 +1,26 @@
 <!-- @format -->
 <script>
 	import { Pangolicons } from 'pangolicons';
-	import { schemeIsDark } from '../../stores/colorScheme.js';
+	import {
+		rainbow,
+		colorScheme,
+		setInitial,
+	} from '../../stores/colorScheme.js';
+	import { onMount } from 'svelte';
+
+	// rainbow mode offset
+	let frames = 0;
+
+	onMount(() => {
+		setInitial();
+
+		const updateFrameCount = () => {
+			frames++;
+			window.requestAnimationFrame(updateFrameCount);
+		};
+
+		updateFrameCount();
+	});
 
 	import Pangol from '../UI/Pangol.svelte';
 	import Section from '../UI/Section.svelte';
@@ -16,11 +35,41 @@
 
 	let strokeWidth = 1.5;
 	let size = 24;
-	$: color = $schemeIsDark ? '#fafafa' : '#1e293b';
+	$: color = $colorScheme === 'dark' ? '#ffffff' : '#1e293b';
+
+	const createColorArray = ({ numberOfIcons }) => {
+		let rainbow = new Array(numberOfIcons);
+
+		const toHex = (i, phase) => {
+			let sin = Math.sin((Math.PI / size) * 2 * i + phase);
+			let int = Math.floor(sin * 127) + 128;
+			let hex = int.toString(16);
+
+			return hex.length === 1 ? '0' + hex : hex;
+		};
+
+		for (var i = 0; i < numberOfIcons; i++) {
+			let red = toHex(i, (0 * Math.PI * 2) / 3); // 0   deg
+			let blue = toHex(i, (1 * Math.PI * 2) / 3); // 120 deg
+			let green = toHex(i, (2 * Math.PI * 2) / 3); // 240 deg
+
+			rainbow[i] = '#' + red + green + blue;
+		}
+
+		return rainbow;
+	};
+	const ArrayOfColors = createColorArray({ numberOfIcons });
+
+	$: getColor = ({ index, numberOfIcons }) =>
+		$rainbow ? ArrayOfColors[(index + frames) % numberOfIcons] : color;
+
+	// filter the icons accoring to the currently entered searchString
 
 	let searchString = '';
 	$: filteredIcons =
 		Pangolicons.search({ searchString }) || Object.values(icons);
+
+	// handle the customizer modal
 
 	let showCustomizer = false;
 	const toggleCustomizer = () => {
@@ -86,7 +135,11 @@
 					'stroke-width': strokeWidth,
 					width: size,
 					height: size,
-					color,
+					// color: ArrayOfColors[(index + offset) % numberOfIcons],
+					color: getColor({
+						index,
+						numberOfIcons: filteredIcons.length | numberOfIcons,
+					}),
 				}}
 			/>
 		{:else}
