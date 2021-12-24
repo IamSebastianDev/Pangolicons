@@ -6712,9 +6712,9 @@ var init_ssr = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/getPackages-e76a4a07.js
-var getPackages_e76a4a07_exports = {};
-__export(getPackages_e76a4a07_exports, {
+// .svelte-kit/output/server/chunks/getPackages-6e65d5ce.js
+var getPackages_6e65d5ce_exports = {};
+__export(getPackages_6e65d5ce_exports, {
   get: () => get
 });
 async function get() {
@@ -6723,10 +6723,10 @@ async function get() {
   };
 }
 var packageList, endpoint, grabPackageData;
-var init_getPackages_e76a4a07 = __esm({
-  ".svelte-kit/output/server/chunks/getPackages-e76a4a07.js"() {
+var init_getPackages_6e65d5ce = __esm({
+  ".svelte-kit/output/server/chunks/getPackages-6e65d5ce.js"() {
     init_shims();
-    packageList = ["pangolicons", "svelte-pangolicons"];
+    packageList = ["pangolicons", "svelte-pangolicons", "react-pangolicons"];
     endpoint = "https://registry.npmjs.org/";
     grabPackageData = async ({ packageList: packageList2, endpoint: endpoint2 }) => {
       const packages = [];
@@ -6780,13 +6780,56 @@ var init_getReadme_91c24d95 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/Pangol-02c92512.js
+// .svelte-kit/output/server/chunks/icon-66d3855b.js
+var icon_66d3855b_exports = {};
+__export(icon_66d3855b_exports, {
+  get: () => get3
+});
+import fs from "fs/promises";
+import nodepath from "path";
+async function get3({ query }) {
+  const name = query.get("name");
+  const color = query.get("color");
+  const size = query.get("size");
+  const width = query.get("width");
+  return {
+    body: await createIcon({ name, color, size, width })
+  };
+}
+var createIcon;
+var init_icon_66d3855b = __esm({
+  ".svelte-kit/output/server/chunks/icon-66d3855b.js"() {
+    init_shims();
+    createIcon = async ({ name, color, size, width }) => {
+      const root = "./static/assets/icons/svgs/";
+      const icon = nodepath.resolve(process.cwd(), root, name + ".svg");
+      const svg = await fs.readFile(icon, "utf-8");
+      const pathRegex = /<svg .+?>(?<pathFrag>.+?)<\/svg>/im;
+      const path = svg.match(pathRegex).groups.pathFrag;
+      return `<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="${size}"
+    height="${size}"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="#${color}"
+    stroke-width="${width}"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="pangolicons pangolicons-${name}">
+    ${path}
+    </svg>`;
+    };
+  }
+});
+
+// .svelte-kit/output/server/chunks/Pangol-0066f473.js
 import * as Pangolicons from "pangolicons";
 var Icon, Pangol;
-var init_Pangol_02c92512 = __esm({
-  ".svelte-kit/output/server/chunks/Pangol-02c92512.js"() {
+var init_Pangol_0066f473 = __esm({
+  ".svelte-kit/output/server/chunks/Pangol-0066f473.js"() {
     init_shims();
-    init_app_4e4fc98b();
+    init_app_5ea73dc3();
     Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let icon;
       let { name } = $$props;
@@ -6819,7 +6862,7 @@ var init_Pangol_02c92512 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/colorScheme-238d4914.js
+// .svelte-kit/output/server/chunks/colorScheme-d8529ec3.js
 function writable2(value, start = noop3) {
   let stop;
   const subscribers = new Set();
@@ -6862,28 +6905,28 @@ function writable2(value, start = noop3) {
   return { set, update, subscribe: subscribe2 };
 }
 var subscriber_queue2, schemeIsDark;
-var init_colorScheme_238d4914 = __esm({
-  ".svelte-kit/output/server/chunks/colorScheme-238d4914.js"() {
+var init_colorScheme_d8529ec3 = __esm({
+  ".svelte-kit/output/server/chunks/colorScheme-d8529ec3.js"() {
     init_shims();
-    init_app_4e4fc98b();
+    init_app_5ea73dc3();
     subscriber_queue2 = [];
     schemeIsDark = writable2(false);
   }
 });
 
-// .svelte-kit/output/server/chunks/__layout-81cef0c8.js
-var layout_81cef0c8_exports = {};
-__export(layout_81cef0c8_exports, {
+// .svelte-kit/output/server/chunks/__layout-e004f785.js
+var layout_e004f785_exports = {};
+__export(layout_e004f785_exports, {
   default: () => _layout
 });
 import "pangolicons";
 var NavItem, NavLink, NavList, NavMobile, Navigation, Link, Footer, _layout;
-var init_layout_81cef0c8 = __esm({
-  ".svelte-kit/output/server/chunks/__layout-81cef0c8.js"() {
+var init_layout_e004f785 = __esm({
+  ".svelte-kit/output/server/chunks/__layout-e004f785.js"() {
     init_shims();
-    init_app_4e4fc98b();
-    init_Pangol_02c92512();
-    init_colorScheme_238d4914();
+    init_app_5ea73dc3();
+    init_Pangol_0066f473();
+    init_colorScheme_d8529ec3();
     init_ssr();
     NavItem = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { classes = "" } = $$props;
@@ -7090,17 +7133,17 @@ ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
   }
 });
 
-// .svelte-kit/output/server/chunks/__error-680f1118.js
-var error_680f1118_exports = {};
-__export(error_680f1118_exports, {
+// .svelte-kit/output/server/chunks/__error-8cc2d8f8.js
+var error_8cc2d8f8_exports = {};
+__export(error_8cc2d8f8_exports, {
   default: () => _error,
   load: () => load
 });
 var load, _error;
-var init_error_680f1118 = __esm({
-  ".svelte-kit/output/server/chunks/__error-680f1118.js"() {
+var init_error_8cc2d8f8 = __esm({
+  ".svelte-kit/output/server/chunks/__error-8cc2d8f8.js"() {
     init_shims();
-    init_app_4e4fc98b();
+    init_app_5ea73dc3();
     init_ssr();
     load = ({ error: error2, status }) => {
       return { props: { error: error2, status } };
@@ -7118,12 +7161,12 @@ var init_error_680f1118 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/Card-eca50880.js
+// .svelte-kit/output/server/chunks/Card-70e57e17.js
 var Section, ButtonLink, Card;
-var init_Card_eca50880 = __esm({
-  ".svelte-kit/output/server/chunks/Card-eca50880.js"() {
+var init_Card_70e57e17 = __esm({
+  ".svelte-kit/output/server/chunks/Card-70e57e17.js"() {
     init_shims();
-    init_app_4e4fc98b();
+    init_app_5ea73dc3();
     Section = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { id } = $$props;
       if ($$props.id === void 0 && $$bindings.id && id !== void 0)
@@ -7151,20 +7194,20 @@ var init_Card_eca50880 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-844f0e3c.js
-var index_844f0e3c_exports = {};
-__export(index_844f0e3c_exports, {
+// .svelte-kit/output/server/chunks/index-16b35ce1.js
+var index_16b35ce1_exports = {};
+__export(index_16b35ce1_exports, {
   default: () => Routes
 });
 import { Pangolicons as Pangolicons2 } from "pangolicons";
 var HeroLinks, Hero, Iconcard, IconSearch, IconController, Display, Routes;
-var init_index_844f0e3c = __esm({
-  ".svelte-kit/output/server/chunks/index-844f0e3c.js"() {
+var init_index_16b35ce1 = __esm({
+  ".svelte-kit/output/server/chunks/index-16b35ce1.js"() {
     init_shims();
-    init_app_4e4fc98b();
-    init_Card_eca50880();
-    init_Pangol_02c92512();
-    init_colorScheme_238d4914();
+    init_app_5ea73dc3();
+    init_Card_70e57e17();
+    init_Pangol_0066f473();
+    init_colorScheme_d8529ec3();
     init_ssr();
     HeroLinks = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"flex flex-col md:flex-row justify-center md:items-center py-2 md:mx-auto"}">${validate_component(ButtonLink, "ButtonLink").$$render($$result, {
@@ -7174,7 +7217,7 @@ var init_index_844f0e3c = __esm({
         default: () => `${validate_component(Pangol, "Pangol").$$render($$result, { name: "pangolin" }, {}, { default: () => `Get Started` })}`
       })}
 	${validate_component(ButtonLink, "ButtonLink").$$render($$result, {
-        href: "https://github.com/iamsebastiandev/pangolicons",
+        href: "https://github.com/IamSebastianDev/Pangolicons/tree/master/docs/static/assets/icons/svgs",
         title: "All Icons as download"
       }, {}, {
         default: () => `${validate_component(Pangol, "Pangol").$$render($$result, { name: "download" }, {}, { default: () => `Download all` })}`
@@ -7197,9 +7240,9 @@ var init_index_844f0e3c = __esm({
       if ($$props.attributes === void 0 && $$bindings.attributes && attributes !== void 0)
         $$bindings.attributes(attributes);
       return `${validate_component(Card, "Card").$$render($$result, {
-        classes: "hover:border-pangol-100 hover:ring-2 ring-pangol-100 w-full h-full"
+        classes: "hover:border-pangol-100 hover:ring-2 ring-pangol-100 w-full"
       }, {}, {
-        default: () => `<a${add_attribute("href", "/assets/icons/svgs/" + name + ".svg", 0)} title="${"Download " + escape2(name)}" download class="${"flex flex-col justify-center items-center h-full w-full"}">${validate_component(Pangol, "Pangol").$$render($$result, {
+        default: () => `<a href="${"/api/icon?name=" + escape2(name) + "&color=" + escape2(attributes.color.replace("#", "")) + "&width=" + escape2(attributes["stroke-width"]) + "&size=" + escape2(attributes.height)}" title="${"Download " + escape2(name)}" download="${escape2(name) + ".svg"}" class="${"flex flex-col justify-center items-center h-full w-full"}">${validate_component(Pangol, "Pangol").$$render($$result, {
           name,
           attributes,
           classes: "w-24 h-24 p-2"
@@ -7301,9 +7344,9 @@ ${validate_component(Display, "Display").$$render($$result, {}, {}, {})}`;
   }
 });
 
-// .svelte-kit/output/server/chunks/index-b23adaad.js
-var index_b23adaad_exports = {};
-__export(index_b23adaad_exports, {
+// .svelte-kit/output/server/chunks/index-406bb4cb.js
+var index_406bb4cb_exports = {};
+__export(index_406bb4cb_exports, {
   default: () => Packages,
   load: () => load2
 });
@@ -7315,12 +7358,12 @@ async function load2({ fetch: fetch2 }) {
   return { status: res.status, error: new Error() };
 }
 var Package, Packages;
-var init_index_b23adaad = __esm({
-  ".svelte-kit/output/server/chunks/index-b23adaad.js"() {
+var init_index_406bb4cb = __esm({
+  ".svelte-kit/output/server/chunks/index-406bb4cb.js"() {
     init_shims();
-    init_app_4e4fc98b();
-    init_Card_eca50880();
-    init_Pangol_02c92512();
+    init_app_5ea73dc3();
+    init_Card_70e57e17();
+    init_Pangol_0066f473();
     init_ssr();
     Package = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { pkg } = $$props;
@@ -7346,10 +7389,10 @@ var init_index_b23adaad = __esm({
           default: () => `${validate_component(Pangol, "Pangol").$$render($$result, { name: "clipboardNotes" }, {}, { default: () => `Docs` })}`
         })}
 		${validate_component(ButtonLink, "ButtonLink").$$render($$result, {
-          href: "https://github.com/iamsebastiandev/pangolicons/packages",
+          href: "https://github.com/IamSebastianDev/Pangolicons/" + (pkg.name !== "pangolicons" ? `tree/master/packages/${pkg.name}` : ""),
           title: pkg.name
         }, {}, {
-          default: () => `${validate_component(Pangol, "Pangol").$$render($$result, { name: "code" }, {}, { default: () => `Source` })}`
+          default: () => `${validate_component(Pangol, "Pangol").$$render($$result, { name: "github" }, {}, { default: () => `Github` })}`
         })}</div>`
       })}`;
     });
@@ -55551,17 +55594,17 @@ var init_es = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/_name_-e8b3aac8.js
-var name_e8b3aac8_exports = {};
-__export(name_e8b3aac8_exports, {
+// .svelte-kit/output/server/chunks/_name_-3fc5b36b.js
+var name_3fc5b36b_exports = {};
+__export(name_3fc5b36b_exports, {
   default: () => U5Bnameu5D,
   load: () => load3
 });
 var css, load3, U5Bnameu5D;
-var init_name_e8b3aac8 = __esm({
-  ".svelte-kit/output/server/chunks/_name_-e8b3aac8.js"() {
+var init_name_3fc5b36b = __esm({
+  ".svelte-kit/output/server/chunks/_name_-3fc5b36b.js"() {
     init_shims();
-    init_app_4e4fc98b();
+    init_app_5ea73dc3();
     init_marked_esm();
     init_es();
     init_ssr();
@@ -55600,7 +55643,7 @@ var init_name_e8b3aac8 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/app-4e4fc98b.js
+// .svelte-kit/output/server/chunks/app-5ea73dc3.js
 function noop3() {
 }
 function run(fn) {
@@ -55713,9 +55756,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-f738bd94.js",
+      file: assets + "/_app/start-68698215.js",
       css: [assets + "/_app/assets/start-464e9d0a.css"],
-      js: [assets + "/_app/start-f738bd94.js", assets + "/_app/chunks/vendor-dcf195ff.js"]
+      js: [assets + "/_app/start-68698215.js", assets + "/_app/chunks/vendor-6996fb32.js"]
     },
     fetched: void 0,
     floc: false,
@@ -55759,8 +55802,8 @@ function render(request, {
   return respond(__spreadProps(__spreadValues({}, request), { host }), options2, { prerender });
 }
 var current_component, escaped2, missing_component, on_destroy, css2, Root, base, assets, user_hooks, template, options2, default_settings, d, empty, manifest, get_hooks, module_lookup, metadata_lookup;
-var init_app_4e4fc98b = __esm({
-  ".svelte-kit/output/server/chunks/app-4e4fc98b.js"() {
+var init_app_5ea73dc3 = __esm({
+  ".svelte-kit/output/server/chunks/app-5ea73dc3.js"() {
     init_shims();
     init_ssr();
     Promise.resolve();
@@ -55896,7 +55939,7 @@ ${``}`;
     d = (s3) => s3.replace(/%23/g, "#").replace(/%3[Bb]/g, ";").replace(/%2[Cc]/g, ",").replace(/%2[Ff]/g, "/").replace(/%3[Ff]/g, "?").replace(/%3[Aa]/g, ":").replace(/%40/g, "@").replace(/%26/g, "&").replace(/%3[Dd]/g, "=").replace(/%2[Bb]/g, "+").replace(/%24/g, "$");
     empty = () => ({});
     manifest = {
-      assets: [{ "file": ".DS_Store", "size": 6148, "type": null }, { "file": "assets/icons/compressed/Pangolicons.latest.zip", "size": 9976, "type": "application/zip" }, { "file": "assets/icons/svgs/Pangolicons.latest.zip", "size": 94950, "type": "application/zip" }, { "file": "assets/icons/svgs/airplay.svg", "size": 411, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/alignCenter.svg", "size": 345, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/alignJustify.svg", "size": 339, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/alignLeft.svg", "size": 342, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/alignRight.svg", "size": 342, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/archive.svg", "size": 385, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowDown.svg", "size": 271, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowLeft.svg", "size": 270, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowLeftDown.svg", "size": 280, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowLeftUp.svg", "size": 279, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowRight.svg", "size": 271, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowRightDown.svg", "size": 281, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowRightUp.svg", "size": 280, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowUp.svg", "size": 270, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/barChart.svg", "size": 408, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/barChartAlternative.svg", "size": 339, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/barChartPositive.svg", "size": 403, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/batteryCharged.svg", "size": 440, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/batteryEmpty.svg", "size": 310, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bell.svg", "size": 357, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bellOff.svg", "size": 423, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bellRinging.svg", "size": 412, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bluetooth.svg", "size": 387, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bluetoothConnected.svg", "size": 471, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bluetoothOff.svg", "size": 320, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bluetoothSearching.svg", "size": 472, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bold.svg", "size": 426, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bookClosed.svg", "size": 323, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bookOpen.svg", "size": 313, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bookmark.svg", "size": 305, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/box.svg", "size": 286, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/calendar.svg", "size": 393, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/camera.svg", "size": 404, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cameraOff.svg", "size": 526, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/castToMedia.svg", "size": 472, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/checkmark.svg", "size": 264, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/checkmarkCircle.svg", "size": 322, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronDown.svg", "size": 261, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronDownUp.svg", "size": 312, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronFirst.svg", "size": 310, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronLast.svg", "size": 310, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronLeft.svg", "size": 262, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronLeftRight.svg", "size": 313, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronRight.svg", "size": 261, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronUp.svg", "size": 262, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronUpDown.svg", "size": 313, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronrightLeft.svg", "size": 312, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronsDown.svg", "size": 312, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronsLeft.svg", "size": 313, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronsRight.svg", "size": 312, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronsUp.svg", "size": 313, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circle.svg", "size": 244, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowDown.svg", "size": 314, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowLeft.svg", "size": 313, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowLeftDown.svg", "size": 297, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowLeftUp.svg", "size": 295, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowRight.svg", "size": 314, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowRightDown.svg", "size": 299, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowRightUp.svg", "size": 297, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowUp.svg", "size": 313, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleMinus.svg", "size": 289, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circlePlus.svg", "size": 322, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleX.svg", "size": 320, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/clipboard.svg", "size": 348, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/clipboardNotes.svg", "size": 495, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloud.svg", "size": 292, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudDrizzle.svg", "size": 567, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudFog.svg", "size": 418, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudHail.svg", "size": 567, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudLightning.svg", "size": 352, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudMoon.svg", "size": 435, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudRain.svg", "size": 427, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudSnow.svg", "size": 567, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudStorm.svg", "size": 442, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudSun.svg", "size": 539, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/clouds.svg", "size": 365, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/code.svg", "size": 285, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/codepen.svg", "size": 527, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/convertToLink.svg", "size": 424, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/convertToOrderedList.svg", "size": 519, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/convertToUnorderedList.svg", "size": 439, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/convertToUnstyledList.svg", "size": 345, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cookie.svg", "size": 509, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowDownLeft.svg", "size": 297, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowDownRight.svg", "size": 294, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowLeftDown.svg", "size": 294, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowLeftUp.svg", "size": 294, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowRightDown.svg", "size": 295, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowRightUp.svg", "size": 296, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowUpLeft.svg", "size": 294, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowUpRight.svg", "size": 293, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/creditcard.svg", "size": 376, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/crown.svg", "size": 303, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/database.svg", "size": 530, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/delimitor.svg", "size": 339, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/display.svg", "size": 445, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/download.svg", "size": 355, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/dragIndicator.svg", "size": 346, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/edit.svg", "size": 284, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/envelope.svg", "size": 308, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/externalLink.svg", "size": 335, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/eyeClosed.svg", "size": 295, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/eyeOpen.svg", "size": 291, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/eyeStriked.svg", "size": 470, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/facebook.svg", "size": 687, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fader.svg", "size": 340, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fastForward.svg", "size": 312, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/file.svg", "size": 339, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/filter.svg", "size": 265, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnBackspace.svg", "size": 458, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnCaps.svg", "size": 410, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnCommand.svg", "size": 354, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnControl.svg", "size": 318, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnEscape.svg", "size": 371, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnOption.svg", "size": 361, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnReturn.svg", "size": 383, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnShift.svg", "size": 359, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnSpacebar.svg", "size": 311, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnTab.svg", "size": 405, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/folder.svg", "size": 294, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/folder2.svg", "size": 347, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/folderMinus.svg", "size": 334, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/folderPlus.svg", "size": 374, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fork.svg", "size": 326, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/form.svg", "size": 441, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/frown.svg", "size": 417, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fullscreenEnter.svg", "size": 404, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fullscreenExit.svg", "size": 404, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/gear.svg", "size": 780, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/ghost.svg", "size": 391, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/github.svg", "size": 591, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/haze.svg", "size": 411, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/headingDecrease.svg", "size": 352, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/headingIncrease.svg", "size": 352, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/heart.svg", "size": 355, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/hexagon.svg", "size": 298, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/horizontalMore.svg", "size": 473, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/icecream.svg", "size": 353, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/image.svg", "size": 397, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/infoCircle.svg", "size": 328, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/infoSquare.svg", "size": 346, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/instagram.svg", "size": 344, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/italic.svg", "size": 343, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/jellyfish.svg", "size": 443, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/key.svg", "size": 436, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layers.svg", "size": 390, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layout.svg", "size": 361, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layoutColumns.svg", "size": 343, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layoutGrid.svg", "size": 354, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layoutHorizontal.svg", "size": 311, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layoutList.svg", "size": 419, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layoutMixed.svg", "size": 352, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layoutVertical.svg", "size": 311, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/library.svg", "size": 380, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/list.svg", "size": 481, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/location.svg", "size": 343, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/lock.svg", "size": 451, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/login.svg", "size": 371, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/logoutLeft.svg", "size": 370, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/logoutRight.svg", "size": 368, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/marker.svg", "size": 277, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/menu.svg", "size": 347, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/microphone.svg", "size": 405, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/microphoneOff.svg", "size": 415, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/minus.svg", "size": 251, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/moonRough.svg", "size": 616, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/moonStylized.svg", "size": 335, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/move.svg", "size": 500, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/moveDiagonal.svg", "size": 370, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/moveDiagonalMirrored.svg", "size": 370, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/moveHorizontal.svg", "size": 356, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/moveVertical.svg", "size": 356, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/mug.svg", "size": 338, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/music.svg", "size": 346, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/neutral.svg", "size": 411, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/pangolin.svg", "size": 302, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/parcel.svg", "size": 310, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/pause.svg", "size": 296, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/phone.svg", "size": 388, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/phoneCall.svg", "size": 478, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/phoneIncoming.svg", "size": 466, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/phoneMissed.svg", "size": 490, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/phoneOff.svg", "size": 432, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/phoneOutgoing.svg", "size": 463, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/pieChart.svg", "size": 347, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/play.svg", "size": 265, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/plus.svg", "size": 290, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/power.svg", "size": 302, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/refresh.svg", "size": 316, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/refreshCCW.svg", "size": 422, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/refreshCW.svg", "size": 424, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/repeat.svg", "size": 432, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/resizeImage.svg", "size": 374, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/rewind.svg", "size": 312, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/robot.svg", "size": 402, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/search.svg", "size": 278, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/server.svg", "size": 518, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/settings.svg", "size": 456, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/shield.svg", "size": 400, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/shuffle.svg", "size": 443, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/sidebar.svg", "size": 303, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/skipBack.svg", "size": 316, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/skipForward.svg", "size": 318, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/sliders.svg", "size": 653, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/smartphone.svg", "size": 366, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/smile.svg", "size": 413, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/snail.svg", "size": 508, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/snowflake.svg", "size": 1124, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/snpachat.svg", "size": 971, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/spoon.svg", "size": 337, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/square.svg", "size": 255, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/squareMinus.svg", "size": 307, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/squarePlus.svg", "size": 340, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/squareX.svg", "size": 338, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/star.svg", "size": 345, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/starHalf.svg", "size": 293, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/strikethrough.svg", "size": 463, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/sunBig.svg", "size": 623, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/sunSmall.svg", "size": 623, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/sword.svg", "size": 403, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/tablet.svg", "size": 403, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/terminal.svg", "size": 304, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/text.svg", "size": 342, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/title.svg", "size": 253, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/trashcanEmpty.svg", "size": 418, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/trashcanFilled.svg", "size": 516, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/trello.svg", "size": 349, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/triangle.svg", "size": 265, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/triangleInverted.svg", "size": 265, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/twitch.svg", "size": 494, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/twitter.svg", "size": 489, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/umbrella.svg", "size": 320, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/underline.svg", "size": 340, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/unlock.svg", "size": 431, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/user.svg", "size": 338, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/userAdd.svg", "size": 432, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/userMultiple.svg", "size": 431, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/userRemove.svg", "size": 387, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/verticalMore.svg", "size": 352, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/voicemail.svg", "size": 314, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/volumeHigh.svg", "size": 386, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/volumeLow.svg", "size": 324, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/volumeMedium.svg", "size": 380, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/volumeMute.svg", "size": 430, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/webcam.svg", "size": 369, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/wifi.svg", "size": 378, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/wifiOff.svg", "size": 549, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/wind.svg", "size": 367, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/wrench.svg", "size": 378, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/x.svg", "size": 288, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/youtube.svg", "size": 395, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/zoomIn.svg", "size": 380, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/zoomOut.svg", "size": 329, "type": "image/svg+xml" }, { "file": "assets/images/packageLogos/svelte-pangolicons.svg", "size": 1892, "type": "image/svg+xml" }, { "file": "favicons/android-chrome-192x192.png", "size": 4655, "type": "image/png" }, { "file": "favicons/android-chrome-256x256.png", "size": 6153, "type": "image/png" }, { "file": "favicons/apple-touch-icon.png", "size": 3732, "type": "image/png" }, { "file": "favicons/browserconfig.xml", "size": 256, "type": "application/xml" }, { "file": "favicons/favicon-16x16.png", "size": 1142, "type": "image/png" }, { "file": "favicons/favicon-32x32.png", "size": 1741, "type": "image/png" }, { "file": "favicons/favicon.ico", "size": 15086, "type": "image/vnd.microsoft.icon" }, { "file": "favicons/mstile-150x150.png", "size": 4512, "type": "image/png" }, { "file": "favicons/safari-pinned-tab.svg", "size": 1849, "type": "image/svg+xml" }, { "file": "favicons/site.webmanifest", "size": 446, "type": "application/manifest+json" }, { "file": "scripts/pangolicons.esm.mjs", "size": 77908, "type": "application/javascript" }, { "file": "scripts/pangolicons.mjs", "size": 77910, "type": "application/javascript" }],
+      assets: [{ "file": ".DS_Store", "size": 6148, "type": null }, { "file": "assets/icons/compressed/Pangolicons.latest.zip", "size": 10085, "type": "application/zip" }, { "file": "assets/icons/svgs/Pangolicons.latest.zip", "size": 96522, "type": "application/zip" }, { "file": "assets/icons/svgs/airplay.svg", "size": 412, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/alignCenter.svg", "size": 345, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/alignJustify.svg", "size": 339, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/alignLeft.svg", "size": 342, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/alignRight.svg", "size": 342, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/archive.svg", "size": 378, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowDown.svg", "size": 273, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowLeft.svg", "size": 270, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowLeftDown.svg", "size": 264, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowLeftUp.svg", "size": 263, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowRight.svg", "size": 273, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowRightDown.svg", "size": 265, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowRightUp.svg", "size": 264, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/arrowUp.svg", "size": 270, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/barChart.svg", "size": 389, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/barChartAlternative.svg", "size": 346, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/barChartPositive.svg", "size": 391, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/batteryCharged.svg", "size": 473, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/batteryEmpty.svg", "size": 319, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bell.svg", "size": 355, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bellOff.svg", "size": 433, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bellRinging.svg", "size": 421, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bluetooth.svg", "size": 391, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bluetoothConnected.svg", "size": 475, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bluetoothOff.svg", "size": 323, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bluetoothSearching.svg", "size": 494, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bold.svg", "size": 418, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bookClosed.svg", "size": 323, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bookOpen.svg", "size": 313, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/bookmark.svg", "size": 307, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/box.svg", "size": 275, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/calendar.svg", "size": 398, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/camera.svg", "size": 415, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cameraOff.svg", "size": 498, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/castToMedia.svg", "size": 547, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/checkmark.svg", "size": 260, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/checkmarkCircle.svg", "size": 307, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronDown.svg", "size": 254, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronDownUp.svg", "size": 303, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronFirst.svg", "size": 302, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronLast.svg", "size": 302, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronLeft.svg", "size": 255, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronLeftRight.svg", "size": 309, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronRight.svg", "size": 254, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronUp.svg", "size": 255, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronUpDown.svg", "size": 309, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronrightLeft.svg", "size": 303, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronsDown.svg", "size": 307, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronsLeft.svg", "size": 308, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronsRight.svg", "size": 307, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/chevronsUp.svg", "size": 308, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circle.svg", "size": 245, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowDown.svg", "size": 315, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowLeft.svg", "size": 314, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowLeftDown.svg", "size": 322, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowLeftUp.svg", "size": 320, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowRight.svg", "size": 315, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowRightDown.svg", "size": 324, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowRightUp.svg", "size": 322, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleArrowUp.svg", "size": 314, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleMinus.svg", "size": 290, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circlePlus.svg", "size": 335, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/circleX.svg", "size": 345, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/clipboard.svg", "size": 333, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/clipboardNotes.svg", "size": 486, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloud.svg", "size": 290, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudDrizzle.svg", "size": 590, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudFog.svg", "size": 437, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudHail.svg", "size": 589, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudLightning.svg", "size": 353, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudMoon.svg", "size": 457, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudRain.svg", "size": 437, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudSnow.svg", "size": 590, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudStorm.svg", "size": 439, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cloudSun.svg", "size": 552, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/clouds.svg", "size": 376, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/code.svg", "size": 313, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/codepen.svg", "size": 499, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/convertToLink.svg", "size": 426, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/convertToOrderedList.svg", "size": 525, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/convertToUnorderedList.svg", "size": 439, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/convertToUnstyledList.svg", "size": 345, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cookie.svg", "size": 549, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowDownLeft.svg", "size": 296, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowDownRight.svg", "size": 288, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowLeftDown.svg", "size": 290, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowLeftUp.svg", "size": 294, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowRightDown.svg", "size": 289, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowRightUp.svg", "size": 296, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowUpLeft.svg", "size": 294, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/cornerArrowUpRight.svg", "size": 289, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/creditcard.svg", "size": 403, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/crown.svg", "size": 308, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/database.svg", "size": 534, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/delimitor.svg", "size": 339, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/display.svg", "size": 452, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/download.svg", "size": 368, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/dragIndicator.svg", "size": 362, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/edit.svg", "size": 286, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/envelope.svg", "size": 321, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/externalLink.svg", "size": 343, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/eyeClosed.svg", "size": 302, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/eyeOpen.svg", "size": 292, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/eyeStriked.svg", "size": 486, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/facebook.svg", "size": 713, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fader.svg", "size": 348, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fastForward.svg", "size": 296, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/file.svg", "size": 320, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/filter.svg", "size": 263, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnBackspace.svg", "size": 450, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnCaps.svg", "size": 424, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnCommand.svg", "size": 408, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnControl.svg", "size": 316, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnEscape.svg", "size": 410, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnOption.svg", "size": 382, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnReturn.svg", "size": 384, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnShift.svg", "size": 373, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnSpacebar.svg", "size": 331, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fnTab.svg", "size": 413, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/folder.svg", "size": 291, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/folder2.svg", "size": 348, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/folderMinus.svg", "size": 342, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/folderPlus.svg", "size": 388, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fork.svg", "size": 329, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/form.svg", "size": 422, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/frown.svg", "size": 393, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fullscreenEnter.svg", "size": 356, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/fullscreenExit.svg", "size": 356, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/gear.svg", "size": 793, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/ghost.svg", "size": 383, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/github.svg", "size": 619, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/guitar.svg", "size": 762, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/haze.svg", "size": 402, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/headingDecrease.svg", "size": 352, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/headingIncrease.svg", "size": 352, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/heart.svg", "size": 368, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/hexagon.svg", "size": 280, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/horizontalMore.svg", "size": 506, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/icecream.svg", "size": 351, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/image.svg", "size": 413, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/infoCircle.svg", "size": 335, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/infoSquare.svg", "size": 352, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/instagram.svg", "size": 340, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/italic.svg", "size": 344, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/jellyfish.svg", "size": 474, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/key.svg", "size": 437, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layers.svg", "size": 384, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layout.svg", "size": 383, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layoutColumns.svg", "size": 343, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layoutGrid.svg", "size": 342, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layoutHorizontal.svg", "size": 303, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layoutList.svg", "size": 397, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layoutMixed.svg", "size": 342, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/layoutVertical.svg", "size": 303, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/library.svg", "size": 390, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/list.svg", "size": 481, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/location.svg", "size": 360, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/lock.svg", "size": 427, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/login.svg", "size": 358, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/logoutLeft.svg", "size": 355, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/logoutRight.svg", "size": 355, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/marker.svg", "size": 275, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/menu.svg", "size": 327, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/microphone.svg", "size": 409, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/microphoneOff.svg", "size": 430, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/minus.svg", "size": 251, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/moonRough.svg", "size": 551, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/moonStylized.svg", "size": 345, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/move.svg", "size": 484, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/moveDiagonal.svg", "size": 346, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/moveDiagonalMirrored.svg", "size": 346, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/moveHorizontal.svg", "size": 348, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/moveVertical.svg", "size": 348, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/mug.svg", "size": 422, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/music.svg", "size": 351, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/neutral.svg", "size": 389, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/pangolin.svg", "size": 357, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/parcel.svg", "size": 294, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/pause.svg", "size": 300, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/phone.svg", "size": 395, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/phoneCall.svg", "size": 497, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/phoneIncoming.svg", "size": 470, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/phoneMissed.svg", "size": 497, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/phoneOff.svg", "size": 436, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/phoneOutgoing.svg", "size": 472, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/pieChart.svg", "size": 330, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/play.svg", "size": 263, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/plus.svg", "size": 290, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/pothos.svg", "size": 347, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/power.svg", "size": 302, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/rainbow.svg", "size": 315, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/refresh.svg", "size": 326, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/refreshCCW.svg", "size": 407, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/refreshCW.svg", "size": 407, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/repeat.svg", "size": 423, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/resizeImage.svg", "size": 374, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/rewind.svg", "size": 296, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/robot.svg", "size": 415, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/search.svg", "size": 282, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/server.svg", "size": 521, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/settings.svg", "size": 442, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/shield.svg", "size": 399, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/shuffle.svg", "size": 425, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/sidebar.svg", "size": 316, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/skipBack.svg", "size": 308, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/skipForward.svg", "size": 310, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/sliders.svg", "size": 648, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/smartphone.svg", "size": 372, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/smile.svg", "size": 391, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/snail.svg", "size": 513, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/snowflake.svg", "size": 1136, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/snpachat.svg", "size": 982, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/spoon.svg", "size": 343, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/square.svg", "size": 255, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/squareMinus.svg", "size": 307, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/squarePlus.svg", "size": 352, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/squareX.svg", "size": 362, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/star.svg", "size": 333, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/starHalf.svg", "size": 291, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/strikethrough.svg", "size": 458, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/sunBig.svg", "size": 600, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/sunSmall.svg", "size": 615, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/sword.svg", "size": 401, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/tablet.svg", "size": 433, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/terminal.svg", "size": 299, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/text.svg", "size": 342, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/title.svg", "size": 253, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/trashcanEmpty.svg", "size": 418, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/trashcanFilled.svg", "size": 516, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/trello.svg", "size": 369, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/triangle.svg", "size": 265, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/triangleInverted.svg", "size": 265, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/twitch.svg", "size": 496, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/twitter.svg", "size": 466, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/umbrella.svg", "size": 347, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/underline.svg", "size": 342, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/unlock.svg", "size": 392, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/user.svg", "size": 335, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/userAdd.svg", "size": 434, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/userMultiple.svg", "size": 428, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/userRemove.svg", "size": 384, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/verticalMore.svg", "size": 373, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/voicemail.svg", "size": 338, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/volumeHigh.svg", "size": 423, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/volumeLow.svg", "size": 333, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/volumeMedium.svg", "size": 375, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/volumeMute.svg", "size": 421, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/webcam.svg", "size": 374, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/wifi.svg", "size": 386, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/wifiOff.svg", "size": 562, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/wind.svg", "size": 367, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/wrench.svg", "size": 339, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/x.svg", "size": 288, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/youtube.svg", "size": 393, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/zoomIn.svg", "size": 377, "type": "image/svg+xml" }, { "file": "assets/icons/svgs/zoomOut.svg", "size": 328, "type": "image/svg+xml" }, { "file": "assets/images/packageLogos/react-pangolicons.svg", "size": 3454, "type": "image/svg+xml" }, { "file": "assets/images/packageLogos/svelte-pangolicons.svg", "size": 1892, "type": "image/svg+xml" }, { "file": "favicons/android-chrome-192x192.png", "size": 4655, "type": "image/png" }, { "file": "favicons/android-chrome-256x256.png", "size": 6153, "type": "image/png" }, { "file": "favicons/apple-touch-icon.png", "size": 3732, "type": "image/png" }, { "file": "favicons/browserconfig.xml", "size": 256, "type": "application/xml" }, { "file": "favicons/favicon-16x16.png", "size": 1142, "type": "image/png" }, { "file": "favicons/favicon-32x32.png", "size": 1741, "type": "image/png" }, { "file": "favicons/favicon.ico", "size": 15086, "type": "image/vnd.microsoft.icon" }, { "file": "favicons/mstile-150x150.png", "size": 4512, "type": "image/png" }, { "file": "favicons/safari-pinned-tab.svg", "size": 1849, "type": "image/svg+xml" }, { "file": "favicons/site.webmanifest", "size": 446, "type": "application/manifest+json" }, { "file": "scripts/pangolicons.esm.mjs", "size": 79475, "type": "application/javascript" }, { "file": "scripts/pangolicons.mjs", "size": 77910, "type": "application/javascript" }],
       layout: "src/routes/__layout.svelte",
       error: "src/routes/__error.svelte",
       routes: [
@@ -55925,13 +55968,19 @@ ${``}`;
           type: "endpoint",
           pattern: /^\/api\/getPackages\/?$/,
           params: empty,
-          load: () => Promise.resolve().then(() => (init_getPackages_e76a4a07(), getPackages_e76a4a07_exports))
+          load: () => Promise.resolve().then(() => (init_getPackages_6e65d5ce(), getPackages_6e65d5ce_exports))
         },
         {
           type: "endpoint",
           pattern: /^\/api\/getReadme\/?$/,
           params: empty,
           load: () => Promise.resolve().then(() => (init_getReadme_91c24d95(), getReadme_91c24d95_exports))
+        },
+        {
+          type: "endpoint",
+          pattern: /^\/api\/icon\/?$/,
+          params: empty,
+          load: () => Promise.resolve().then(() => (init_icon_66d3855b(), icon_66d3855b_exports))
         }
       ]
     };
@@ -55942,13 +55991,13 @@ ${``}`;
       externalFetch: hooks.externalFetch || fetch
     });
     module_lookup = {
-      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_81cef0c8(), layout_81cef0c8_exports)),
-      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_680f1118(), error_680f1118_exports)),
-      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_844f0e3c(), index_844f0e3c_exports)),
-      "src/routes/packages/index.svelte": () => Promise.resolve().then(() => (init_index_b23adaad(), index_b23adaad_exports)),
-      "src/routes/docs/[name].svelte": () => Promise.resolve().then(() => (init_name_e8b3aac8(), name_e8b3aac8_exports))
+      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_e004f785(), layout_e004f785_exports)),
+      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_8cc2d8f8(), error_8cc2d8f8_exports)),
+      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_16b35ce1(), index_16b35ce1_exports)),
+      "src/routes/packages/index.svelte": () => Promise.resolve().then(() => (init_index_406bb4cb(), index_406bb4cb_exports)),
+      "src/routes/docs/[name].svelte": () => Promise.resolve().then(() => (init_name_3fc5b36b(), name_3fc5b36b_exports))
     };
-    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-dd0c55f5.js", "css": ["assets/pages/__layout.svelte-0feadd29.css"], "js": ["pages/__layout.svelte-dd0c55f5.js", "chunks/vendor-dcf195ff.js", "chunks/Pangol-4cd0c652.js", "chunks/colorScheme-464b7e95.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-b2fa7a1f.js", "css": [], "js": ["pages/__error.svelte-b2fa7a1f.js", "chunks/vendor-dcf195ff.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-c61c1ef8.js", "css": ["assets/pages/index.svelte-9b758041.css"], "js": ["pages/index.svelte-c61c1ef8.js", "chunks/vendor-dcf195ff.js", "chunks/Card-05e0aa9c.js", "chunks/Pangol-4cd0c652.js", "chunks/colorScheme-464b7e95.js"], "styles": [] }, "src/routes/packages/index.svelte": { "entry": "pages/packages/index.svelte-9d497052.js", "css": [], "js": ["pages/packages/index.svelte-9d497052.js", "chunks/vendor-dcf195ff.js", "chunks/Card-05e0aa9c.js", "chunks/Pangol-4cd0c652.js"], "styles": [] }, "src/routes/docs/[name].svelte": { "entry": "pages/docs/_name_.svelte-bf00aa7d.js", "css": ["assets/pages/docs/_name_.svelte-cbc8f865.css"], "js": ["pages/docs/_name_.svelte-bf00aa7d.js", "chunks/vendor-dcf195ff.js"], "styles": [] } };
+    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-1ce44b81.js", "css": ["assets/pages/__layout.svelte-21d06fbf.css"], "js": ["pages/__layout.svelte-1ce44b81.js", "chunks/vendor-6996fb32.js", "chunks/Pangol-b2238606.js", "chunks/colorScheme-ec0d8dfc.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-d67c260a.js", "css": [], "js": ["pages/__error.svelte-d67c260a.js", "chunks/vendor-6996fb32.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-07fdabe0.js", "css": ["assets/pages/index.svelte-9b758041.css"], "js": ["pages/index.svelte-07fdabe0.js", "chunks/vendor-6996fb32.js", "chunks/Card-e2c27a64.js", "chunks/Pangol-b2238606.js", "chunks/colorScheme-ec0d8dfc.js"], "styles": [] }, "src/routes/packages/index.svelte": { "entry": "pages/packages/index.svelte-8ba86823.js", "css": [], "js": ["pages/packages/index.svelte-8ba86823.js", "chunks/vendor-6996fb32.js", "chunks/Card-e2c27a64.js", "chunks/Pangol-b2238606.js"], "styles": [] }, "src/routes/docs/[name].svelte": { "entry": "pages/docs/_name_.svelte-1e306d0e.js", "css": ["assets/pages/docs/_name_.svelte-cbc8f865.css"], "js": ["pages/docs/_name_.svelte-1e306d0e.js", "chunks/vendor-6996fb32.js"], "styles": [] } };
   }
 });
 
@@ -55958,7 +56007,7 @@ init_shims();
 // .svelte-kit/output/server/app.js
 init_shims();
 init_ssr();
-init_app_4e4fc98b();
+init_app_5ea73dc3();
 
 // .svelte-kit/node/middlewares.js
 import {
