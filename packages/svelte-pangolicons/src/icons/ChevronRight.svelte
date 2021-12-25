@@ -1,14 +1,11 @@
 
 		<script>
-			let className = '';
-			let size = '24';
-			let strokeWidth = '1.5';
-			let color = "currentColor";
-			let linejoin = "round";
-			let linecap = "round";
-
-			export let attributes = { className, size, strokeWidth, color, linejoin, linecap };
-			$: ({ className, size, strokeWidth, color, linejoin, linecap } = attributes);
+			export let className = '';
+			export let size = '24';
+			export let strokeWidth = '1.5';
+			export let color = "currentColor";
+			export let linejoin = "round";
+			export let linecap = "round";
 		</script>
 
 		<svg
