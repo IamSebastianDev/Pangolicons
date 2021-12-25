@@ -33,7 +33,7 @@ All icons are converted to PascalCase to work with svelte out of the box.
 
 ### `Attributes`
 
-You might pass a `attributes` object to the component containing the following properties:
+You might pass a `attributes` object to the component using the spread syntax containing the following properties:
 
 | Property    | Type    | Description                                        |
 | ----------- | ------- | -------------------------------------------------- |
@@ -43,6 +43,8 @@ You might pass a `attributes` object to the component containing the following p
 | color       | String? | The color of the stroke                            |
 | linejoin    | String? | The linejoin of the stroke                         |
 | linecap     | String? | The linecap of the stroke                          |
+
+You can also pass the properties individually.
 
 ```html
 <script>
@@ -60,7 +62,7 @@ You might pass a `attributes` object to the component containing the following p
 
 ...
 
-<Pangolin {attributes} />
+<Pangolin {...attributes} />
 ```
 
 ## 📋 License
