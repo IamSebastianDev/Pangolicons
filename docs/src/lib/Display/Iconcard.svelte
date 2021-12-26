@@ -17,7 +17,7 @@
 		class="flex flex-col justify-center items-center h-full w-full"
 	>
 		<Pangol {name} {attributes} classes="w-24 h-24 p-2" />
-		<p class="text-sm font-open font-light p-2 break-all text-center">
+		<p class="text-sm font-open font-light p-2 text-center">
 			{name}
 		</p>
 	</a>

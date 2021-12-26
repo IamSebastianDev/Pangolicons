@@ -126,7 +126,7 @@
 		{/if}
 	</form>
 	<div
-		class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 place-items-center gap-5 py-4 md:mx-4"
+		class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5 py-4 md:mx-4"
 	>
 		{#each filteredIcons as Icon, index (index)}
 			<Iconcard
