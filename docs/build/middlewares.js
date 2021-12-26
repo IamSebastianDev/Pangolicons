@@ -6823,13 +6823,13 @@ var init_icon_66d3855b = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/Pangol-518dc8e3.js
+// .svelte-kit/output/server/chunks/Pangol-d46fbe19.js
 import * as Pangolicons from "pangolicons";
 var Icon, Pangol;
-var init_Pangol_518dc8e3 = __esm({
-  ".svelte-kit/output/server/chunks/Pangol-518dc8e3.js"() {
+var init_Pangol_d46fbe19 = __esm({
+  ".svelte-kit/output/server/chunks/Pangol-d46fbe19.js"() {
     init_shims();
-    init_app_5f7d365b();
+    init_app_9c8715ca();
     Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let icon;
       let { name } = $$props;
@@ -6862,7 +6862,7 @@ var init_Pangol_518dc8e3 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/colorScheme-91c83624.js
+// .svelte-kit/output/server/chunks/colorScheme-9edf5305.js
 function writable2(value, start = noop3) {
   let stop;
   const subscribers = new Set();
@@ -6905,29 +6905,29 @@ function writable2(value, start = noop3) {
   return { set, update, subscribe: subscribe2 };
 }
 var subscriber_queue2, colorScheme, rainbow;
-var init_colorScheme_91c83624 = __esm({
-  ".svelte-kit/output/server/chunks/colorScheme-91c83624.js"() {
+var init_colorScheme_9edf5305 = __esm({
+  ".svelte-kit/output/server/chunks/colorScheme-9edf5305.js"() {
     init_shims();
-    init_app_5f7d365b();
+    init_app_9c8715ca();
     subscriber_queue2 = [];
     colorScheme = writable2();
     rainbow = writable2(false);
   }
 });
 
-// .svelte-kit/output/server/chunks/__layout-128945ab.js
-var layout_128945ab_exports = {};
-__export(layout_128945ab_exports, {
+// .svelte-kit/output/server/chunks/__layout-ea1a8a1e.js
+var layout_ea1a8a1e_exports = {};
+__export(layout_ea1a8a1e_exports, {
   default: () => _layout
 });
 import "pangolicons";
 var NavItem, NavLink, NavList, NavMobile, Navigation, Link, Footer, _layout;
-var init_layout_128945ab = __esm({
-  ".svelte-kit/output/server/chunks/__layout-128945ab.js"() {
+var init_layout_ea1a8a1e = __esm({
+  ".svelte-kit/output/server/chunks/__layout-ea1a8a1e.js"() {
     init_shims();
-    init_app_5f7d365b();
-    init_Pangol_518dc8e3();
-    init_colorScheme_91c83624();
+    init_app_9c8715ca();
+    init_Pangol_d46fbe19();
+    init_colorScheme_9edf5305();
     init_ssr();
     NavItem = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { classes = "" } = $$props;
@@ -7051,7 +7051,8 @@ ${validate_component(NavItem, "NavItem").$$render($$result, {}, {}, {
           }, {}, {})}`
         })}
 	${validate_component(NavLink, "NavLink").$$render($$result, {
-          classes: "p-2 mx-4 hover:bg-pangol-300 dark:hover:bg-white hover:text-white dark:hover:text-pangol-500 rounded-sm"
+          classes: "p-2 mx-4 hover:bg-pangol-300 dark:hover:bg-white hover:text-white dark:hover:text-pangol-500 rounded-sm",
+          title: "Change colour scheme"
         }, {}, {
           default: () => `${$rainbow ? `${validate_component(Pangol, "Pangol").$$render($$result, { name: "rainbow", attributes }, {}, {})}` : `${$colorScheme === "light" ? `${validate_component(Pangol, "Pangol").$$render($$result, { name: "moonStylized", attributes }, {}, {})}` : `${validate_component(Pangol, "Pangol").$$render($$result, { name: "sunSmall", attributes }, {}, {})}`}`}`
         })}</nav>`;
@@ -7085,14 +7086,16 @@ ${validate_component(NavItem, "NavItem").$$render($$result, {}, {}, {
       return `<footer class="${"max-w-screen-lg mx-auto border-t border-t-slate-100 dark:border-slate-700 relative text-slate-500 dark:text-slate-300 text-sm p-8 flex flex-row justify-around items-center"}"><p>Copyright \xA9 ${escape2(year)},
 		${validate_component(Link, "Link").$$render($$result, {
         href: "https://iamsebastian.dev",
-        target: "_blank"
+        target: "_blank",
+        title: "Creator"
       }, {}, {
         default: () => `Sebastian Heinz
 		`
       })}</p>
 	<div class="${"flex flex-row"}">${validate_component(Link, "Link").$$render($$result, {
         href: "https://twitter.com/iamsebastiandev",
-        target: "_blank"
+        target: "_blank",
+        title: "Twitter"
       }, {}, {
         default: () => `${validate_component(Pangol, "Pangol").$$render($$result, {
           name: "twitter",
@@ -7102,7 +7105,8 @@ ${validate_component(NavItem, "NavItem").$$render($$result, {}, {}, {
       })}
 		${validate_component(Link, "Link").$$render($$result, {
         href: "https://github.com/iamsebastiandev",
-        target: "_blank"
+        target: "_blank",
+        title: "Github"
       }, {}, {
         default: () => `${validate_component(Pangol, "Pangol").$$render($$result, {
           name: "github",
@@ -7114,11 +7118,13 @@ ${validate_component(NavItem, "NavItem").$$render($$result, {}, {}, {
 	<p>Built with
 		${validate_component(Link, "Link").$$render($$result, {
         href: "https://kit.svelte.dev",
-        target: "_blank"
+        target: "_blank",
+        title: "SvelteKit"
       }, {}, { default: () => `SvelteKit` })} &amp;
 		${validate_component(Link, "Link").$$render($$result, {
         href: "https://tailwindcss.com",
-        target: "_blank"
+        target: "_blank",
+        title: "TailwindCSS"
       }, {}, { default: () => `Tailwind` })} \u{1F60D} \u{1F680}
 	</p></footer>`;
     });
@@ -7132,17 +7138,17 @@ ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}`;
   }
 });
 
-// .svelte-kit/output/server/chunks/__error-d81937fe.js
-var error_d81937fe_exports = {};
-__export(error_d81937fe_exports, {
+// .svelte-kit/output/server/chunks/__error-fc31c66d.js
+var error_fc31c66d_exports = {};
+__export(error_fc31c66d_exports, {
   default: () => _error,
   load: () => load
 });
 var load, _error;
-var init_error_d81937fe = __esm({
-  ".svelte-kit/output/server/chunks/__error-d81937fe.js"() {
+var init_error_fc31c66d = __esm({
+  ".svelte-kit/output/server/chunks/__error-fc31c66d.js"() {
     init_shims();
-    init_app_5f7d365b();
+    init_app_9c8715ca();
     init_ssr();
     load = ({ error: error2, status }) => {
       return { props: { error: error2, status } };
@@ -7160,12 +7166,12 @@ var init_error_d81937fe = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/Card-dbbfc5af.js
+// .svelte-kit/output/server/chunks/Card-66ef3176.js
 var Section, ButtonLink, Card;
-var init_Card_dbbfc5af = __esm({
-  ".svelte-kit/output/server/chunks/Card-dbbfc5af.js"() {
+var init_Card_66ef3176 = __esm({
+  ".svelte-kit/output/server/chunks/Card-66ef3176.js"() {
     init_shims();
-    init_app_5f7d365b();
+    init_app_9c8715ca();
     Section = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { id } = $$props;
       if ($$props.id === void 0 && $$bindings.id && id !== void 0)
@@ -7193,20 +7199,20 @@ var init_Card_dbbfc5af = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-0985510e.js
-var index_0985510e_exports = {};
-__export(index_0985510e_exports, {
+// .svelte-kit/output/server/chunks/index-e671d2fc.js
+var index_e671d2fc_exports = {};
+__export(index_e671d2fc_exports, {
   default: () => Routes
 });
 import { Pangolicons as Pangolicons2 } from "pangolicons";
 var HeroLinks, Hero, Iconcard, IconSearch, IconController, Display, Routes;
-var init_index_0985510e = __esm({
-  ".svelte-kit/output/server/chunks/index-0985510e.js"() {
+var init_index_e671d2fc = __esm({
+  ".svelte-kit/output/server/chunks/index-e671d2fc.js"() {
     init_shims();
-    init_app_5f7d365b();
-    init_Card_dbbfc5af();
-    init_Pangol_518dc8e3();
-    init_colorScheme_91c83624();
+    init_app_9c8715ca();
+    init_Card_66ef3176();
+    init_Pangol_d46fbe19();
+    init_colorScheme_9edf5305();
     init_ssr();
     HeroLinks = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `<div class="${"flex flex-col md:flex-row justify-center md:items-center py-2 md:mx-auto"}">${validate_component(ButtonLink, "ButtonLink").$$render($$result, {
@@ -7225,9 +7231,9 @@ var init_index_0985510e = __esm({
     Hero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(Section, "Section").$$render($$result, { id: "hero" }, {}, {
         default: () => `<h1 class="${"text-5xl md:text-8xl text-center font-light font-comfortaa dark:text-white text-slate-700 py-6 mx-auto"}">Pangol<span class="${"text-pangol-500 font-semibold"}">icons</span></h1>
-	<h3 class="${"text-base md:text-xl text-center font-open font-thin dark:text-white text-slate-700 py-6 max-w-screen-sm tracking-wider mx-auto"}">A modern &amp; minimal open source SVG Icon library. As cute &amp; fierce as
+	<h2 class="${"text-base md:text-xl text-center font-open font-thin dark:text-white text-slate-700 py-6 max-w-screen-sm tracking-wider mx-auto"}">A modern &amp; minimal open source SVG Icon library. As cute &amp; fierce as
 		it&#39;s name suggests.
-	</h3>
+	</h2>
 	${validate_component(HeroLinks, "HeroLinks").$$render($$result, {}, {}, {})}`
       })}`;
     });
@@ -7246,7 +7252,7 @@ var init_index_0985510e = __esm({
           attributes,
           classes: "w-24 h-24 p-2"
         }, {}, {})}
-		<p class="${"text-sm font-open font-light p-2 break-all text-center"}">${escape2(name)}</p></a>`
+		<p class="${"text-sm font-open font-light p-2 text-center"}">${escape2(name)}</p></a>`
       })}`;
     });
     IconSearch = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -7331,7 +7337,7 @@ ${validate_component(Section, "Section").$$render($$result, { id: "icon-display"
 		${validate_component(IconController, "IconController").$$render($$result, { classes: "pl-2" }, {}, {
             default: () => `<h3 class="${"font-comfortaa font-semibold text-2xl text-slate-800 tracking-wider dark:text-white"}">Customize the Icons:
 			</h3>
-			<button class="${"p-2 hover:bg-pangol-300 dark:hover:bg-white hover:text-white dark:hover:text-pangol-500 rounded-sm"}" type="${"button"}">${validate_component(Pangol, "Pangol").$$render($$result, {
+			<button class="${"p-2 hover:bg-pangol-300 dark:hover:bg-white hover:text-white dark:hover:text-pangol-500 rounded-sm"}" type="${"button"}" name="${"Customize Icons"}" aria-label="${"Customize Icons"}">${validate_component(Pangol, "Pangol").$$render($$result, {
               name: "chevronDown",
               attributes: {
                 "stroke-width": 1.5,
@@ -7341,7 +7347,7 @@ ${validate_component(Section, "Section").$$render($$result, { id: "icon-display"
             }, {}, {})}</button>`
           })}
 		${``}</form>
-	<div class="${"grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 place-items-center gap-5 py-4 md:mx-4"}">${filteredIcons.length ? each(filteredIcons, (Icon2, index) => `${validate_component(Iconcard, "Iconcard").$$render($$result, {
+	<div class="${"grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5 py-4 md:mx-4"}">${filteredIcons.length ? each(filteredIcons, (Icon2, index) => `${validate_component(Iconcard, "Iconcard").$$render($$result, {
             name: Icon2.name,
             attributes: {
               "stroke-width": strokeWidth,
@@ -7369,9 +7375,9 @@ ${validate_component(Display, "Display").$$render($$result, {}, {}, {})}`;
   }
 });
 
-// .svelte-kit/output/server/chunks/index-ae664ad6.js
-var index_ae664ad6_exports = {};
-__export(index_ae664ad6_exports, {
+// .svelte-kit/output/server/chunks/index-2ddee65b.js
+var index_2ddee65b_exports = {};
+__export(index_2ddee65b_exports, {
   default: () => Packages,
   load: () => load2
 });
@@ -7383,12 +7389,12 @@ async function load2({ fetch: fetch2 }) {
   return { status: res.status, error: new Error() };
 }
 var Package, Packages;
-var init_index_ae664ad6 = __esm({
-  ".svelte-kit/output/server/chunks/index-ae664ad6.js"() {
+var init_index_2ddee65b = __esm({
+  ".svelte-kit/output/server/chunks/index-2ddee65b.js"() {
     init_shims();
-    init_app_5f7d365b();
-    init_Card_dbbfc5af();
-    init_Pangol_518dc8e3();
+    init_app_9c8715ca();
+    init_Card_66ef3176();
+    init_Pangol_d46fbe19();
     init_ssr();
     Package = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { pkg } = $$props;
@@ -55619,17 +55625,17 @@ var init_es = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/_name_-8bf8fbe2.js
-var name_8bf8fbe2_exports = {};
-__export(name_8bf8fbe2_exports, {
+// .svelte-kit/output/server/chunks/_name_-50fb8c0f.js
+var name_50fb8c0f_exports = {};
+__export(name_50fb8c0f_exports, {
   default: () => U5Bnameu5D,
   load: () => load3
 });
 var css, load3, U5Bnameu5D;
-var init_name_8bf8fbe2 = __esm({
-  ".svelte-kit/output/server/chunks/_name_-8bf8fbe2.js"() {
+var init_name_50fb8c0f = __esm({
+  ".svelte-kit/output/server/chunks/_name_-50fb8c0f.js"() {
     init_shims();
-    init_app_5f7d365b();
+    init_app_9c8715ca();
     init_marked_esm();
     init_es();
     init_ssr();
@@ -55668,7 +55674,7 @@ var init_name_8bf8fbe2 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/app-5f7d365b.js
+// .svelte-kit/output/server/chunks/app-9c8715ca.js
 function noop3() {
 }
 function run(fn) {
@@ -55781,9 +55787,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-8dbb2a18.js",
+      file: assets + "/_app/start-b68130e5.js",
       css: [assets + "/_app/assets/start-464e9d0a.css"],
-      js: [assets + "/_app/start-8dbb2a18.js", assets + "/_app/chunks/vendor-59710896.js"]
+      js: [assets + "/_app/start-b68130e5.js", assets + "/_app/chunks/vendor-59710896.js"]
     },
     fetched: void 0,
     floc: false,
@@ -55827,8 +55833,8 @@ function render(request, {
   return respond(__spreadProps(__spreadValues({}, request), { host }), options2, { prerender });
 }
 var current_component, escaped2, missing_component, on_destroy, css2, Root, base, assets, user_hooks, template, options2, default_settings, d, empty, manifest, get_hooks, module_lookup, metadata_lookup;
-var init_app_5f7d365b = __esm({
-  ".svelte-kit/output/server/chunks/app-5f7d365b.js"() {
+var init_app_9c8715ca = __esm({
+  ".svelte-kit/output/server/chunks/app-9c8715ca.js"() {
     init_shims();
     init_ssr();
     Promise.resolve();
@@ -55897,7 +55903,12 @@ ${``}`;
 			rel="stylesheet"
 		/>
 
-		<!-- FAVICONS -->
+		<meta
+			name="description"
+			content="Pangolicons is a open source minimal svg Icon library! Also super cute."
+		/>
+
+		<!--  FAVICONS  -->
 
 		<link
 			rel="apple-touch-icon"
@@ -56008,13 +56019,13 @@ ${``}`;
       externalFetch: hooks.externalFetch || fetch
     });
     module_lookup = {
-      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_128945ab(), layout_128945ab_exports)),
-      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_d81937fe(), error_d81937fe_exports)),
-      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_0985510e(), index_0985510e_exports)),
-      "src/routes/packages/index.svelte": () => Promise.resolve().then(() => (init_index_ae664ad6(), index_ae664ad6_exports)),
-      "src/routes/docs/[name].svelte": () => Promise.resolve().then(() => (init_name_8bf8fbe2(), name_8bf8fbe2_exports))
+      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_ea1a8a1e(), layout_ea1a8a1e_exports)),
+      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_fc31c66d(), error_fc31c66d_exports)),
+      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_e671d2fc(), index_e671d2fc_exports)),
+      "src/routes/packages/index.svelte": () => Promise.resolve().then(() => (init_index_2ddee65b(), index_2ddee65b_exports)),
+      "src/routes/docs/[name].svelte": () => Promise.resolve().then(() => (init_name_50fb8c0f(), name_50fb8c0f_exports))
     };
-    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-7ae74a57.js", "css": ["assets/pages/__layout.svelte-c4c34460.css"], "js": ["pages/__layout.svelte-7ae74a57.js", "chunks/vendor-59710896.js", "chunks/Pangol-e08da048.js", "chunks/colorScheme-a090f1b5.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-0ff606d0.js", "css": [], "js": ["pages/__error.svelte-0ff606d0.js", "chunks/vendor-59710896.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-1f86c88d.js", "css": ["assets/pages/index.svelte-9b758041.css"], "js": ["pages/index.svelte-1f86c88d.js", "chunks/vendor-59710896.js", "chunks/Card-fb84abcc.js", "chunks/Pangol-e08da048.js", "chunks/colorScheme-a090f1b5.js"], "styles": [] }, "src/routes/packages/index.svelte": { "entry": "pages/packages/index.svelte-f104ff3e.js", "css": [], "js": ["pages/packages/index.svelte-f104ff3e.js", "chunks/vendor-59710896.js", "chunks/Card-fb84abcc.js", "chunks/Pangol-e08da048.js"], "styles": [] }, "src/routes/docs/[name].svelte": { "entry": "pages/docs/_name_.svelte-243654cd.js", "css": ["assets/pages/docs/_name_.svelte-cbc8f865.css"], "js": ["pages/docs/_name_.svelte-243654cd.js", "chunks/vendor-59710896.js"], "styles": [] } };
+    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-7ea5ddf7.js", "css": ["assets/pages/__layout.svelte-2731b0da.css"], "js": ["pages/__layout.svelte-7ea5ddf7.js", "chunks/vendor-59710896.js", "chunks/Pangol-e08da048.js", "chunks/colorScheme-a090f1b5.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-0ff606d0.js", "css": [], "js": ["pages/__error.svelte-0ff606d0.js", "chunks/vendor-59710896.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-39f4ab39.js", "css": ["assets/pages/index.svelte-9b758041.css"], "js": ["pages/index.svelte-39f4ab39.js", "chunks/vendor-59710896.js", "chunks/Card-fb84abcc.js", "chunks/Pangol-e08da048.js", "chunks/colorScheme-a090f1b5.js"], "styles": [] }, "src/routes/packages/index.svelte": { "entry": "pages/packages/index.svelte-f104ff3e.js", "css": [], "js": ["pages/packages/index.svelte-f104ff3e.js", "chunks/vendor-59710896.js", "chunks/Card-fb84abcc.js", "chunks/Pangol-e08da048.js"], "styles": [] }, "src/routes/docs/[name].svelte": { "entry": "pages/docs/_name_.svelte-243654cd.js", "css": ["assets/pages/docs/_name_.svelte-cbc8f865.css"], "js": ["pages/docs/_name_.svelte-243654cd.js", "chunks/vendor-59710896.js"], "styles": [] } };
   }
 });
 
@@ -56024,7 +56035,7 @@ init_shims();
 // .svelte-kit/output/server/app.js
 init_shims();
 init_ssr();
-init_app_5f7d365b();
+init_app_9c8715ca();
 
 // .svelte-kit/node/middlewares.js
 import {
