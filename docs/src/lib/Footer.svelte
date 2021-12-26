@@ -12,22 +12,34 @@
 >
 	<p>
 		Copyright &copy; {year},
-		<Link href="https://iamsebastian.dev" target="_blank">
+		<Link href="https://iamsebastian.dev" target="_blank" title="Creator">
 			Sebastian Heinz
 		</Link>
 	</p>
 	<div class="flex flex-row">
-		<Link href="https://twitter.com/iamsebastiandev" target="_blank">
+		<Link
+			href="https://twitter.com/iamsebastiandev"
+			target="_blank"
+			title="Twitter"
+		>
 			<Pangol name="twitter" classes="px-4" {attributes} />
 		</Link>
-		<Link href="https://github.com/iamsebastiandev" target="_blank">
+		<Link
+			href="https://github.com/iamsebastiandev"
+			target="_blank"
+			title="Github"
+		>
 			<Pangol name="github" classes="px-4" {attributes} />
 		</Link>
 	</div>
 
 	<p>
 		Built with
-		<Link href="https://kit.svelte.dev" target="_blank">SvelteKit</Link> &
-		<Link href="https://tailwindcss.com" target="_blank">Tailwind</Link> 😍 🚀
+		<Link href="https://kit.svelte.dev" target="_blank" title="SvelteKit"
+			>SvelteKit</Link
+		> &
+		<Link href="https://tailwindcss.com" target="_blank" title="TailwindCSS"
+			>Tailwind</Link
+		> 😍 🚀
 	</p>
 </footer>

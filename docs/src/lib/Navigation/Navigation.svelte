@@ -47,6 +47,7 @@
 	<NavLink
 		on:click={toggleColorScheme}
 		classes="p-2 mx-4 hover:bg-pangol-300 dark:hover:bg-white hover:text-white dark:hover:text-pangol-500 rounded-sm"
+		title="Change colour scheme"
 	>
 		{#if $rainbow}
 			<Pangol name="rainbow" {attributes} />

@@ -91,6 +91,8 @@
 			<button
 				class="p-2 hover:bg-pangol-300 dark:hover:bg-white hover:text-white dark:hover:text-pangol-500 rounded-sm"
 				type="button"
+				name="Customize Icons"
+				aria-label="Customize Icons"
 				on:click={toggleCustomizer}
 			>
 				<Pangol
