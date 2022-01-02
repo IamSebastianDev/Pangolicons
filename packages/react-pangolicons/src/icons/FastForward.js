@@ -17,10 +17,10 @@
           fill="none"
           viewBox="0 0 24 24"
           stroke={color}
-          stroke-width={strokeWidth}
-          stroke-linecap={linecap}
-          stroke-linejoin={linejoin}
-          class="pangolicons pangolicons-fastForward {className}"
+          strokeWidth={strokeWidth}
+          strokeLinecap={linecap}
+          strokeLinejoin={linejoin}
+          className="pangolicons pangolicons-fastForward {className}"
         >
           <polygon  points="12 12 2 22 2 2 12 12"/><polygon  points="22 12 12 22 12 2 22 12"/>
         </svg>

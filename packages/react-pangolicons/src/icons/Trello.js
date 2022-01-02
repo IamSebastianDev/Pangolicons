@@ -17,10 +17,10 @@
           fill="none"
           viewBox="0 0 24 24"
           stroke={color}
-          stroke-width={strokeWidth}
-          stroke-linecap={linecap}
-          stroke-linejoin={linejoin}
-          class="pangolicons pangolicons-trello {className}"
+          strokeWidth={strokeWidth}
+          strokeLinecap={linecap}
+          strokeLinejoin={linejoin}
+          className="pangolicons pangolicons-trello {className}"
         >
           <rect  x="4.04" y="2" width="16.18" height="20"/><rect  x="7.27" y="4.94" width="3.53" height="14.12"/><rect  x="13.74" y="4.94" width="3.53" height="7.06"/>
         </svg>

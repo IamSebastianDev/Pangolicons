@@ -17,10 +17,10 @@
           fill="none"
           viewBox="0 0 24 24"
           stroke={color}
-          stroke-width={strokeWidth}
-          stroke-linecap={linecap}
-          stroke-linejoin={linejoin}
-          class="pangolicons pangolicons-eyeOpen {className}"
+          strokeWidth={strokeWidth}
+          strokeLinecap={linecap}
+          strokeLinejoin={linejoin}
+          className="pangolicons pangolicons-eyeOpen {className}"
         >
           <ellipse  cx="12" cy="12" rx="10" ry="6.47"/><circle  cx="12" cy="12" r="2.94"/>
         </svg>

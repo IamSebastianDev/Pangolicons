@@ -17,10 +17,10 @@
           fill="none"
           viewBox="0 0 24 24"
           stroke={color}
-          stroke-width={strokeWidth}
-          stroke-linecap={linecap}
-          stroke-linejoin={linejoin}
-          class="pangolicons pangolicons-umbrella {className}"
+          strokeWidth={strokeWidth}
+          strokeLinecap={linecap}
+          strokeLinejoin={linejoin}
+          className="pangolicons pangolicons-umbrella {className}"
         >
           <path  d="M2.59,11.41a9.41,9.41,0,0,1,18.82,0H2.59Z"/><path  d="M16.71,19.88A2.25,2.25,0,0,1,14.35,22,2.24,2.24,0,0,1,12,19.88V11.41"/>
         </svg>

@@ -17,10 +17,10 @@
           fill="none"
           viewBox="0 0 24 24"
           stroke={color}
-          stroke-width={strokeWidth}
-          stroke-linecap={linecap}
-          stroke-linejoin={linejoin}
-          class="pangolicons pangolicons-chevronsUp {className}"
+          strokeWidth={strokeWidth}
+          strokeLinecap={linecap}
+          strokeLinejoin={linejoin}
+          className="pangolicons pangolicons-chevronsUp {className}"
         >
           <polyline  points="5.37 19 12 12.37 18.63 19"/><polyline  points="5.37 11.63 12 5 18.63 11.63"/>
         </svg>

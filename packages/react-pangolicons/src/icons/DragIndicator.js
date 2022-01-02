@@ -17,10 +17,10 @@
           fill="none"
           viewBox="0 0 24 24"
           stroke={color}
-          stroke-width={strokeWidth}
-          stroke-linecap={linecap}
-          stroke-linejoin={linejoin}
-          class="pangolicons pangolicons-dragIndicator {className}"
+          strokeWidth={strokeWidth}
+          strokeLinecap={linecap}
+          strokeLinejoin={linejoin}
+          className="pangolicons pangolicons-dragIndicator {className}"
         >
           <circle  cx="12" cy="2.91" r="0.91"/><circle  cx="21.09" cy="12" r="0.91"/><circle  cx="12" cy="21.09" r="0.91"/><circle  cx="2.91" cy="12" r="0.91"/>
         </svg>

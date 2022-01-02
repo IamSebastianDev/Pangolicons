@@ -17,10 +17,10 @@
           fill="none"
           viewBox="0 0 24 24"
           stroke={color}
-          stroke-width={strokeWidth}
-          stroke-linecap={linecap}
-          stroke-linejoin={linejoin}
-          class="pangolicons pangolicons-circleArrowRightDown {className}"
+          strokeWidth={strokeWidth}
+          strokeLinecap={linecap}
+          strokeLinejoin={linejoin}
+          className="pangolicons pangolicons-circleArrowRightDown {className}"
         >
           <polyline  points="15.33 10.21 15.33 15.33 10.21 15.33 15.33 15.33 8.67 8.67"/><circle  cx="12" cy="12" r="10"/>
         </svg>

@@ -17,10 +17,10 @@
           fill="none"
           viewBox="0 0 24 24"
           stroke={color}
-          stroke-width={strokeWidth}
-          stroke-linecap={linecap}
-          stroke-linejoin={linejoin}
-          class="pangolicons pangolicons-checkmarkCircle {className}"
+          strokeWidth={strokeWidth}
+          strokeLinecap={linecap}
+          strokeLinejoin={linejoin}
+          className="pangolicons pangolicons-checkmarkCircle {className}"
         >
           <polyline  points="20.9 4.78 10.34 14.78 7.54 11.84"/><path  d="M22,12a10,10,0,1,1-6.36-9.32"/>
         </svg>

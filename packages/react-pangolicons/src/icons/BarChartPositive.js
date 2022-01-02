@@ -17,10 +17,10 @@
           fill="none"
           viewBox="0 0 24 24"
           stroke={color}
-          stroke-width={strokeWidth}
-          stroke-linecap={linecap}
-          stroke-linejoin={linejoin}
-          class="pangolicons pangolicons-barChartPositive {className}"
+          strokeWidth={strokeWidth}
+          strokeLinecap={linecap}
+          strokeLinejoin={linejoin}
+          className="pangolicons pangolicons-barChartPositive {className}"
         >
           <line  x1="19.5" y1="2" x2="19.5" y2="22"/><line  x1="4.5" y1="15.53" x2="4.5" y2="22"/><line  x1="9.5" y1="22" x2="9.5" y2="12.22"/><line  x1="14.5" y1="22" x2="14.5" y2="7.29"/>
         </svg>

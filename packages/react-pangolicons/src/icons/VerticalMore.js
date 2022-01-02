@@ -17,10 +17,10 @@
           fill="none"
           viewBox="0 0 24 24"
           stroke={color}
-          stroke-width={strokeWidth}
-          stroke-linecap={linecap}
-          stroke-linejoin={linejoin}
-          class="pangolicons pangolicons-verticalMore {className}"
+          strokeWidth={strokeWidth}
+          strokeLinecap={linecap}
+          strokeLinejoin={linejoin}
+          className="pangolicons pangolicons-verticalMore {className}"
         >
           <rect  x="11.09" y="2" width="1.82" height="1.82"/><rect  x="11.09" y="11.09" width="1.82" height="1.82"/><rect  x="11.09" y="20.18" width="1.82" height="1.82"/>
         </svg>

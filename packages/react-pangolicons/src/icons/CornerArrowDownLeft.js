@@ -17,10 +17,10 @@
           fill="none"
           viewBox="0 0 24 24"
           stroke={color}
-          stroke-width={strokeWidth}
-          stroke-linecap={linecap}
-          stroke-linejoin={linejoin}
-          class="pangolicons pangolicons-cornerArrowDownLeft {className}"
+          strokeWidth={strokeWidth}
+          strokeLinecap={linecap}
+          strokeLinejoin={linejoin}
+          className="pangolicons pangolicons-cornerArrowDownLeft {className}"
         >
           <path  d="M11.05,22,4.61,15.56l6.44-6.44L4.61,15.56H15.79a3.6,3.6,0,0,0,3.6-3.6V2"/>
         </svg>
