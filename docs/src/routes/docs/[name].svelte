@@ -2,7 +2,17 @@
 	export const load = async ({ page, fetch }) => {
 		const { name } = page.params;
 
-		const res = await fetch(`/api/getReadme?name=${name}&readme=readme.md`);
+		// get the package data from the api
+		const pkg = await fetch(`/api/getPackages`);
+		const pkgList = await pkg.json();
+
+		const { readmeFilename } = pkgList.find((elem) => elem.name === name);
+
+		// grab the readme markdown from the package
+
+		const res = await fetch(
+			`/api/getReadme?name=${name}&readme=${readmeFilename}`
+		);
 
 		if (res.ok) return { props: { markdown: await res.text(), name } };
 
