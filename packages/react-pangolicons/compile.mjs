@@ -124,7 +124,7 @@ const createReactFileContents = ({ name, svgPath }) => {
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-${name} {className}"
+          className={['pangolicons pangolicons-${name}', className].join(" ")}
         >
           ${svgPath}
         </svg>
