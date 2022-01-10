@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-triangleInverted {className}"
+          className={['pangolicons pangolicons-triangleInverted', className].join(" ")}
         >
           <polygon  points="12 20.66 2 3.34 22 3.34 12 20.66"/>
         </svg>

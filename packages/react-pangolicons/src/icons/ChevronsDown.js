@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-chevronsDown {className}"
+          className={['pangolicons pangolicons-chevronsDown', className].join(" ")}
         >
           <polyline  points="5.37 5 12 11.63 18.63 5"/><polyline  points="5.37 12.37 12 19 18.63 12.37"/>
         </svg>

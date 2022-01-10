@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-cornerArrowRightDown {className}"
+          className={['pangolicons pangolicons-cornerArrowRightDown', className].join(" ")}
         >
           <path  d="M22,13l-6.44,6.44L9.12,13l6.44,6.44V8.21A3.6,3.6,0,0,0,12,4.61H2"/>
         </svg>

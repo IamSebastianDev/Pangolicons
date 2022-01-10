@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-search {className}"
+          className={['pangolicons pangolicons-search', className].join(" ")}
         >
           <circle  cx="14.86" cy="9.14" r="7.14"/><path  d="M9.35,14.65,2,22Z"/>
         </svg>

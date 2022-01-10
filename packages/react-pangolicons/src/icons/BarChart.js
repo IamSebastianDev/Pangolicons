@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-barChart {className}"
+          className={['pangolicons pangolicons-barChart', className].join(" ")}
         >
           <line  x1="4.5" y1="2" x2="4.5" y2="22"/><line  x1="19.5" y1="8.25" x2="19.5" y2="22"/><line  x1="14.5" y1="22" x2="14.5" y2="12.22"/><line  x1="9.5" y1="22" x2="9.5" y2="4.7"/>
         </svg>

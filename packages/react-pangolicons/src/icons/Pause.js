@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-pause {className}"
+          className={['pangolicons pangolicons-pause', className].join(" ")}
         >
           <line  x1="6.55" y1="2" x2="6.55" y2="22"/><line  x1="17.45" y1="2" x2="17.45" y2="22"/>
         </svg>

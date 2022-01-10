@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-layoutColumns {className}"
+          className={['pangolicons pangolicons-layoutColumns', className].join(" ")}
         >
           <rect  x="2" y="2" width="20" height="20"/><line  x1="8.47" y1="2" x2="8.47" y2="22"/><line  x1="15.53" y1="2" x2="15.53" y2="22"/>
         </svg>

@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-zoomOut {className}"
+          className={['pangolicons pangolicons-zoomOut', className].join(" ")}
         >
           <circle  cx="14.86" cy="9.14" r="7.14"/><path  d="M9.35,14.65,2,22Z"/><line  x1="12" y1="9.14" x2="18.2" y2="9.14"/>
         </svg>

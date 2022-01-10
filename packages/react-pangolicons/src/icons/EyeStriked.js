@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-eyeStriked {className}"
+          className={['pangolicons pangolicons-eyeStriked', className].join(" ")}
         >
           <path  d="M13.82,18.29a9.13,9.13,0,0,1-1.82.18C6.48,18.47,2,13.29,2,12c0-.61,1-2.1,2.65-3.49"/><path  d="M10.45,5.66A9.92,9.92,0,0,1,12,5.53c5.52,0,10,5.18,10,6.47,0,.66-1.17,2.33-3,3.81"/><circle  cx="12" cy="12" r="2.94"/><line  x1="4.65" y1="3.67" x2="19.35" y2="20.33"/>
         </svg>

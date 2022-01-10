@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-skipBack {className}"
+          className={['pangolicons pangolicons-skipBack', className].join(" ")}
         >
           <polygon  points="6.91 12 18.45 22 18.45 2 6.91 12"/><line  x1="5.55" y1="22" x2="5.55" y2="2"/>
         </svg>

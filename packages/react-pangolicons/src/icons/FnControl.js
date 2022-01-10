@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-fnControl {className}"
+          className={['pangolicons pangolicons-fnControl', className].join(" ")}
         >
           <rect  x="2" y="2" width="20" height="20" rx="1.5"/><polyline  points="7.88 10.53 12 6.41 16.12 10.53"/>
         </svg>

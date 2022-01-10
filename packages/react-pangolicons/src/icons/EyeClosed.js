@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-eyeClosed {className}"
+          className={['pangolicons pangolicons-eyeClosed', className].join(" ")}
         >
           <ellipse  cx="12" cy="12" rx="10" ry="6.47"/><line  x1="8.67" y1="12" x2="15.33" y2="12"/>
         </svg>

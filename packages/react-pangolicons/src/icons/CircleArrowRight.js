@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-circleArrowRight {className}"
+          className={['pangolicons pangolicons-circleArrowRight', className].join(" ")}
         >
           <polyline  points="13.09 8.37 16.71 12 13.09 15.63 16.71 12 7.29 12"/><circle  cx="12" cy="12" r="10"/>
         </svg>

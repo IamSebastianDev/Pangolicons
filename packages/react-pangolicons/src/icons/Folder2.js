@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-folder2 {className}"
+          className={['pangolicons pangolicons-folder2', className].join(" ")}
         >
           <polygon  points="22 19.65 2 19.65 2 4.35 7.91 4.35 10.82 9.06 22 9.06 22 19.65"/><path  d="M12,4.35h8.67A1.34,1.34,0,0,1,22,5.68v.44"/>
         </svg>

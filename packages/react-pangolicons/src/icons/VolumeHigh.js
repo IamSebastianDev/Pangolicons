@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-volumeHigh {className}"
+          className={['pangolicons pangolicons-volumeHigh', className].join(" ")}
         >
           <rect  x="2" y="8.43" width="4.29" height="7.14"/><polygon  points="12 2.71 6.29 8.43 6.29 15.57 12 21.29 12 2.71"/><path  d="M16.29,7.71a9.17,9.17,0,0,1,0,8.58"/><path  d="M20.57,6.29a12.1,12.1,0,0,1,0,11.42"/>
         </svg>

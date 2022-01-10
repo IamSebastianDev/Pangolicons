@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-marker {className}"
+          className={['pangolicons pangolicons-marker', className].join(" ")}
         >
           <polygon  points="8.41 20.5 2 20.5 18.6 3.5 22 6.9 8.41 20.5"/>
         </svg>

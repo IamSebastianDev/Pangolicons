@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-file {className}"
+          className={['pangolicons pangolicons-file', className].join(" ")}
         >
           <path  d="M13.37,2V9.14h6.84L13.37,2H5.7A2,2,0,0,0,3.79,4V20A2,2,0,0,0,5.7,22H18.3a2,2,0,0,0,1.91-2V9.14Z"/>
         </svg>

@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-pieChart {className}"
+          className={['pangolicons pangolicons-pieChart', className].join(" ")}
         >
           <path  d="M22,12A10,10,0,0,0,12,2"/><path  d="M9.16,2.41A10,10,0,1,0,21.55,15"/><polyline  points="12 2 12 12 22 12"/>
         </svg>

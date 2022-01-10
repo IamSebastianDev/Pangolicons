@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-convertToUnorderedList {className}"
+          className={['pangolicons pangolicons-convertToUnorderedList', className].join(" ")}
         >
           <line  x1="8.67" y1="12" x2="22" y2="12"/><line  x1="2" y1="5.33" x2="22" y2="5.33"/><line  x1="8.67" y1="18.67" x2="22" y2="18.67"/><line  x1="3.65" y1="12" x2="3.67" y2="12"/><line  x1="3.65" y1="18.67" x2="3.67" y2="18.67"/>
         </svg>

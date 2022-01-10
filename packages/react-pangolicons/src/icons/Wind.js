@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-wind {className}"
+          className={['pangolicons pangolicons-wind', className].join(" ")}
         >
           <path  d="M8.33,2.57a3.12,3.12,0,1,1,1.79,5.68H2"/><path  d="M17.08,6.32A3.12,3.12,0,1,1,18.87,12H2"/><path  d="M12.08,21.43a3.12,3.12,0,1,0,1.79-5.68H2"/>
         </svg>

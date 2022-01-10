@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-trello {className}"
+          className={['pangolicons pangolicons-trello', className].join(" ")}
         >
           <rect  x="4.04" y="2" width="16.18" height="20"/><rect  x="7.27" y="4.94" width="3.53" height="14.12"/><rect  x="13.74" y="4.94" width="3.53" height="7.06"/>
         </svg>

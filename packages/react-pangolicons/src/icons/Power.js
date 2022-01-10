@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-power {className}"
+          className={['pangolicons pangolicons-power', className].join(" ")}
         >
           <path  d="M16.4,6.06a8.55,8.55,0,1,1-8.8,0"/><polyline  points="12 1.93 12 7.5 12 13.47"/>
         </svg>

@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-fullscreenExit {className}"
+          className={['pangolicons pangolicons-fullscreenExit', className].join(" ")}
         >
           <polyline  points="6 2 6 6 2 6"/><polyline  points="18 2 18 6 22 6"/><polyline  points="6 22 6 18 2 18"/><polyline  points="18 22 18 18 22 18"/>
         </svg>

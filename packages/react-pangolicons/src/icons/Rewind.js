@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-rewind {className}"
+          className={['pangolicons pangolicons-rewind', className].join(" ")}
         >
           <polygon  points="12 12 22 22 22 2 12 12"/><polygon  points="2 12 12 22 12 2 2 12"/>
         </svg>

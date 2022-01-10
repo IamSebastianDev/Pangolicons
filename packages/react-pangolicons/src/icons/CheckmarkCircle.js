@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-checkmarkCircle {className}"
+          className={['pangolicons pangolicons-checkmarkCircle', className].join(" ")}
         >
           <polyline  points="20.9 4.78 10.34 14.78 7.54 11.84"/><path  d="M22,12a10,10,0,1,1-6.36-9.32"/>
         </svg>

@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-microphone {className}"
+          className={['pangolicons pangolicons-microphone', className].join(" ")}
         >
           <path  d="M12.64,13.43H11.36a1.5,1.5,0,0,1-1.5-1.5V3.5A1.5,1.5,0,0,1,11.36,2h1.28a1.5,1.5,0,0,1,1.5,1.5v8.43A1.5,1.5,0,0,1,12.64,13.43ZM6.29,11.29a5.71,5.71,0,0,0,11.42,0M12,17v4.94m2.14.06H9.86"/>
         </svg>

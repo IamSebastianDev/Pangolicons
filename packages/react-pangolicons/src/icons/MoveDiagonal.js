@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-moveDiagonal {className}"
+          className={['pangolicons pangolicons-moveDiagonal', className].join(" ")}
         >
           <polyline  points="16 20.5 20.5 20.5 20.5 16"/><polyline  points="8 3.5 3.5 3.5 3.5 8"/><line  x1="3.5" y1="3.5" x2="20.5" y2="20.5"/>
         </svg>

@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-fastForward {className}"
+          className={['pangolicons pangolicons-fastForward', className].join(" ")}
         >
           <polygon  points="12 12 2 22 2 2 12 12"/><polygon  points="22 12 12 22 12 2 22 12"/>
         </svg>

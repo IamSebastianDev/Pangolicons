@@ -20,7 +20,7 @@
           strokeWidth={strokeWidth}
           strokeLinecap={linecap}
           strokeLinejoin={linejoin}
-          className="pangolicons pangolicons-webcam {className}"
+          className={['pangolicons pangolicons-webcam', className].join(" ")}
         >
           <circle  cx="12" cy="9.06" r="2.35"/><circle  cx="12" cy="9.06" r="7.06"/><line  x1="12" y1="16.12" x2="12" y2="22"/><line  x1="6.71" y1="22" x2="17.29" y2="22"/>
         </svg>
