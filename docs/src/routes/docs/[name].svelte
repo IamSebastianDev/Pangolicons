@@ -1,6 +1,6 @@
 <script context="module">
-	export const load = async ({ page, fetch }) => {
-		const { name } = page.params;
+	export const load = async ({ params, fetch }) => {
+		const { name } = params;
 
 		// get the package data from the api
 		const pkg = await fetch(`/api/getPackages`);

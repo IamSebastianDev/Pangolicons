@@ -8,9 +8,9 @@ const getReadme = async ({ name, readme }) => {
 	return markdown;
 };
 
-export async function get({ query }) {
-	const name = query.get('name');
-	const readme = query.get('readme');
+export async function get({ url }) {
+	const name = url.searchParams.get('name');
+	const readme = url.searchParams.get('readme');
 
 	return {
 		body: await getReadme({ name, readme }),
