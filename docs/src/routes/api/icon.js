@@ -26,11 +26,12 @@ const createIcon = async ({ name, color, size, width }) => {
     </svg>`;
 };
 
-export async function get({ query }) {
-	const name = query.get('name');
-	const color = query.get('color');
-	const size = query.get('size');
-	const width = query.get('width');
+export async function get({ url }) {
+	const { searchParams: params } = url;
+	const name = params.get('name');
+	const color = params.get('color');
+	const size = params.get('size');
+	const width = params.get('width');
 
 	return {
 		body: await createIcon({ name, color, size, width }),
