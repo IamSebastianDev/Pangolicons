@@ -71,7 +71,7 @@ const compile = async ({ src, iconsSrc, index }) => {
 
 		// append the export in the index js & index.d.ts file
 		const statement = `export { default as ${componentName} } from './icons/${componentName}.svelte';\n\n`;
-		const type = `export class ${componentName} extends SvelteComponentTyped<{attributes?: {size?: number | string, strokeWidth?: number | string, className?: string, color?: string, linejoin?: string, linecap?: string}}> {}\n`;
+		const type = `export class ${componentName} extends SvelteComponentTyped< {size?: number | string, strokeWidth?: number | string, className?: string, color?: string, linejoin?: string, linecap?: string}> {}\n`;
 
 		await fs.appendFile(
 			path.join(process.cwd(), index),
