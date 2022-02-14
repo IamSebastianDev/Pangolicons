@@ -1,6 +1,7 @@
 
 		<script>
-			export let className = '';
+			let className = ''; 
+			export {className as class}; 
 			export let size = '24';
 			export let strokeWidth = '1.5';
 			export let color = "currentColor";
