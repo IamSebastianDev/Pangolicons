@@ -38,7 +38,7 @@ You might pass a `attributes` object to the component using the spread syntax co
 | Property    | Type    | Description                                        |
 | ----------- | ------- | -------------------------------------------------- |
 | size        | String? | The size of the Icon.                              |
-| className   | String? | A custom class name to append to the icon classes. |
+| class       | String? | A custom class name to append to the icon classes. |
 | strokeWidth | String? | The stroke-width property of the svg               |
 | color       | String? | The color of the stroke                            |
 | linejoin    | String? | The linejoin of the stroke                         |
@@ -53,7 +53,7 @@ You can also pass the properties individually.
 	const attributes = {
 		size: '24',
 		strokeWidth: '1.5',
-		className: 'pangolicon',
+		class: 'pangolicon',
 		color: 'currentColor',
 		linejoin: 'round',
 		linecap: 'round',
