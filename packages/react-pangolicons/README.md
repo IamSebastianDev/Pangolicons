@@ -61,7 +61,7 @@ export default () => {
 };
 ```
 
-You could also use destructuring to pass the props.
+You could also use the spread operator to pass the props.
 
 ```js
 import React from 'react';
