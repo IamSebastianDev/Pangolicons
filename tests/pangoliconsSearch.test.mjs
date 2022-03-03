@@ -6,7 +6,7 @@
  */
 
 import fs from 'fs/promises';
-import { Pangolicons } from '../dist/pangolicons.esm.mjs';
+import { Pangolicons } from '../packages/pangolicons/dist/pangolicons.esm.mjs';
 
 export default {
 	name: 'Pangolicons.search()',

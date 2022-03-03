@@ -6,7 +6,7 @@ export default {
 	name: 'Treeshakeable',
 	description: 'Check if the ESM version of the file is treeshakeable',
 	run: async ({ Testrunner }) => {
-		const esmPath = './dist/pangolicons.esm.mjs';
+		const esmPath = './packages/pangolicons/dist/pangolicons.esm.mjs';
 
 		return new Promise((resolve, reject) => {
 			exec(`npx agadoo ${esmPath}`, (error, stdout, stderr) => {
