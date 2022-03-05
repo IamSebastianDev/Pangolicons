@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Hero from '$lib/layouts/Hero.svelte';
+    import Icons from '$lib/layouts/Icons.svelte';
+</script>
+
+<main>
+    <Hero />
+    <Icons />
+</main>
