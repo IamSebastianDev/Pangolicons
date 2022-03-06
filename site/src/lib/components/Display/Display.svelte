@@ -12,13 +12,12 @@
 <div
     class="my-7 grid grid-cols-2 place-items-center justify-items-center gap-7 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
 >
-    {#each Object.values(filteredIcons) as { name } (name)}
-        <Iconcard {name}>
+    {#each Object.values(filteredIcons) as { name }, index (name)}
+        <Iconcard {name} delay={index} color={$color}>
             <svelte:component
                 this={allIcons[name[0].toUpperCase() + name.slice(1)]}
                 size={$size}
                 strokeWidth={$strokeWidth}
-                color={$color}
             />
         </Iconcard>
     {:else}
