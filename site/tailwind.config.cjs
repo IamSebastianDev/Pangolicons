@@ -20,6 +20,21 @@ const config = {
                     900: '#1E3948',
                 },
             },
+            animation: {
+                rainbow: 'rainbow 5s infinite',
+            },
+            keyframes: {
+                rainbow: {
+                    '0%': { color: '#ef4444' },
+                    '15%': { color: '#f97316' },
+                    '30%': { color: '#eab308' },
+                    '45%': { color: '#22c55e' },
+                    '60%': { color: '#0891b2' },
+                    '75%': { color: '#3b82f6' },
+                    '90%': { color: '#8b5cf6' },
+                    '100%': { color: '#ef4444' },
+                },
+            },
         },
     },
 
