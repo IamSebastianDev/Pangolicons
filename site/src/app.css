@@ -18,7 +18,7 @@
     }
 
     .link {
-        @apply inline-flex flex-row items-center hover:underline;
+        @apply inline-flex flex-row items-center;
     }
 }
 
