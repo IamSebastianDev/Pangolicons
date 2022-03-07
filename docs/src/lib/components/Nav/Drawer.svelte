@@ -10,7 +10,7 @@
     <aside
         transition:fly={{ x: -500 }}
         id="nav-drawer"
-        class="bg-pangol-500 fixed inset-0 flex flex-col items-center justify-center text-white"
+        class="bg-pangol-500 fixed inset-0 z-50 flex flex-col items-center justify-center text-white"
     >
         <div class="absolute top-0 right-0 p-4">
             <button on:click={() => showDrawer.set(false)}><X /></button>
