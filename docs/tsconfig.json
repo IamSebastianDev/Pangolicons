@@ -1,6 +1,8 @@
 {
     "extends": "./.svelte-kit/tsconfig.json",
     "compilerOptions": {
-        "lib": ["es2021"]
+        "lib": ["es2021"],
+        "declaration": true,
+        "emitDeclarationOnly": true
     }
 }
