@@ -7,6 +7,8 @@
     export let name: string;
     export let delay: number = 0;
     export let color: string;
+    export let size: number;
+    export let strokeWidth: number;
 
     let element;
     let isVisible: boolean = true;
@@ -35,7 +37,8 @@
         'relative flex aspect-square h-full w-full flex-col items-center justify-center rounded-lg border border-zinc-300 px-4 py-6 hover:ring-1 dark:border-zinc-700',
         $theme.fancy && isVisible ? 'motion-safe:animate-rainbow' : ''
     )}
-    href="/"
+    href="/api/{name}?stroke={strokeWidth}&size={size}&color={color.replace('#', '')}"
+    download="{name}.svg"
 >
     <span class="absolute">
         <slot />
