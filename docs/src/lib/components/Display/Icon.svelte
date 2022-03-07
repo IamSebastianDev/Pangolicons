@@ -34,7 +34,7 @@
     style="--animation-delay: {delay * 100}ms"
     style:color
     class={cls(
-        'relative flex aspect-square h-full w-full flex-col items-center justify-center rounded-lg border border-zinc-300 px-4 py-6 hover:ring-1 dark:border-zinc-700',
+        'relative flex aspect-square w-full flex-col items-center justify-center rounded-lg border border-zinc-300 px-4 py-6 hover:ring-1 dark:border-zinc-700',
         $theme.fancy && isVisible ? 'motion-safe:animate-rainbow' : ''
     )}
     href="/api/{name}?stroke={strokeWidth}&size={size}&color={color.replace('#', '')}"
