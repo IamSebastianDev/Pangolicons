@@ -6,6 +6,10 @@
     import { PkgCard } from '$lib/components/Packages';
 </script>
 
+<svelte:head>
+    <title>Pangolicons | Packages</title>
+</svelte:head>
+
 <Section id="packages-list">
     <div class="font-comfortaa my-8 space-y-4 text-center">
         <h1 class="text-3xl font-semibold">Packages</h1>
