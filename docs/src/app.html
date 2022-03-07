@@ -42,6 +42,21 @@
         <meta name="msapplication-TileColor" content="#2d89ef" />
         <meta name="msapplication-config" content="./favicons/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
+
+        <script>
+            let stored = window.localStorage.getItem('pangolicons-theme');
+            let system = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            const getTheme = (stored, system) => {
+                if (stored) {
+                    return JSON.parse(stored).theme === 'dark';
+                }
+
+                return system;
+            };
+
+            document.documentElement.classList.toggle('dark', getTheme(stored, system));
+        </script>
     </head>
     <body class="bg-white text-zinc-700 dark:bg-zinc-900 dark:text-white">
         <div>%svelte.body%</div>
