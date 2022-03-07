@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { size, strokeWidth, color } from '$lib/stores/attributes.store';
+    import { size, strokeWidth, stroke } from '$lib/stores/attributes.store';
     import { icons } from '$lib/stores/icons.store';
     import * as allIcons from 'svelte-pangolicons';
     import { Pangolicons } from 'pangolicons';
@@ -13,7 +13,7 @@
     class="my-7 grid grid-cols-2 place-items-center justify-items-center gap-7 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
 >
     {#each Object.values(filteredIcons) as { name }, index (name)}
-        <Iconcard {name} delay={index} color={$color} size={$size} strokeWidth={$strokeWidth}>
+        <Iconcard {name} delay={index} color={$stroke} size={$size} strokeWidth={$strokeWidth}>
             <svelte:component
                 this={allIcons[name[0].toUpperCase() + name.slice(1)]}
                 size={$size}
