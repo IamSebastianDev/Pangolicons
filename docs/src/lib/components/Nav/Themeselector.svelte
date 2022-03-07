@@ -21,7 +21,11 @@
     class="relative ml-5 border-l border-l-zinc-200 pl-4 dark:border-l-zinc-700"
     bind:this={element}
 >
-    <button class="squared squared-full" on:click={() => (showSelector = !showSelector)}>
+    <button
+        class="squared squared-full"
+        on:click={() => (showSelector = !showSelector)}
+        title="Select a theme."
+    >
         <svelte:component this={themeIcons[$theme.status]} size={18} />
     </button>
     {#if showSelector}
