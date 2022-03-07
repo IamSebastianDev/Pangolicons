@@ -27,6 +27,6 @@
     export { className as class };
 </script>
 
-<a {href} target="_self" class={className} {title}>
+<a {href} sveltekit:prefetch target="_self" class={className} {title}>
     <slot />
 </a>
