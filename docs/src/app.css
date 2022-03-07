@@ -23,6 +23,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 300;
@@ -35,6 +36,7 @@
 }
 /* comfortaa-700 - latin */
 @font-face {
+    font-display: swap;
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 700;
@@ -48,6 +50,7 @@
 
 /* open-sans-300 - latin */
 @font-face {
+    font-display: swap;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
