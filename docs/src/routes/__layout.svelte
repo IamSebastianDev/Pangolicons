@@ -1,13 +1,11 @@
 <script>
-	import '../app.css';
-	import Navigation from '$lib/Navigation/Navigation.svelte';
-	import Footer from '$lib/Footer.svelte';
+    import '../app.css';
+
+    // Layout components
+    import Navigation from '$lib/layouts/Navigation.svelte';
+    import Footer from '$lib/layouts/Footer.svelte';
 </script>
 
 <Navigation />
-
-<main class="max-w-screen-lg mx-auto md:px-0 px-5">
-	<slot />
-</main>
-
+<slot />
 <Footer />
