@@ -10,8 +10,6 @@
             content="Pangolicons is a open source minimal svg Icon library! Also super cute."
         />
 
-        %svelte.head%
-
         <!-- SOCIAL META THINGS -->
 
         <meta name="twitter:card" content="summary" />
@@ -60,6 +58,8 @@
 
             document.documentElement.classList.toggle('dark', getTheme(stored, system));
         </script>
+
+        %svelte.head%
     </head>
     <body class="bg-white text-zinc-700 dark:bg-zinc-900 dark:text-white">
         <div>%svelte.body%</div>
