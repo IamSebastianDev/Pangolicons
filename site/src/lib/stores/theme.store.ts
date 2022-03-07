@@ -41,7 +41,7 @@ const themeStore = (initalTheme: Theme) => {
                 return { ...state, theme: 'dark', status: 'dark' };
             case 'system':
                 return { ...state, theme: getSystemTheme(), status: 'system' };
-            case 'fancy':
+            case 'colourful':
                 return { ...state, fancy: !state.fancy };
         }
     };
