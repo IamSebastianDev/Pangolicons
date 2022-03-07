@@ -7,7 +7,7 @@
 
 <li
     class={cls(
-        key === 'fancy' && $theme.fancy ? 'text-red-500' : '',
+        key === 'colourful' && $theme.fancy ? 'text-red-500' : '',
         $theme.theme === key ? 'text-blue-500' : ''
     )}
 >

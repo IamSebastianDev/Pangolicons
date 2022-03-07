@@ -12,7 +12,7 @@
         showSelector = false;
     };
 
-    const themeIcons = { system: Display, dark: MoonStylized, light: SunSmall, fancy: Rainbow };
+    const themeIcons = { system: Display, dark: MoonStylized, light: SunSmall, colourful: Rainbow };
 </script>
 
 <div
