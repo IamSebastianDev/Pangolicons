@@ -22,7 +22,7 @@
           strokeLinejoin={linejoin}
           className={['pangolicons pangolicons-moveDiagonalMirrored', className].join(" ")}
         >
-          <polyline  points="16 3.5 20.5 3.5 20.5 8"/><polyline  points="8 20.5 3.5 20.5 3.5 16"/><line  x1="3.5" y1="20.5" x2="20.5" y2="3.5"/>
+          <path  d="M16,3.5h4.5v4.5M3.5,16v4.5H8m-4.5,0L20.5,3.5"/>
         </svg>
       );
     };

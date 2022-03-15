@@ -22,7 +22,7 @@
           strokeLinejoin={linejoin}
           className={['pangolicons pangolicons-eyeOpen', className].join(" ")}
         >
-          <ellipse  cx="12" cy="12" rx="10" ry="6.47"/><circle  cx="12" cy="12" r="2.94"/>
+          <path  d="M22,12c0,1.29-4.48,6.47-10,6.47S2,13.29,2,12,6.48,5.53,12,5.53s10,5.18,10,6.47Zm-10-2.94c-1.62,0-2.94,1.32-2.94,2.94s1.32,2.94,2.94,2.94,2.94-1.32,2.94-2.94-1.32-2.94-2.94-2.94Z"/>
         </svg>
       );
     };

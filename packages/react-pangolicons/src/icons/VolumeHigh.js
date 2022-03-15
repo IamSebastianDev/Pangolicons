@@ -22,7 +22,7 @@
           strokeLinejoin={linejoin}
           className={['pangolicons pangolicons-volumeHigh', className].join(" ")}
         >
-          <rect  x="2" y="8.43" width="4.29" height="7.14"/><polygon  points="12 2.71 6.29 8.43 6.29 15.57 12 21.29 12 2.71"/><path  d="M16.29,7.71a9.17,9.17,0,0,1,0,8.58"/><path  d="M20.57,6.29a12.1,12.1,0,0,1,0,11.42"/>
+          <path  d="M6.29,15.57H2v-7.14H6.29v7.14ZM12,2.71l-5.71,5.71v7.14l5.71,5.71V2.71Zm4.29,13.57c1.43-2.86,1.43-5.71,0-8.57m4.29,10c1.9-3.81,1.9-7.62,0-11.43"/>
         </svg>
       );
     };

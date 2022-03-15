@@ -22,7 +22,7 @@
           strokeLinejoin={linejoin}
           className={['pangolicons pangolicons-barChartPositive', className].join(" ")}
         >
-          <line  x1="19.5" y1="2" x2="19.5" y2="22"/><line  x1="4.5" y1="15.53" x2="4.5" y2="22"/><line  x1="9.5" y1="22" x2="9.5" y2="12.22"/><line  x1="14.5" y1="22" x2="14.5" y2="7.29"/>
+          <path  d="M19.5,2V22M4.5,15.53v6.47m5,0V12.22m5,9.78V7.29"/>
         </svg>
       );
     };

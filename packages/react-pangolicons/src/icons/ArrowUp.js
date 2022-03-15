@@ -22,7 +22,7 @@
           strokeLinejoin={linejoin}
           className={['pangolicons pangolicons-arrowUp', className].join(" ")}
         >
-          <polyline  points="4.31 9.69 12 2 19.69 9.69 12 2 12 22"/>
+          <path  d="M4.31,9.69L12,2l7.69,7.69L12,2V22"/>
         </svg>
       );
     };

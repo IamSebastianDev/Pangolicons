@@ -22,7 +22,7 @@
           strokeLinejoin={linejoin}
           className={['pangolicons pangolicons-clipboardNotes', className].join(" ")}
         >
-          <polyline  points="15.75 4.5 19.5 4.5 19.5 22 4.5 22 4.5 4.5 8.25 4.5"/><rect  x="8.25" y="2" width="7.5" height="3.75"/><line  x1="8.36" y1="13.76" x2="15.64" y2="13.76"/><line  x1="8.36" y1="10.24" x2="15.64" y2="10.24"/><line  x1="8.36" y1="17.29" x2="15.64" y2="17.29"/>
+          <path  d="M15.75,4.5h3.75V22H4.5V4.5h3.75m7.5,0-7.5,0,7.5-2.5h-7.5v3.75h7.5V2Zm-7.39,11.76h7.28m-7.28-3.53h7.28m-7.28,7.06h7.28"/>
         </svg>
       );
     };

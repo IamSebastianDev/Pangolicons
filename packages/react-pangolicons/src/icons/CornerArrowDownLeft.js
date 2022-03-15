@@ -22,7 +22,7 @@
           strokeLinejoin={linejoin}
           className={['pangolicons pangolicons-cornerArrowDownLeft', className].join(" ")}
         >
-          <path  d="M11.05,22,4.61,15.56l6.44-6.44L4.61,15.56H15.79a3.6,3.6,0,0,0,3.6-3.6V2"/>
+          <path  d="M19.39,2V11.96c0,1.99-1.61,3.6-3.6,3.6H4.61l6.44-6.44-6.44,6.44,6.44,6.44"/>
         </svg>
       );
     };

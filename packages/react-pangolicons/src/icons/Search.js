@@ -22,7 +22,7 @@
           strokeLinejoin={linejoin}
           className={['pangolicons pangolicons-search', className].join(" ")}
         >
-          <circle  cx="14.86" cy="9.14" r="7.14"/><path  d="M9.35,14.65,2,22Z"/>
+          <path  d="M19.91,4.09c2.79,2.79,2.79,7.31,0,10.1s-7.31,2.79-10.1,0-2.79-7.31,0-10.1,7.31-2.79,10.1,0ZM9.35,14.65l-7.35,7.35,7.35-7.35Z"/>
         </svg>
       );
     };

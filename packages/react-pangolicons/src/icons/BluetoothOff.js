@@ -22,7 +22,7 @@
           strokeLinejoin={linejoin}
           className={['pangolicons pangolicons-bluetoothOff', className].join(" ")}
         >
-          <path  d="M15.36,19.5l-4,2.5V2l7.94,5-7.94,5m-5.5,3.38L11.39,12l7.94-5"/><line  x1="2" y1="2" x2="22" y2="22"/>
+          <path  d="M15.36,19.5l-3.97,2.5V2l7.94,5-7.94,5m-5.5,3.38l5.5-3.38,7.94-5M2,2L22,22"/>
         </svg>
       );
     };

@@ -22,7 +22,7 @@
           strokeLinejoin={linejoin}
           className={['pangolicons pangolicons-fader', className].join(" ")}
         >
-          <line  x1="12" y1="10.36" x2="12" y2="22"/><line  x1="12" y1="2" x2="12" y2="6.61"/><rect  x="8.25" y="6.61" width="7.5" height="3.75"/>
+          <path  d="M12,10.36v11.64m0-11.64,0-3.75,0-4.61V6.61m3.75,0h-7.5v3.75h7.5v-3.75Z"/>
         </svg>
       );
     };

@@ -22,7 +22,7 @@
           strokeLinejoin={linejoin}
           className={['pangolicons pangolicons-edit', className].join(" ")}
         >
-          <polygon  points="7.81 20.07 2 22 3.94 16.19 18.13 2 22 5.87 7.81 20.07"/>
+          <path  d="M7.81,20.06l-5.81,1.94,1.94-5.81L18.13,2l3.87,3.87L7.81,20.06Z"/>
         </svg>
       );
     };

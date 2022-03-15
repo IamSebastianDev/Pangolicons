@@ -22,7 +22,7 @@
           strokeLinejoin={linejoin}
           className={['pangolicons pangolicons-skipBack', className].join(" ")}
         >
-          <polygon  points="6.91 12 18.45 22 18.45 2 6.91 12"/><line  x1="5.55" y1="22" x2="5.55" y2="2"/>
+          <path  d="M18.45,2V22L6.91,12,18.45,2ZM5.55,22V2"/>
         </svg>
       );
     };

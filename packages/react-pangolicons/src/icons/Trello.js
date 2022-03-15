@@ -22,7 +22,7 @@
           strokeLinejoin={linejoin}
           className={['pangolicons pangolicons-trello', className].join(" ")}
         >
-          <rect  x="4.04" y="2" width="16.18" height="20"/><rect  x="7.27" y="4.94" width="3.53" height="14.12"/><rect  x="13.74" y="4.94" width="3.53" height="7.06"/>
+          <path  d="M20.21,22H4.04V2H20.21V22ZM10.8,4.94h-3.53v14.12h3.53V4.94Zm6.47,0h-3.53v7.06h3.53V4.94Z"/>
         </svg>
       );
     };
