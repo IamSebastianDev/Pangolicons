@@ -20,7 +20,8 @@
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-bluetoothConnected {className}"
+			{ ...$$restProps }
 		>
-			<polygon  points="11.79 22 11.79 12 11.79 2 19.74 7 11.79 12 19.74 17 11.79 22"/><polyline  points="6.29 15.38 11.79 12 19.74 7"/><polyline  points="6.29 8.25 11.79 12 19.74 17"/><line  x1="5.49" y1="12" x2="2" y2="12"/><line  x1="22" y1="12" x2="18.51" y2="12"/>
+			<path  d="M11.79,22V2l7.94,5-7.94,5,7.94,5-7.94,5Zm-5.5-6.62l5.5-3.38,7.94-5m-13.44,1.25l5.5,3.75,7.94,5M5.49,12H2m20,0h-3.49"/>
 		</svg>
 	

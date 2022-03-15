@@ -1,6 +1,6 @@
 {
 	"name": "svelte-pangolicons",
-	"version": "2.0.1",
+	"version": "2.1.1",
 	"description": "Pangolicons made ready for svelte!",
 	"types": "dist/types",
 	"main": "dist/index.js",
@@ -9,7 +9,7 @@
 	"scripts": {
 		"build": "rollup -c",
 		"compile": "node compile.mjs",
-		"prepublish": "npm run compile && npm run build"
+		"prepublishOnly": "npm run compile && npm run build"
 	},
 	"keywords": [
 		"svelte",

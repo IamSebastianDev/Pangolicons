@@ -20,7 +20,8 @@
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-voicemail {className}"
+			{ ...$$restProps }
 		>
-			<circle  cx="5.75" cy="12" r="3.75"/><circle  cx="18.25" cy="12" r="3.75"/><line  x1="5.75" y1="15.75" x2="18.25" y2="15.75"/>
+			<path  d="M9.5,12c0,2.07-1.68,3.75-3.75,3.75s-3.75-1.68-3.75-3.75,1.68-3.75,3.75-3.75,3.75,1.68,3.75,3.75Zm8.75-3.75c-2.07,0-3.75,1.68-3.75,3.75s1.68,3.75,3.75,3.75,3.75-1.68,3.75-3.75-1.68-3.75-3.75-3.75ZM5.75,15.75h12.5"/>
 		</svg>
 	

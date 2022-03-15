@@ -20,7 +20,8 @@
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-fastForward {className}"
+			{ ...$$restProps }
 		>
-			<polygon  points="12 12 2 22 2 2 12 12"/><polygon  points="22 12 12 22 12 2 22 12"/>
+			<path  d="M12,12L2,22V2L12,12Zm0-10V22l10-10L12,2Z"/>
 		</svg>
 	

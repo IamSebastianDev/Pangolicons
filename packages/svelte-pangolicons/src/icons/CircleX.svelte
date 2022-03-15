@@ -20,7 +20,8 @@
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-circleX {className}"
+			{ ...$$restProps }
 		>
-			<line  x1="8.67" y1="15.33" x2="15.33" y2="8.67"/><line  x1="15.33" y1="15.33" x2="8.67" y2="8.67"/><circle  cx="12" cy="12" r="10"/>
+			<path  d="M8.67,15.33l6.67-6.67m0,6.67l-6.67-6.67m3.33-6.67C6.48,2,2,6.48,2,12s4.48,10,10,10,10-4.48,10-10S17.52,2,12,2Z"/>
 		</svg>
 	

@@ -115,6 +115,7 @@ const createSvelteFileContents = ({ name, svgPath }) => {
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-${name} {className}"
+			{ ...$$restProps }
 		>
 			${svgPath}
 		</svg>

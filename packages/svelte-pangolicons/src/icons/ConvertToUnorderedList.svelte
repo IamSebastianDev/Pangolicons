@@ -20,7 +20,8 @@
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-convertToUnorderedList {className}"
+			{ ...$$restProps }
 		>
-			<line  x1="8.67" y1="12" x2="22" y2="12"/><line  x1="2" y1="5.33" x2="22" y2="5.33"/><line  x1="8.67" y1="18.67" x2="22" y2="18.67"/><line  x1="3.65" y1="12" x2="3.67" y2="12"/><line  x1="3.65" y1="18.67" x2="3.67" y2="18.67"/>
+			<path  d="M8.67,12h13.33M2,5.33H22m-13.33,13.33h13.33M3.65,12h.02m-.02,6.67h.02"/>
 		</svg>
 	

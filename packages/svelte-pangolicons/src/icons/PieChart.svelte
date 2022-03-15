@@ -20,7 +20,8 @@
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-pieChart {className}"
+			{ ...$$restProps }
 		>
-			<path  d="M22,12A10,10,0,0,0,12,2"/><path  d="M9.16,2.41A10,10,0,1,0,21.55,15"/><polyline  points="12 2 12 12 22 12"/>
+			<path  d="M9.16,2.41m12.84,9.59c0-5.52-4.48-10-10-10m10,10-.45,2.97M9.16,2.41C5.02,3.64,2,7.47,2,12c0,5.52,4.48,10,10,10,4.49,0,8.28-2.96,9.55-7.03M12,2V12h10"/>
 		</svg>
 	

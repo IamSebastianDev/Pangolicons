@@ -20,7 +20,8 @@
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-triangleInverted {className}"
+			{ ...$$restProps }
 		>
-			<polygon  points="12 20.66 2 3.34 22 3.34 12 20.66"/>
+			<path  d="M12,20.66L2,3.34H22L12,20.66Z"/>
 		</svg>
 	

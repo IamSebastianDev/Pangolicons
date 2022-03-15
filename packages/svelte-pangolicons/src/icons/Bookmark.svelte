@@ -20,7 +20,8 @@
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-bookmark {className}"
+			{ ...$$restProps }
 		>
-			<path  d="M4,22V3.88A1.88,1.88,0,0,1,5.88,2H18.12A1.88,1.88,0,0,1,20,3.88V22m0,0-8-5.13L4,22"/>
+			<path  d="M4,22V3.88c0-1.04,.84-1.88,1.88-1.88h12.25c1.04,0,1.88,.84,1.88,1.88V22m0,0l-8-5.13-8,5.13"/>
 		</svg>
 	

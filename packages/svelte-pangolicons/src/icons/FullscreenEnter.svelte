@@ -20,7 +20,8 @@
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-fullscreenEnter {className}"
+			{ ...$$restProps }
 		>
-			<polyline  points="2 6 2 2 6 2"/><polyline  points="22 6 22 2 18 2"/><polyline  points="2 18 2 22 6 22"/><polyline  points="22 18 22 22 18 22"/>
+			<path  d="M2,6V2H6M22,6V2h-4M2,18v4H6m12,0h4v-4"/>
 		</svg>
 	

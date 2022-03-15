@@ -20,7 +20,8 @@
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-zoomIn {className}"
+			{ ...$$restProps }
 		>
-			<circle  cx="14.86" cy="9.14" r="7.14"/><path  d="M9.35,14.65,2,22Z"/><line  x1="12" y1="9.14" x2="18.2" y2="9.14"/><line  x1="15.1" y1="12.24" x2="15.1" y2="6.04"/>
+			<path  d="M19.91,4.09c2.79,2.79,2.79,7.31,0,10.1-2.79,2.79-7.31,2.79-10.1,0-2.79-2.79-2.79-7.31,0-10.1,2.79-2.79,7.31-2.79,10.1,0ZM9.35,14.65l-7.35,7.35,7.35-7.35Zm2.65-5.51h6.2m-3.1,3.1V6.04"/>
 		</svg>
 	

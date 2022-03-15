@@ -20,7 +20,8 @@
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-barChart {className}"
+			{ ...$$restProps }
 		>
-			<line  x1="4.5" y1="2" x2="4.5" y2="22"/><line  x1="19.5" y1="8.25" x2="19.5" y2="22"/><line  x1="14.5" y1="22" x2="14.5" y2="12.22"/><line  x1="9.5" y1="22" x2="9.5" y2="4.7"/>
+			<path  d="M4.5,2V22m15-13.75v13.75m-5,0V12.22m-5,9.78V4.7"/>
 		</svg>
 	

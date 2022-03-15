@@ -20,7 +20,8 @@
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-checkmarkCircle {className}"
+			{ ...$$restProps }
 		>
-			<polyline  points="20.9 4.78 10.34 14.78 7.54 11.84"/><path  d="M22,12a10,10,0,1,1-6.36-9.32"/>
+			<path  d="M20.9,4.78L10.34,14.78l-2.8-2.94M15.64,2.68c-1.13-.44-2.35-.68-3.64-.68C6.48,2,2,6.48,2,12s4.48,10,10,10,10-4.48,10-10"/>
 		</svg>
 	

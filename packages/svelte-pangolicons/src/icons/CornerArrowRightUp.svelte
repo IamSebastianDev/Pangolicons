@@ -20,7 +20,8 @@
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-cornerArrowRightUp {className}"
+			{ ...$$restProps }
 		>
-			<path  d="M22,11.05,15.56,4.61,9.12,11.05l6.44-6.44V15.79a3.6,3.6,0,0,1-3.6,3.6H2"/>
+			<path  d="M22,11.05l-6.44-6.44-6.44,6.44,6.44-6.44V15.79c0,1.99-1.61,3.6-3.6,3.6H2"/>
 		</svg>
 	

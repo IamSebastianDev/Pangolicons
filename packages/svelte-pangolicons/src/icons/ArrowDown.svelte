@@ -20,7 +20,8 @@
 			stroke-linecap={linecap}
 			stroke-linejoin={linejoin}
 			class="pangolicons pangolicons-arrowDown {className}"
+			{ ...$$restProps }
 		>
-			<polyline  points="19.69 14.31 12 22 4.31 14.31 12 22 12 2"/>
+			<path  d="M19.69,14.31l-7.69,7.69-7.69-7.69,7.69,7.69V2"/>
 		</svg>
 	
