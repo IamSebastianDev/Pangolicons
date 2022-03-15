@@ -1,561 +1,612 @@
-declare namespace Bn {
+export namespace Pangolicons {
     namespace icons {
-        export { t as airplay };
-        export { n as alignCenter };
-        export { o as alignJustify };
-        export { i as alignLeft };
-        export { r as alignRight };
-        export { l as archive };
-        export { p as arrowDown };
-        export { s as arrowLeft };
-        export { h as arrowLeftDown };
-        export { c as arrowLeftUp };
-        export { y as arrowRight };
-        export { x as arrowRightDown };
-        export { g as arrowRightUp };
-        export { m as arrowUp };
-        export { d as barChart };
-        export { u as barChartAlternative };
-        export { w as barChartPositive };
-        export { f as batteryCharged };
-        export { M as batteryEmpty };
-        export { v as bell };
-        export { A as bellOff };
-        export { b as bellRinging };
-        export { k as bluetooth };
-        export { L as bluetoothConnected };
-        export { H as bluetoothOff };
-        export { C as bluetoothSearching };
-        export { V as bold };
-        export { R as bookClosed };
-        export { Z as bookOpen };
-        export { S as bookmark };
-        export { D as box };
-        export { z as calendar };
-        export { U as camera };
-        export { O as cameraOff };
-        export { T as castToMedia };
-        export { q as checkmark };
-        export { P as checkmarkCircle };
-        export { E as chevronDown };
-        export { I as chevronDownUp };
-        export { F as chevronFirst };
-        export { j as chevronLast };
-        export { B as chevronLeft };
-        export { $ as chevronLeftRight };
-        export { W as chevronRight };
-        export { X as chevronUp };
-        export { G as chevronUpDown };
-        export { N as chevronrightLeft };
-        export { J as chevronsDown };
-        export { Y as chevronsLeft };
-        export { _ as chevronsRight };
-        export { K as chevronsUp };
-        export { Q as circle };
-        export { ee as circleArrowDown };
-        export { ae as circleArrowLeft };
-        export { te as circleArrowLeftDown };
-        export { ne as circleArrowLeftUp };
-        export { oe as circleArrowRight };
-        export { ie as circleArrowRightDown };
-        export { re as circleArrowRightUp };
-        export { le as circleArrowUp };
-        export { pe as circleMinus };
-        export { se as circlePlus };
-        export { he as circleX };
-        export { ce as clipboard };
-        export { ye as clipboardNotes };
-        export { xe as cloud };
-        export { ge as cloudDrizzle };
-        export { me as cloudFog };
-        export { de as cloudHail };
-        export { ue as cloudLightning };
-        export { we as cloudMoon };
-        export { fe as cloudRain };
-        export { Me as cloudSnow };
-        export { ve as cloudStorm };
-        export { Ae as cloudSun };
-        export { be as clouds };
-        export { ke as code };
-        export { Le as codepen };
-        export { He as convertToLink };
-        export { Ce as convertToOrderedList };
-        export { Ve as convertToUnorderedList };
-        export { Re as convertToUnstyledList };
-        export { Ze as cookie };
-        export { Se as cornerArrowDownLeft };
-        export { De as cornerArrowDownRight };
-        export { ze as cornerArrowLeftDown };
-        export { Ue as cornerArrowLeftUp };
-        export { Oe as cornerArrowRightDown };
-        export { Te as cornerArrowRightUp };
-        export { qe as cornerArrowUpLeft };
-        export { Pe as cornerArrowUpRight };
-        export { Ee as creditcard };
-        export { Ie as crown };
-        export { Fe as database };
-        export { je as delimitor };
-        export { Be as display };
-        export { $e as download };
-        export { We as dragIndicator };
-        export { Xe as edit };
-        export { Ge as envelope };
-        export { Ne as externalLink };
-        export { Je as eyeClosed };
-        export { Ye as eyeOpen };
-        export { _e as eyeStriked };
-        export { Ke as facebook };
-        export { Qe as fader };
-        export { ea as fastForward };
-        export { aa as file };
-        export { ta as filter };
-        export { na as fnBackspace };
-        export { oa as fnCaps };
-        export { ia as fnCommand };
-        export { ra as fnControl };
-        export { la as fnEscape };
-        export { pa as fnOption };
-        export { sa as fnReturn };
-        export { ha as fnShift };
-        export { ca as fnSpacebar };
-        export { ya as fnTab };
-        export { xa as folder2 };
-        export { ga as folder };
-        export { ma as folderMinus };
-        export { da as folderPlus };
-        export { ua as fork };
-        export { wa as form };
-        export { fa as frown };
-        export { Ma as fullscreenEnter };
-        export { va as fullscreenExit };
-        export { Aa as gear };
-        export { ba as ghost };
-        export { ka as github };
-        export { La as guitar };
-        export { Ha as haze };
-        export { Ca as headingDecrease };
-        export { Va as headingIncrease };
-        export { Ra as heart };
-        export { Za as hexagon };
-        export { Sa as horizontalMore };
-        export { Da as icecream };
-        export { za as image };
-        export { Ua as infoCircle };
-        export { Oa as infoSquare };
-        export { Ta as instagram };
-        export { qa as italic };
-        export { Pa as jellyfish };
-        export { Ea as key };
-        export { Ia as layers };
-        export { Fa as layout };
-        export { ja as layoutColumns };
-        export { Ba as layoutGrid };
-        export { $a as layoutHorizontal };
-        export { Wa as layoutList };
-        export { Xa as layoutMixed };
-        export { Ga as layoutVertical };
-        export { Na as library };
-        export { Ja as list };
-        export { Ya as location };
-        export { _a as lock };
-        export { Ka as login };
-        export { Qa as logoutLeft };
-        export { et as logoutRight };
-        export { at as marker };
-        export { tt as menu };
-        export { nt as microphone };
-        export { ot as microphoneOff };
-        export { it as minus };
-        export { rt as moonRough };
-        export { lt as moonStylized };
-        export { pt as move };
-        export { st as moveDiagonal };
-        export { ht as moveDiagonalMirrored };
-        export { ct as moveHorizontal };
-        export { yt as moveVertical };
-        export { xt as mug };
-        export { gt as music };
-        export { mt as neutral };
-        export { dt as pangolin };
-        export { ut as parcel };
-        export { wt as pause };
-        export { ft as phone };
-        export { Mt as phoneCall };
-        export { vt as phoneIncoming };
-        export { At as phoneMissed };
-        export { bt as phoneOff };
-        export { kt as phoneOutgoing };
-        export { Lt as pieChart };
-        export { Ht as play };
-        export { Ct as plus };
-        export { Vt as pothos };
-        export { Rt as power };
-        export { Zt as rainbow };
-        export { St as refresh };
-        export { Dt as refreshCCW };
-        export { zt as refreshCW };
-        export { Ut as repeat };
-        export { Ot as resizeImage };
-        export { Tt as rewind };
-        export { qt as robot };
-        export { Pt as search };
-        export { Et as server };
-        export { It as settings };
-        export { Ft as shield };
-        export { jt as shuffle };
-        export { Bt as sidebar };
-        export { $t as skipBack };
-        export { Wt as skipForward };
-        export { Xt as sliders };
-        export { Gt as smartphone };
-        export { Nt as smile };
-        export { Jt as snail };
-        export { Yt as snowflake };
-        export { _t as snpachat };
-        export { Kt as spoon };
-        export { Qt as square };
-        export { en as squareMinus };
-        export { an as squarePlus };
-        export { tn as squareX };
-        export { nn as star };
-        export { on as starHalf };
-        export { rn as strikethrough };
-        export { ln as sunBig };
-        export { pn as sunSmall };
-        export { sn as sword };
-        export { hn as tablet };
-        export { cn as terminal };
-        export { yn as text };
-        export { xn as title };
-        export { gn as trashcanEmpty };
-        export { mn as trashcanFilled };
-        export { dn as trello };
-        export { un as triangle };
-        export { wn as triangleInverted };
-        export { fn as twitch };
-        export { Mn as twitter };
-        export { vn as umbrella };
-        export { An as underline };
-        export { bn as unlock };
-        export { kn as user };
-        export { Ln as userAdd };
-        export { Hn as userMultiple };
-        export { Cn as userRemove };
-        export { Vn as verticalMore };
-        export { Rn as voicemail };
-        export { Zn as volumeHigh };
-        export { Sn as volumeLow };
-        export { Dn as volumeMedium };
-        export { zn as volumeMute };
-        export { Un as webcam };
-        export { On as wifi };
-        export { Tn as wifiOff };
-        export { qn as wind };
-        export { Pn as wrench };
-        export { En as x };
-        export { In as youtube };
-        export { Fn as zoomIn };
-        export { jn as zoomOut };
+        export { airplay };
+        export { alignCenter };
+        export { alignJustify };
+        export { alignLeft };
+        export { alignRight };
+        export { archive };
+        export { arrowDown };
+        export { arrowLeft };
+        export { arrowLeftDown };
+        export { arrowLeftUp };
+        export { arrowRight };
+        export { arrowRightDown };
+        export { arrowRightUp };
+        export { arrowUp };
+        export { barChart };
+        export { barChartAlternative };
+        export { barChartPositive };
+        export { batteryCharged };
+        export { batteryEmpty };
+        export { bell };
+        export { bellOff };
+        export { bellRinging };
+        export { bluetooth };
+        export { bluetoothConnected };
+        export { bluetoothOff };
+        export { bluetoothSearching };
+        export { bold };
+        export { bookClosed };
+        export { bookOpen };
+        export { bookmark };
+        export { box };
+        export { calendar };
+        export { camera };
+        export { cameraOff };
+        export { castToMedia };
+        export { checkmark };
+        export { checkmarkCircle };
+        export { chevronDown };
+        export { chevronDownUp };
+        export { chevronFirst };
+        export { chevronLast };
+        export { chevronLeft };
+        export { chevronLeftRight };
+        export { chevronRight };
+        export { chevronUp };
+        export { chevronUpDown };
+        export { chevronrightLeft };
+        export { chevronsDown };
+        export { chevronsLeft };
+        export { chevronsRight };
+        export { chevronsUp };
+        export { circle };
+        export { circleArrowDown };
+        export { circleArrowLeft };
+        export { circleArrowLeftDown };
+        export { circleArrowLeftUp };
+        export { circleArrowRight };
+        export { circleArrowRightDown };
+        export { circleArrowRightUp };
+        export { circleArrowUp };
+        export { circleMinus };
+        export { circlePlus };
+        export { circleX };
+        export { clipboard };
+        export { clipboardNotes };
+        export { cloud };
+        export { cloudDrizzle };
+        export { cloudFog };
+        export { cloudHail };
+        export { cloudLightning };
+        export { cloudMoon };
+        export { cloudRain };
+        export { cloudSnow };
+        export { cloudStorm };
+        export { cloudSun };
+        export { clouds };
+        export { code };
+        export { codepen };
+        export { convertToLink };
+        export { convertToOrderedList };
+        export { convertToUnorderedList };
+        export { convertToUnstyledList };
+        export { cookie };
+        export { cornerArrowDownLeft };
+        export { cornerArrowDownRight };
+        export { cornerArrowLeftDown };
+        export { cornerArrowLeftUp };
+        export { cornerArrowRightDown };
+        export { cornerArrowRightUp };
+        export { cornerArrowUpLeft };
+        export { cornerArrowUpRight };
+        export { creditcard };
+        export { crown };
+        export { database };
+        export { delimitor };
+        export { display };
+        export { download };
+        export { dragIndicator };
+        export { edit };
+        export { envelope };
+        export { externalLink };
+        export { eyeClosed };
+        export { eyeOpen };
+        export { eyeStriked };
+        export { facebook };
+        export { fader };
+        export { fastForward };
+        export { file };
+        export { filter };
+        export { fnBackspace };
+        export { fnCaps };
+        export { fnCommand };
+        export { fnControl };
+        export { fnEscape };
+        export { fnOption };
+        export { fnReturn };
+        export { fnShift };
+        export { fnSpacebar };
+        export { fnTab };
+        export { folder2 };
+        export { folder };
+        export { folderMinus };
+        export { folderPlus };
+        export { fork };
+        export { form };
+        export { frown };
+        export { fullscreenEnter };
+        export { fullscreenExit };
+        export { gear };
+        export { ghost };
+        export { github };
+        export { guitar };
+        export { haze };
+        export { headingDecrease };
+        export { headingIncrease };
+        export { heart };
+        export { hexagon };
+        export { horizontalMore };
+        export { icecream };
+        export { image };
+        export { infoCircle };
+        export { infoSquare };
+        export { instagram };
+        export { italic };
+        export { jellyfish };
+        export { key };
+        export { layers };
+        export { layout };
+        export { layoutColumns };
+        export { layoutGrid };
+        export { layoutHorizontal };
+        export { layoutList };
+        export { layoutMixed };
+        export { layoutVertical };
+        export { library };
+        export { list };
+        export { location };
+        export { lock };
+        export { login };
+        export { logoutLeft };
+        export { logoutRight };
+        export { marker };
+        export { menu };
+        export { microphone };
+        export { microphoneOff };
+        export { minus };
+        export { moonRough };
+        export { moonStylized };
+        export { move };
+        export { moveDiagonal };
+        export { moveDiagonalMirrored };
+        export { moveHorizontal };
+        export { moveVertical };
+        export { mug };
+        export { music };
+        export { neutral };
+        export { pangolin };
+        export { parcel };
+        export { pause };
+        export { phone };
+        export { phoneCall };
+        export { phoneIncoming };
+        export { phoneMissed };
+        export { phoneOff };
+        export { phoneOutgoing };
+        export { pieChart };
+        export { play };
+        export { plus };
+        export { pothos };
+        export { power };
+        export { rainbow };
+        export { refresh };
+        export { refreshCCW };
+        export { refreshCW };
+        export { repeat };
+        export { resizeImage };
+        export { rewind };
+        export { robot };
+        export { search };
+        export { server };
+        export { settings };
+        export { shield };
+        export { shuffle };
+        export { sidebar };
+        export { skipBack };
+        export { skipForward };
+        export { sliders };
+        export { smartphone };
+        export { smile };
+        export { snail };
+        export { snowflake };
+        export { snpachat };
+        export { spoon };
+        export { square };
+        export { squareMinus };
+        export { squarePlus };
+        export { squareX };
+        export { star };
+        export { starHalf };
+        export { strikethrough };
+        export { sunBig };
+        export { sunSmall };
+        export { sword };
+        export { tablet };
+        export { terminal };
+        export { text };
+        export { title };
+        export { trashcanEmpty };
+        export { trashcanFilled };
+        export { trello };
+        export { triangle };
+        export { triangleInverted };
+        export { twitch };
+        export { twitter };
+        export { umbrella };
+        export { underline };
+        export { unlock };
+        export { user };
+        export { userAdd };
+        export { userMultiple };
+        export { userRemove };
+        export { verticalMore };
+        export { voicemail };
+        export { volumeHigh };
+        export { volumeLow };
+        export { volumeMedium };
+        export { volumeMute };
+        export { webcam };
+        export { wifi };
+        export { wifiOff };
+        export { wind };
+        export { wrench };
+        export { x };
+        export { youtube };
+        export { zoomIn };
+        export { zoomOut };
     }
-    function replace({ element: e }: {
-        element: any;
-    }): any;
-    function replace({ element: e }: {
-        element: any;
-    }): any;
-    function replaceAll(): any;
-    function replaceAll(): any;
-    function search({ searchString: e }: {
-        searchString: any;
-    }): {
+    /**
+     *  @method
+     *	@description static method to replace a element with a icon, if that element has a pangolicons attribute.
+     *
+     * 	@param { Object } param0 - the object passed to the replace method with the element property
+     * 	@param { HTMLElement } param0.element - the HTMLElement to replace.
+     *
+     * 	@returns { SVGElement } the created svgElement with the icon
+     */
+    function replace({ element }: {
+        element: HTMLElement;
+    }): SVGElement;
+    /**
+     *  @method
+     *	@description static method to replace a element with a icon, if that element has a pangolicons attribute.
+     *
+     * 	@param { Object } param0 - the object passed to the replace method with the element property
+     * 	@param { HTMLElement } param0.element - the HTMLElement to replace.
+     *
+     * 	@returns { SVGElement } the created svgElement with the icon
+     */
+    function replace({ element }: {
+        element: HTMLElement;
+    }): SVGElement;
+    /**
+     * @description method to replace all icons with a pangolicons attribute on the page.
+     */
+    function replaceAll(): void;
+    /**
+     * @description method to replace all icons with a pangolicons attribute on the page.
+     */
+    function replaceAll(): void;
+    /**
+     *	@description method to search the Pangolicons.icons object for all icons which tags (and in extension name)
+     * matches the defined searchstring.
+     *
+     * 	@param { Object } param0 - the object passed to the replace method with the element property
+     * 	@param { String } param0.searchString - the String to search for
+     *
+     * 	@returns { Icon[] } an Array containing all icons found with the matching tags
+     */
+    function search({ searchString }: {
+        searchString: string;
+    }): (({ path, tags, name }: {
+        path: any;
+        tags?: any[];
+        name: any;
+    }) => {
         name: any;
         path: any;
         tags: any[];
-        toString: (t?: {}) => string;
-        toSvg: (t?: {}) => SVGSVGElement;
-    }[];
-    function search({ searchString: e }: {
-        searchString: any;
-    }): {
+        toString: (attributes?: {}) => string;
+        toSvg: (attributes?: {}) => SVGElement;
+    })[];
+    /**
+     *	@description method to search the Pangolicons.icons object for all icons which tags (and in extension name)
+     * matches the defined searchstring.
+     *
+     * 	@param { Object } param0 - the object passed to the replace method with the element property
+     * 	@param { String } param0.searchString - the String to search for
+     *
+     * 	@returns { Icon[] } an Array containing all icons found with the matching tags
+     */
+    function search({ searchString }: {
+        searchString: string;
+    }): (({ path, tags, name }: {
+        path: any;
+        tags?: any[];
+        name: any;
+    }) => {
         name: any;
         path: any;
         tags: any[];
-        toString: (t?: {}) => string;
-        toSvg: (t?: {}) => SVGSVGElement;
-    }[];
+        toString: (attributes?: {}) => string;
+        toSvg: (attributes?: {}) => SVGElement;
+    })[];
 }
-declare namespace t {
-    export { n as name };
-    export { a as path };
-    export { t as tags };
-    export function toString(t?: {}): string;
-    export function toSvg(t?: {}): SVGSVGElement;
+export namespace airplay {
+    export { name };
+    export { path };
+    export { tags };
+    export { toString };
+    export { toSvg };
 }
-declare namespace n { }
-declare namespace o { }
-declare namespace i { }
-declare namespace r { }
-declare namespace l { }
-declare namespace p { }
-declare namespace s { }
-declare namespace h { }
-declare namespace c { }
-declare namespace y { }
-declare namespace x { }
-declare namespace g { }
-declare namespace m { }
-declare namespace d { }
-declare namespace u { }
-declare namespace w { }
-declare namespace f { }
-declare namespace M { }
-declare namespace v { }
-declare namespace A { }
-declare namespace b { }
-declare namespace k { }
-declare namespace L { }
-declare namespace H { }
-declare namespace C { }
-declare namespace V { }
-declare namespace R { }
-declare namespace Z { }
-declare namespace S { }
-declare namespace D { }
-declare namespace z { }
-declare namespace U { }
-declare namespace O { }
-declare namespace T { }
-declare namespace q { }
-declare namespace P { }
-declare namespace E { }
-declare namespace I { }
-declare namespace F { }
-declare namespace j { }
-declare namespace B { }
-declare namespace $ { }
-declare namespace W { }
-declare namespace X { }
-declare namespace G { }
-declare namespace N { }
-declare namespace J { }
-declare namespace Y { }
-declare namespace _ { }
-declare namespace K { }
-declare namespace Q { }
-declare namespace ee { }
-declare namespace ae { }
-declare namespace te { }
-declare namespace ne { }
-declare namespace oe { }
-declare namespace ie { }
-declare namespace re { }
-declare namespace le { }
-declare namespace pe { }
-declare namespace se { }
-declare namespace he { }
-declare namespace ce { }
-declare namespace ye { }
-declare namespace xe { }
-declare namespace ge { }
-declare namespace me { }
-declare namespace de { }
-declare namespace ue { }
-declare namespace we { }
-declare namespace fe { }
-declare namespace Me { }
-declare namespace ve { }
-declare namespace Ae { }
-declare namespace be { }
-declare namespace ke { }
-declare namespace Le { }
-declare namespace He { }
-declare namespace Ce { }
-declare namespace Ve { }
-declare namespace Re { }
-declare namespace Ze { }
-declare namespace Se { }
-declare namespace De { }
-declare namespace ze { }
-declare namespace Ue { }
-declare namespace Oe { }
-declare namespace Te { }
-declare namespace qe { }
-declare namespace Pe { }
-declare namespace Ee { }
-declare namespace Ie { }
-declare namespace Fe { }
-declare namespace je { }
-declare namespace Be { }
-declare namespace $e { }
-declare namespace We { }
-declare namespace Xe { }
-declare namespace Ge { }
-declare namespace Ne { }
-declare namespace Je { }
-declare namespace Ye { }
-declare namespace _e { }
-declare namespace Ke { }
-declare namespace Qe { }
-declare namespace ea { }
-declare namespace aa { }
-declare namespace ta { }
-declare namespace na { }
-declare namespace oa { }
-declare namespace ia { }
-declare namespace ra { }
-declare namespace la { }
-declare namespace pa { }
-declare namespace sa { }
-declare namespace ha { }
-declare namespace ca { }
-declare namespace ya { }
-declare namespace ga { }
-declare namespace xa { }
-declare namespace ma { }
-declare namespace da { }
-declare namespace ua { }
-declare namespace wa { }
-declare namespace fa { }
-declare namespace Ma { }
-declare namespace va { }
-declare namespace Aa { }
-declare namespace ba { }
-declare namespace ka { }
-declare namespace La { }
-declare namespace Ha { }
-declare namespace Ca { }
-declare namespace Va { }
-declare namespace Ra { }
-declare namespace Za { }
-declare namespace Sa { }
-declare namespace Da { }
-declare namespace za { }
-declare namespace Ua { }
-declare namespace Oa { }
-declare namespace Ta { }
-declare namespace qa { }
-declare namespace Pa { }
-declare namespace Ea { }
-declare namespace Ia { }
-declare namespace Fa { }
-declare namespace ja { }
-declare namespace Ba { }
-declare namespace $a { }
-declare namespace Wa { }
-declare namespace Xa { }
-declare namespace Ga { }
-declare namespace Na { }
-declare namespace Ja { }
-declare namespace Ya { }
-declare namespace _a { }
-declare namespace Ka { }
-declare namespace Qa { }
-declare namespace et { }
-declare namespace at { }
-declare namespace tt { }
-declare namespace nt { }
-declare namespace ot { }
-declare namespace it { }
-declare namespace rt { }
-declare namespace lt { }
-declare namespace pt { }
-declare namespace st { }
-declare namespace ht { }
-declare namespace ct { }
-declare namespace yt { }
-declare namespace xt { }
-declare namespace gt { }
-declare namespace mt { }
-declare namespace dt { }
-declare namespace ut { }
-declare namespace wt { }
-declare namespace ft { }
-declare namespace Mt { }
-declare namespace vt { }
-declare namespace At { }
-declare namespace bt { }
-declare namespace kt { }
-declare namespace Lt { }
-declare namespace Ht { }
-declare namespace Ct { }
-declare namespace Vt { }
-declare namespace Rt { }
-declare namespace Zt { }
-declare namespace St { }
-declare namespace Dt { }
-declare namespace zt { }
-declare namespace Ut { }
-declare namespace Ot { }
-declare namespace Tt { }
-declare namespace qt { }
-declare namespace Pt { }
-declare namespace Et { }
-declare namespace It { }
-declare namespace Ft { }
-declare namespace jt { }
-declare namespace Bt { }
-declare namespace $t { }
-declare namespace Wt { }
-declare namespace Xt { }
-declare namespace Gt { }
-declare namespace Nt { }
-declare namespace Jt { }
-declare namespace Yt { }
-declare namespace _t { }
-declare namespace Kt { }
-declare namespace Qt { }
-declare namespace en { }
-declare namespace an { }
-declare namespace tn { }
-declare namespace nn { }
-declare namespace on { }
-declare namespace rn { }
-declare namespace ln { }
-declare namespace pn { }
-declare namespace sn { }
-declare namespace hn { }
-declare namespace cn { }
-declare namespace yn { }
-declare namespace xn { }
-declare namespace gn { }
-declare namespace mn { }
-declare namespace dn { }
-declare namespace un { }
-declare namespace wn { }
-declare namespace fn { }
-declare namespace Mn { }
-declare namespace vn { }
-declare namespace An { }
-declare namespace bn { }
-declare namespace kn { }
-declare namespace Ln { }
-declare namespace Hn { }
-declare namespace Cn { }
-declare namespace Vn { }
-declare namespace Rn { }
-declare namespace Zn { }
-declare namespace Sn { }
-declare namespace Dn { }
-declare namespace zn { }
-declare namespace Un { }
-declare namespace On { }
-declare namespace Tn { }
-declare namespace qn { }
-declare namespace Pn { }
-declare namespace En { }
-declare namespace In { }
-declare namespace Fn { }
-declare namespace jn { }
-declare function a({ path: a, tags: t, name: n }: {
-    path: any;
-    tags?: any[];
-    name: any;
-}): {
-    name: any;
-    path: any;
-    tags: any[];
-    toString: (t?: {}) => string;
-    toSvg: (t?: {}) => SVGSVGElement;
-};
-export { Bn as Pangolicons, t as airplay, n as alignCenter, o as alignJustify, i as alignLeft, r as alignRight, l as archive, p as arrowDown, s as arrowLeft, h as arrowLeftDown, c as arrowLeftUp, y as arrowRight, x as arrowRightDown, g as arrowRightUp, m as arrowUp, d as barChart, u as barChartAlternative, w as barChartPositive, f as batteryCharged, M as batteryEmpty, v as bell, A as bellOff, b as bellRinging, k as bluetooth, L as bluetoothConnected, H as bluetoothOff, C as bluetoothSearching, V as bold, R as bookClosed, Z as bookOpen, S as bookmark, D as box, z as calendar, U as camera, O as cameraOff, T as castToMedia, q as checkmark, P as checkmarkCircle, E as chevronDown, I as chevronDownUp, F as chevronFirst, j as chevronLast, B as chevronLeft, $ as chevronLeftRight, W as chevronRight, X as chevronUp, G as chevronUpDown, N as chevronrightLeft, J as chevronsDown, Y as chevronsLeft, _ as chevronsRight, K as chevronsUp, Q as circle, ee as circleArrowDown, ae as circleArrowLeft, te as circleArrowLeftDown, ne as circleArrowLeftUp, oe as circleArrowRight, ie as circleArrowRightDown, re as circleArrowRightUp, le as circleArrowUp, pe as circleMinus, se as circlePlus, he as circleX, ce as clipboard, ye as clipboardNotes, xe as cloud, ge as cloudDrizzle, me as cloudFog, de as cloudHail, ue as cloudLightning, we as cloudMoon, fe as cloudRain, Me as cloudSnow, ve as cloudStorm, Ae as cloudSun, be as clouds, ke as code, Le as codepen, He as convertToLink, Ce as convertToOrderedList, Ve as convertToUnorderedList, Re as convertToUnstyledList, Ze as cookie, Se as cornerArrowDownLeft, De as cornerArrowDownRight, ze as cornerArrowLeftDown, Ue as cornerArrowLeftUp, Oe as cornerArrowRightDown, Te as cornerArrowRightUp, qe as cornerArrowUpLeft, Pe as cornerArrowUpRight, Ee as creditcard, Ie as crown, Fe as database, je as delimitor, Be as display, $e as download, We as dragIndicator, Xe as edit, Ge as envelope, Ne as externalLink, Je as eyeClosed, Ye as eyeOpen, _e as eyeStriked, Ke as facebook, Qe as fader, ea as fastForward, aa as file, ta as filter, na as fnBackspace, oa as fnCaps, ia as fnCommand, ra as fnControl, la as fnEscape, pa as fnOption, sa as fnReturn, ha as fnShift, ca as fnSpacebar, ya as fnTab, ga as folder, xa as folder2, ma as folderMinus, da as folderPlus, ua as fork, wa as form, fa as frown, Ma as fullscreenEnter, va as fullscreenExit, Aa as gear, ba as ghost, ka as github, La as guitar, Ha as haze, Ca as headingDecrease, Va as headingIncrease, Ra as heart, Za as hexagon, Sa as horizontalMore, Da as icecream, za as image, Ua as infoCircle, Oa as infoSquare, Ta as instagram, qa as italic, Pa as jellyfish, Ea as key, Ia as layers, Fa as layout, ja as layoutColumns, Ba as layoutGrid, $a as layoutHorizontal, Wa as layoutList, Xa as layoutMixed, Ga as layoutVertical, Na as library, Ja as list, Ya as location, _a as lock, Ka as login, Qa as logoutLeft, et as logoutRight, at as marker, tt as menu, nt as microphone, ot as microphoneOff, it as minus, rt as moonRough, lt as moonStylized, pt as move, st as moveDiagonal, ht as moveDiagonalMirrored, ct as moveHorizontal, yt as moveVertical, xt as mug, gt as music, mt as neutral, dt as pangolin, ut as parcel, wt as pause, ft as phone, Mt as phoneCall, vt as phoneIncoming, At as phoneMissed, bt as phoneOff, kt as phoneOutgoing, Lt as pieChart, Ht as play, Ct as plus, Vt as pothos, Rt as power, Zt as rainbow, St as refresh, Dt as refreshCCW, zt as refreshCW, Ut as repeat, Ot as resizeImage, Tt as rewind, qt as robot, Pt as search, Et as server, It as settings, Ft as shield, jt as shuffle, Bt as sidebar, $t as skipBack, Wt as skipForward, Xt as sliders, Gt as smartphone, Nt as smile, Jt as snail, Yt as snowflake, _t as snpachat, Kt as spoon, Qt as square, en as squareMinus, an as squarePlus, tn as squareX, nn as star, on as starHalf, rn as strikethrough, ln as sunBig, pn as sunSmall, sn as sword, hn as tablet, cn as terminal, yn as text, xn as title, gn as trashcanEmpty, mn as trashcanFilled, dn as trello, un as triangle, wn as triangleInverted, fn as twitch, Mn as twitter, vn as umbrella, An as underline, bn as unlock, kn as user, Ln as userAdd, Hn as userMultiple, Cn as userRemove, Vn as verticalMore, Rn as voicemail, Zn as volumeHigh, Sn as volumeLow, Dn as volumeMedium, zn as volumeMute, Un as webcam, On as wifi, Tn as wifiOff, qn as wind, Pn as wrench, En as x, In as youtube, Fn as zoomIn, jn as zoomOut };
+export namespace alignCenter { }
+export namespace alignJustify { }
+export namespace alignLeft { }
+export namespace alignRight { }
+export namespace archive { }
+export namespace arrowDown { }
+export namespace arrowLeft { }
+export namespace arrowLeftDown { }
+export namespace arrowLeftUp { }
+export namespace arrowRight { }
+export namespace arrowRightDown { }
+export namespace arrowRightUp { }
+export namespace arrowUp { }
+export namespace barChart { }
+export namespace barChartAlternative { }
+export namespace barChartPositive { }
+export namespace batteryCharged { }
+export namespace batteryEmpty { }
+export namespace bell { }
+export namespace bellOff { }
+export namespace bellRinging { }
+export namespace bluetooth { }
+export namespace bluetoothConnected { }
+export namespace bluetoothOff { }
+export namespace bluetoothSearching { }
+export namespace bold { }
+export namespace bookClosed { }
+export namespace bookOpen { }
+export namespace bookmark { }
+export namespace box { }
+export namespace calendar { }
+export namespace camera { }
+export namespace cameraOff { }
+export namespace castToMedia { }
+export namespace checkmark { }
+export namespace checkmarkCircle { }
+export namespace chevronDown { }
+export namespace chevronDownUp { }
+export namespace chevronFirst { }
+export namespace chevronLast { }
+export namespace chevronLeft { }
+export namespace chevronLeftRight { }
+export namespace chevronRight { }
+export namespace chevronUp { }
+export namespace chevronUpDown { }
+export namespace chevronrightLeft { }
+export namespace chevronsDown { }
+export namespace chevronsLeft { }
+export namespace chevronsRight { }
+export namespace chevronsUp { }
+export namespace circle { }
+export namespace circleArrowDown { }
+export namespace circleArrowLeft { }
+export namespace circleArrowLeftDown { }
+export namespace circleArrowLeftUp { }
+export namespace circleArrowRight { }
+export namespace circleArrowRightDown { }
+export namespace circleArrowRightUp { }
+export namespace circleArrowUp { }
+export namespace circleMinus { }
+export namespace circlePlus { }
+export namespace circleX { }
+export namespace clipboard { }
+export namespace clipboardNotes { }
+export namespace cloud { }
+export namespace cloudDrizzle { }
+export namespace cloudFog { }
+export namespace cloudHail { }
+export namespace cloudLightning { }
+export namespace cloudMoon { }
+export namespace cloudRain { }
+export namespace cloudSnow { }
+export namespace cloudStorm { }
+export namespace cloudSun { }
+export namespace clouds { }
+export namespace code { }
+export namespace codepen { }
+export namespace convertToLink { }
+export namespace convertToOrderedList { }
+export namespace convertToUnorderedList { }
+export namespace convertToUnstyledList { }
+export namespace cookie { }
+export namespace cornerArrowDownLeft { }
+export namespace cornerArrowDownRight { }
+export namespace cornerArrowLeftDown { }
+export namespace cornerArrowLeftUp { }
+export namespace cornerArrowRightDown { }
+export namespace cornerArrowRightUp { }
+export namespace cornerArrowUpLeft { }
+export namespace cornerArrowUpRight { }
+export namespace creditcard { }
+export namespace crown { }
+export namespace database { }
+export namespace delimitor { }
+export namespace display { }
+export namespace download { }
+export namespace dragIndicator { }
+export namespace edit { }
+export namespace envelope { }
+export namespace externalLink { }
+export namespace eyeClosed { }
+export namespace eyeOpen { }
+export namespace eyeStriked { }
+export namespace facebook { }
+export namespace fader { }
+export namespace fastForward { }
+export namespace file { }
+export namespace filter { }
+export namespace fnBackspace { }
+export namespace fnCaps { }
+export namespace fnCommand { }
+export namespace fnControl { }
+export namespace fnEscape { }
+export namespace fnOption { }
+export namespace fnReturn { }
+export namespace fnShift { }
+export namespace fnSpacebar { }
+export namespace fnTab { }
+export namespace folder { }
+export namespace folder2 { }
+export namespace folderMinus { }
+export namespace folderPlus { }
+export namespace fork { }
+export namespace form { }
+export namespace frown { }
+export namespace fullscreenEnter { }
+export namespace fullscreenExit { }
+export namespace gear { }
+export namespace ghost { }
+export namespace github { }
+export namespace guitar { }
+export namespace haze { }
+export namespace headingDecrease { }
+export namespace headingIncrease { }
+export namespace heart { }
+export namespace hexagon { }
+export namespace horizontalMore { }
+export namespace icecream { }
+export namespace image { }
+export namespace infoCircle { }
+export namespace infoSquare { }
+export namespace instagram { }
+export namespace italic { }
+export namespace jellyfish { }
+export namespace key { }
+export namespace layers { }
+export namespace layout { }
+export namespace layoutColumns { }
+export namespace layoutGrid { }
+export namespace layoutHorizontal { }
+export namespace layoutList { }
+export namespace layoutMixed { }
+export namespace layoutVertical { }
+export namespace library { }
+export namespace list { }
+export namespace location { }
+export namespace lock { }
+export namespace login { }
+export namespace logoutLeft { }
+export namespace logoutRight { }
+export namespace marker { }
+export namespace menu { }
+export namespace microphone { }
+export namespace microphoneOff { }
+export namespace minus { }
+export namespace moonRough { }
+export namespace moonStylized { }
+export namespace move { }
+export namespace moveDiagonal { }
+export namespace moveDiagonalMirrored { }
+export namespace moveHorizontal { }
+export namespace moveVertical { }
+export namespace mug { }
+export namespace music { }
+export namespace neutral { }
+export namespace pangolin { }
+export namespace parcel { }
+export namespace pause { }
+export namespace phone { }
+export namespace phoneCall { }
+export namespace phoneIncoming { }
+export namespace phoneMissed { }
+export namespace phoneOff { }
+export namespace phoneOutgoing { }
+export namespace pieChart { }
+export namespace play { }
+export namespace plus { }
+export namespace pothos { }
+export namespace power { }
+export namespace rainbow { }
+export namespace refresh { }
+export namespace refreshCCW { }
+export namespace refreshCW { }
+export namespace repeat { }
+export namespace resizeImage { }
+export namespace rewind { }
+export namespace robot { }
+export namespace search { }
+export namespace server { }
+export namespace settings { }
+export namespace shield { }
+export namespace shuffle { }
+export namespace sidebar { }
+export namespace skipBack { }
+export namespace skipForward { }
+export namespace sliders { }
+export namespace smartphone { }
+export namespace smile { }
+export namespace snail { }
+export namespace snowflake { }
+export namespace snpachat { }
+export namespace spoon { }
+export namespace square { }
+export namespace squareMinus { }
+export namespace squarePlus { }
+export namespace squareX { }
+export namespace star { }
+export namespace starHalf { }
+export namespace strikethrough { }
+export namespace sunBig { }
+export namespace sunSmall { }
+export namespace sword { }
+export namespace tablet { }
+export namespace terminal { }
+export namespace text { }
+export namespace title { }
+export namespace trashcanEmpty { }
+export namespace trashcanFilled { }
+export namespace trello { }
+export namespace triangle { }
+export namespace triangleInverted { }
+export namespace twitch { }
+export namespace twitter { }
+export namespace umbrella { }
+export namespace underline { }
+export namespace unlock { }
+export namespace user { }
+export namespace userAdd { }
+export namespace userMultiple { }
+export namespace userRemove { }
+export namespace verticalMore { }
+export namespace voicemail { }
+export namespace volumeHigh { }
+export namespace volumeLow { }
+export namespace volumeMedium { }
+export namespace volumeMute { }
+export namespace webcam { }
+export namespace wifi { }
+export namespace wifiOff { }
+export namespace wind { }
+export namespace wrench { }
+export namespace x { }
+export namespace youtube { }
+export namespace zoomIn { }
+export namespace zoomOut { }
+/**
+ *
+ *  @public @method
+ *  @description method to create a svg element displaying the icon using the supplied attributes and the
+ *  defaultAttributes
+ *
+ *  @param { {} } attributes - the attributes passed to the method
+ *
+ *  @returns { SVGElement } the created Element
+ *
+ */
+declare function toSvg(attributes?: {}): SVGElement;
+export {};
 //# sourceMappingURL=pangolicons.esm.d.mts.map

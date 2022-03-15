@@ -1,6 +1,6 @@
 {
 	"name": "pangolicons",
-	"version": "3.1.0",
+	"version": "3.2.0",
 	"description": "Pangolicons is a cute open source svg icon library inspired by feather icons.",
 	"main": "./dist/pangolicons.js",
 	"module": "./dist/pangolicons.esm.mjs",
@@ -12,8 +12,7 @@
 	"scripts": {
 		"dev": "rollup --config rollup.config.js --watch",
 		"build": "rollup --config rollup.config.js",
-		"compile": "node ./compiler/compiler.mjs",
-		"prepublishOnly": "npm run compile && npm run build && npx tsc"
+		"prepublishOnly": "npm run build && npx tsc"
 	},
 	"keywords": [
 		"svg",

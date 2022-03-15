@@ -4,7 +4,7 @@ import { terser } from 'rollup-plugin-terser';
 
 export default [
 	{
-		input: 'src/compiled/pangolicons.js',
+		input: './src/compiled/pangolicons.js',
 		output: [
 			/**
 			 * The CJS bundle is outputted for a node enviroment and is used as the main entry point for the npm
@@ -14,7 +14,6 @@ export default [
 			{
 				file: './dist/pangolicons.js',
 				format: 'cjs',
-				plugins: [terser({ module: false, toplevel: true })],
 				sourcemap: true,
 			},
 
@@ -29,11 +28,12 @@ export default [
 				format: 'iife',
 				plugins: [terser()],
 				sourcemap: true,
+				name: 'Pangolicons',
 			},
 		],
 	},
 	{
-		input: 'src/compiled/pangolicons.esm.mjs',
+		input: './src/compiled/pangolicons.esm.mjs',
 
 		/**
 		 * The ESM bundle is used for modern browsers & node enviroments, it will provide granular export for Icons and
@@ -44,7 +44,6 @@ export default [
 			{
 				format: 'esm',
 				file: './dist/pangolicons.esm.mjs',
-				plugins: [terser()],
 				sourcemap: true,
 			},
 		],
