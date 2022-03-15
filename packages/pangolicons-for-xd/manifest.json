@@ -1,0 +1,21 @@
+{
+	"id": "2cbf6867",
+	"name": "Pangolicons",
+	"version": "0.0.1",
+	"description": "Pangolicons for Adobe Xd",
+	"icons": [
+		{ "width": 24, "height": 24, "path": "images/icon@1x.png" },
+		{ "width": 48, "height": 48, "path": "images/icon@2x.png" }
+	],
+	"host": {
+		"app": "XD",
+		"minVersion": "21.0"
+	},
+	"uiEntryPoints": [
+		{
+			"type": "panel",
+			"label": "Pangolicons",
+			"panelId": "pangolicons"
+		}
+	]
+}
