@@ -10,7 +10,7 @@ import fs from 'fs';
 
 class Testrunner {
 	static getTest() {
-		const files = fs.readdirSync('./test');
+		const files = fs.readdirSync('./tests');
 		return files.filter((file) => file.trim().includes('.test.'));
 	}
 
