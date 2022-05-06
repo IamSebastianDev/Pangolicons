@@ -22,6 +22,6 @@
 			class="pangolicons pangolicons-headingDecrease {className}"
 			{ ...$$restProps }
 		>
-			<path  d="M10.57,20.57V3.43h8.57m0,7.14v10l-2.86-2.86,2.86,2.86,2.86-2.86"/>
+			<path  d="M10.57,20.57V3.43H2m17.14,7.14v10l-2.85-2.86,2.85,2.86L22,17.71M10.57,3.43h8.57"/>
 		</svg>
 	

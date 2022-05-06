@@ -22,6 +22,6 @@
 			class="pangolicons pangolicons-circleArrowRightUp {className}"
 			{ ...$$restProps }
 		>
-			<path  d="M10.21,8.67h5.13v0l-6.67,6.67M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10,10-4.48,10-10S17.52,2,12,2Z"/>
+			<path  d="M15.33,8.67,8.67,15.33m6.66-6.66-5.12,0h5.12V13.8M2,12A10,10,0,1,0,12,2,10,10,0,0,0,2,12Z"/>
 		</svg>
 	
