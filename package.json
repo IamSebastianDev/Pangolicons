@@ -4,8 +4,7 @@
 	"scripts": {
 		"compile": "node ./compiler/compiler.mjs",
 		"clean": "rm -rf ./icons/*",
-		"test": "node ./tests/testrunner.mjs",
-		"prepublish": "npm run compile && npm run build && npx tsc"
+		"test": "node ./tests/testrunner.mjs"
 	},
 	"keywords": [
 		"svg",
