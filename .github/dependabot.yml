@@ -9,15 +9,31 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    commit-message:
+      prefix: "chore: "
+    ignore:
+      update-types: ["version-update:semver-patch"]
   - package-ecosystem: 'npm'
     directory: "/packages/pangolicons/"
     schedule: 
       interval: "weekly"
+    commit-message:
+      prefix: "chore: "
+    ignore:
+      update-types: ["version-update:semver-patch"]
   - package-ecosystem: 'npm'
     directory: "/packages/react-pangolicons/"
     schedule: 
       interval: "weekly"
+    commit-message:
+      prefix: "chore: "
+    ignore:
+      update-types: ["version-update:semver-patch"]
   - package-ecosystem: 'npm'
     directory: "/packages/svelte-pangolicons/"
     schedule: 
       interval: "weekly"
+    commit-message:
+      prefix: "chore: "
+    ignore:
+      update-types: ["version-update:semver-patch"]
