@@ -12,7 +12,7 @@ updates:
     commit-message:
       prefix: "chore: "
     ignore:
-      - dependency-name: *
+      - dependency-name: "*"
         update-types: ["version-update:semver-patch"]
   - package-ecosystem: 'npm'
     directory: "/packages/pangolicons/"
@@ -21,7 +21,7 @@ updates:
     commit-message:
       prefix: "chore: "
     ignore:
-      - dependency-name: *
+      - dependency-name: "*"
         update-types: ["version-update:semver-patch"]
   - package-ecosystem: 'npm'
     directory: "/packages/react-pangolicons/"
@@ -30,7 +30,7 @@ updates:
     commit-message:
       prefix: "chore: "
     ignore:
-      - dependency-name: *
+      - dependency-name: "*"
         update-types: ["version-update:semver-patch"]
   - package-ecosystem: 'npm'
     directory: "/packages/svelte-pangolicons/"
@@ -39,5 +39,5 @@ updates:
     commit-message:
       prefix: "chore: "
     ignore:
-      - dependency-name: *
+      - dependency-name: "*"
         update-types: ["version-update:semver-patch"]
