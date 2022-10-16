@@ -1,5 +1,3 @@
-<!-- @format -->
-
 # MIT License
 
 Copyright (c) 2021 - 2022 [Sebastian Heinz](https://iamsebastian.dev)

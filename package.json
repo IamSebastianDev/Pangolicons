@@ -1,24 +1,21 @@
 {
-	"name": "pangolicons",
-	"description": "Pangolicons is a cute open source svg icon library inspired by feather icons. This is the projects monorepo.",
-	"scripts": {
-		"compile": "node ./compiler/compiler.mjs",
-		"clean": "rm -rf ./icons/*",
-		"test": "node ./tests/testrunner.mjs"
-	},
-	"keywords": [
-		"svg",
-		"icon",
-		"glyph",
-		"minimal",
-		"dependency-free"
-	],
-	"sideEffects": false,
-	"author": "Sebastian Heinz",
-	"license": "MIT",
-	"devDependencies": {
-		"rollup": "^2.79.0",
-		"rollup-plugin-terser": "^7.0.2",
-		"typescript": "^4.8.3"
-	}
+  "description": "Monorepo for the Pangolicons compiler, documentation, site & packages.",
+  "repository": "https://github.com/IamSebastianDev/Pangolicons",
+  "author": "Sebastian <sebastian@iamsebastian.dev>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3",
+    "typescript": "^4.8.4"
+  },
+  "scripts": {
+    "preci": "rm -rf node_modules",
+    "ci": "yarn install --frozen-lockfile",
+    "postinstall": "npx husky install",
+    "compile": "",
+    "build": "yarn compile"
+  }
 }
