@@ -1,0 +1,8 @@
+{
+  "name": "@pangolicons/compiler",
+  "version": "1.0.0",
+  "description": "Compiler used by Pangolicons to process icons for the different packages inside the scope",
+  "bin": "./bin/index.js",
+  "license": "MIT",
+  "type": "module"
+}
