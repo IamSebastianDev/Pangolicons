@@ -1,6 +1,7 @@
 /** @format */
 
 import fs from 'node:fs/promises';
+import { resolve, join } from 'node:path';
 import type { CompilerInit } from '../types';
 import { composeError, composeSuccess } from '../utils/composer.util';
 import { wrapAsyncSafely } from '../utils/wrapAsyncSafely.util';
@@ -33,7 +34,7 @@ export const compiler = async (config: Partial<CompilerInit>): Promise<void> => 
 
     // parse the icons from the specified input directory
     let { result: icons, error } = await wrapAsyncSafely(async () => {
-        return await fs.readdir(init.input);
+        return await fs.readdir(resolve(join(process.cwd(), init.input)));
     });
 
     if (error || !icons) {
