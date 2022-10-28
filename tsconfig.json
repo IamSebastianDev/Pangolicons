@@ -1,5 +1,5 @@
 {
-  "include": ["/packages/**/*", "/site/src/**/*.ts"],
+  "include": ["/packages/**/*.ts", "/site/src/**/*.ts", "/compiler/src/**/*.ts"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
