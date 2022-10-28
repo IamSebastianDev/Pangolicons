@@ -28,6 +28,8 @@ After installing the necessary tools, you can run the commands below to start de
 -   `yarn postinstall`: Installs husky and githooks.
 -   `yarn compile`: Compiles the icons into the necessary manifest file and places them according to the compiler.config.yml file.
 -   `yarn build`: Triggers the build step for all packages.
+-   `yarn format`: Formats the code using pretty-quick.
+-   `yarn lint`: Uses [alexjs](https://github.com/get-alex/alex) to lint the project's md files.
 
 ## Development - Project Structure
 
