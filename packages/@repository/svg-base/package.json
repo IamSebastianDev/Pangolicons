@@ -1,0 +1,20 @@
+{
+	"name": "@repository/svg-base",
+	"version": "0.0.0",
+	"publishConfig": {
+		"access": "restricted"
+	},
+	"module": "./src/index.ts",
+	"type": "module",
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"exports": {
+		".": {
+			"default": "./src/index.ts"
+		}
+	}
+}
