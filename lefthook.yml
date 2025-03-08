@@ -1,0 +1,12 @@
+pre-commit:
+    commands:
+        lint:
+            run: bun biome check .
+        format:
+            run: bun biome format --write .
+        alex:
+            run: bun alex .
+commit-msg:
+    commands:
+        lint:
+            run: bunx commitlint --edit
