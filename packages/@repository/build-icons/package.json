@@ -1,0 +1,14 @@
+{
+	"name": "@repository/build-icons",
+	"module": "index.ts",
+	"type": "module",
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"scripts": {
+		"build": "bun run src/index.ts"
+	}
+}
