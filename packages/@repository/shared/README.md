@@ -1,4 +1,4 @@
-# @repository/svg-base
+# @repository/shared
 
 To install dependencies:
 

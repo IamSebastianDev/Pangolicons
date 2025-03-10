@@ -1,5 +1,5 @@
 {
-	"name": "@repository/svg-base",
+	"name": "@repository/shared",
 	"version": "0.0.0",
 	"publishConfig": {
 		"access": "restricted"

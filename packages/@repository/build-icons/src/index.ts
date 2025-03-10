@@ -1,3 +1,4 @@
+import type { IconSrc } from "@repository/shared";
 import { $ } from "bun";
 import { readFileSync } from "node:fs";
 import { readdir, writeFile } from "node:fs/promises";
@@ -26,7 +27,7 @@ async function buildIcons() {
         input.map((file) => {
             const { name, tags } = processIconName(file);
             const svg = readFileSync(resolve(join(root, "icons", file)), { encoding: "utf-8" });
-            const data = { name, tags, svg: processSvg(svg) };
+            const data = { name, tags, svg: processSvg(svg) } satisfies IconSrc;
 
             return [name, data] as const;
         })

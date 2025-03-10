@@ -17,10 +17,23 @@
         "typescript": "^5.0.0",
       },
     },
+    "packages/@pangolicons/browser": {
+      "name": "@pangolicons/browser",
+      "version": "4.0.0",
+      "devDependencies": {
+        "@iasd/bun-bake": "^1.0.1",
+        "@repository/shared": "workspace:*",
+        "@types/bun": "latest",
+      },
+      "peerDependencies": {
+        "typescript": "^5.0.0",
+      },
+    },
     "packages/@pangolicons/svg": {
       "name": "@pangolicons/svg",
+      "version": "4.0.0",
       "devDependencies": {
-        "@repository/svg-base": "workspace:*",
+        "@repository/shared": "workspace:*",
         "@types/bun": "latest",
       },
       "peerDependencies": {
@@ -30,14 +43,15 @@
     "packages/@repository/build-icons": {
       "name": "@repository/build-icons",
       "devDependencies": {
+        "@repository/shared": "workspace:*",
         "@types/bun": "latest",
       },
       "peerDependencies": {
         "typescript": "^5.0.0",
       },
     },
-    "packages/@repository/svg-base": {
-      "name": "@repository/svg-base",
+    "packages/@repository/shared": {
+      "name": "@repository/shared",
       "version": "0.0.0",
       "devDependencies": {
         "@types/bun": "latest",
@@ -104,6 +118,8 @@
 
     "@commitlint/types": ["@commitlint/types@19.8.0", "", { "dependencies": { "@types/conventional-commits-parser": "^5.0.0", "chalk": "^5.3.0" } }, "sha512-LRjP623jPyf3Poyfb0ohMj8I3ORyBDOwXAgxxVPbSD0unJuW2mJWeiRfaQinjtccMqC5Wy1HOMfa4btKjbNxbg=="],
 
+    "@iasd/bun-bake": ["@iasd/bun-bake@1.0.1", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-NvKFDYzVoLjnNlhKfb5Dx5KEk/1gk4j+74XfJH2c6/u3ROzrT2ofb3ekiyol76EIFVarMr7lQs1gysWkV82Uxg=="],
+
     "@isaacs/cliui": ["@isaacs/cliui@8.0.2", "", { "dependencies": { "string-width": "^5.1.2", "string-width-cjs": "npm:string-width@^4.2.0", "strip-ansi": "^7.0.1", "strip-ansi-cjs": "npm:strip-ansi@^6.0.1", "wrap-ansi": "^8.1.0", "wrap-ansi-cjs": "npm:wrap-ansi@^7.0.0" } }, "sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA=="],
 
     "@npmcli/config": ["@npmcli/config@6.4.1", "", { "dependencies": { "@npmcli/map-workspaces": "^3.0.2", "ci-info": "^4.0.0", "ini": "^4.1.0", "nopt": "^7.0.0", "proc-log": "^3.0.0", "read-package-json-fast": "^3.0.2", "semver": "^7.3.5", "walk-up-path": "^3.0.1" } }, "sha512-uSz+elSGzjCMANWa5IlbGczLYPkNI/LeR+cHrgaTqTrTSh9RHhOFA4daD2eRUz6lMtOW+Fnsb+qv7V2Zz8ML0g=="],
@@ -111,6 +127,8 @@
     "@npmcli/map-workspaces": ["@npmcli/map-workspaces@3.0.6", "", { "dependencies": { "@npmcli/name-from-folder": "^2.0.0", "glob": "^10.2.2", "minimatch": "^9.0.0", "read-package-json-fast": "^3.0.0" } }, "sha512-tkYs0OYnzQm6iIRdfy+LcLBjcKuQCeE5YLb8KnrIlutJfheNaPvPpgoFEyEFgbjzl5PLZ3IA/BWAwRU0eHuQDA=="],
 
     "@npmcli/name-from-folder": ["@npmcli/name-from-folder@2.0.0", "", {}, "sha512-pwK+BfEBZJbKdNYpHHRTNBwBoqrN/iIMO0AiGvYsp3Hoaq0WbgGSWQR6SCldZovoDpY3yje5lkFUe6gsDgJ2vg=="],
+
+    "@pangolicons/browser": ["@pangolicons/browser@workspace:packages/@pangolicons/browser"],
 
     "@pangolicons/svg": ["@pangolicons/svg@workspace:packages/@pangolicons/svg"],
 
@@ -124,7 +142,7 @@
 
     "@repository/build-icons": ["@repository/build-icons@workspace:packages/@repository/build-icons"],
 
-    "@repository/svg-base": ["@repository/svg-base@workspace:packages/@repository/svg-base"],
+    "@repository/shared": ["@repository/shared@workspace:packages/@repository/shared"],
 
     "@sindresorhus/is": ["@sindresorhus/is@5.6.0", "", {}, "sha512-TV7t8GKYaJWsn00tFDqBw8+Uqmr8A0fRU1tvTQhyZzGv0sJCGRQL3JGMI3ucuKo3XIZdUP+Lx7/gh2t3lewy7g=="],
 
@@ -988,7 +1006,7 @@
 
     "@isaacs/cliui/wrap-ansi": ["wrap-ansi@8.1.0", "", { "dependencies": { "ansi-styles": "^6.1.0", "string-width": "^5.0.1", "strip-ansi": "^7.0.1" } }, "sha512-si7QWI6zUMq56bESFvagtmzMdGOtoxfR+Sez11Mobfc7tm+VkUckk9bW2UeffTGVUbOksxmSw0AA2gs8g71NCQ=="],
 
-    "@npmcli/config/ci-info": ["ci-info@4.1.0", "", {}, "sha512-HutrvTNsF48wnxkzERIXOe5/mlcfFcbfCmwcg6CJnizbSue78AbDt+1cgl26zwn61WFxhcPykPfZrbqjGmBb4A=="],
+    "@npmcli/config/ci-info": ["ci-info@4.2.0", "", {}, "sha512-cYY9mypksY8NRqgDB1XD1RiJL338v/551niynFTGkZOO2LHuB2OmOYxDIe/ttN9AHwrqdum1360G3ald0W9kCg=="],
 
     "@npmcli/map-workspaces/glob": ["glob@10.4.5", "", { "dependencies": { "foreground-child": "^3.1.0", "jackspeak": "^3.1.2", "minimatch": "^9.0.4", "minipass": "^7.1.2", "package-json-from-dist": "^1.0.0", "path-scurry": "^1.11.1" }, "bin": { "glob": "dist/esm/bin.mjs" } }, "sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg=="],
 
