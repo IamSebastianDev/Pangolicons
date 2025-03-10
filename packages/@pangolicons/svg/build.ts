@@ -1,4 +1,4 @@
-import { svgDefaultParameter } from "@repository/svg-base";
+import { createAttributeString } from "@repository/shared";
 import { writeFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 
@@ -11,11 +11,13 @@ async function build() {
     // be overwritten by css.
     for (const [name, definition] of Object.entries(manifest.icons)) {
         // 1) We create the attribute string
-        const parameters = { ...svgDefaultParameter, "data-tags": definition.tags.join(","), class: name };
-        const attributes = Object.entries(parameters).map(([name, value]) => `${name}="${value}"`);
+        const attributes = createAttributeString({
+            "data-tags": definition.tags.join(","),
+            class: `pangolicon ${name}`,
+        });
 
         // 2) The actual svg
-        const svg = `<svg ${attributes.join(" ")}>${definition.svg}</svg>`;
+        const svg = `<svg ${attributes}>${definition.svg}</svg>`;
 
         // 3) And write the svg to the svg folder, where
         // it then can be imported by the user.
