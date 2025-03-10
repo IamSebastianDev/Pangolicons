@@ -1,0 +1,20 @@
+{
+	"name": "@pangolicons/browser",
+	"version": "4.0.0",
+	"main": "./dist/index.js",
+	"module": "./dist/esm/index.js",
+	"types": "./dist/types/index.d.ts",
+	"cdn": "./dist/browser/index.js",
+	"type": "module",
+	"devDependencies": {
+		"@iasd/bun-bake": "^1.0.1",
+		"@repository/shared": "workspace:*",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"scripts": {
+		"build": "bun run .build.ts"
+	}
+}
